@@ -1,11 +1,11 @@
-#1.在线markdown编辑器
+#1.在线markdown
 ##[MaHua](http://mahua.jser.me/)  
 ##[Cmd Markdown](https://www.zybuluo.com/mdeditor)  
 ##[Markdown Plus](http://mdp.tylingsoft.com/)  
 ##[马克飞象](http://www.maxiang.info/)  
 ##[小书匠](http://markdown.xiaoshujiang.com/)
 
-#2.markdown编辑器客户端
+#2.[markdown编辑器](http://www.csdn.net/article/2014-05-05/2819623)
 ##[Mou](http://25.io/mou/) —— Markdown editor for developers.
 
 
