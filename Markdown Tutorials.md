@@ -6,6 +6,7 @@ Markdown允许人们『使用易读易写的纯文本格式编写文档，然后
 [怎样引导新手使用 Markdown？](http://www.zhihu.com/question/20409634)  
 [认识与入门 Markdown](http://sspai.com/25137)  
 
+[Markdown: Syntax](http://daringfireball.net/projects/markdown/syntax)  
 [markdown简明语法](http://lutaf.com/markdown-simple-usage.htm)  
 [markdown简明语法](http://ibruce.info/2013/11/26/markdown/)  
 [Markdown简易语法](http://maybeiwill.me/markdown/)  
