@@ -16,7 +16,7 @@ Markdown允许人们『使用易读易写的纯文本格式编写文档，然后
 [简书-Markdown 新手指南](http://www.jianshu.com/p/q81RER)  
 [简书-Markdown 简明教程](http://www.jianshu.com/p/7bd23251da0a)  
 
-[Writing on GitHub / GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+[Writing on GitHub / GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)  
 [Github Flavored Markdown介绍](http://www.jianshu.com/p/cfPxyr)  
 
 [CSDN Markdown简明教程](http://edu.csdn.net/course/detail/553)  
