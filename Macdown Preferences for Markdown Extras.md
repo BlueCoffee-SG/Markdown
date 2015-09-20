@@ -29,13 +29,13 @@ _underline_
  > Blockquote
 `Inline Code`
 
-* [x] Highlight 
+* [x] Highlight  
 ==Highlight==
-* [x] Superscript 
+* [x] Superscript  
  2<sup>0</sup> = 1
-* [x] Autolink
+* [x] Autolink  
 http://macdown.uranusjr.com/
-* [x] Footnote 
+* [x] Footnote  
 参见下文。
 
 ###Editor
@@ -52,9 +52,9 @@ http://macdown.uranusjr.com/
 - CSS  
 选择样式（GitHub2）。
 
-- [x] Syntax highlighted code block 
-Theme：`Tomorrow`
-Accessory：`Language name`
+- [x] Syntax highlighted code block  
+Theme：`Tomorrow`  
+Accessory：`Language name`  
  - [x] Show line numbers
 
 - [x] TeX-like math syntax 
@@ -63,9 +63,9 @@ Accessory：`Language name`
 
 - [x] Task list syntax 
 
-- [x] Detect table of contents token 
+- [x] Detect table of contents token  
  参考下文《Tables》。
-- [x] Render newline literally
+- [x] Render newline literally  
 非块中自动检测自然行，而无需末尾添加两个空格。
 - [x] Scale preview based on editor font size
 
@@ -78,7 +78,7 @@ Where Markdown transforms underscores (_) into italics, GFM ignores underscores 
     wow_great_stuff
     do_this_and_do_that_and_another_thing.
 
-由于Macdown开启了Underline，下划线包围的表示添加下划线（斜体只能使用*italic*标记）。在计算机编程语言中定义的变量名往往包含很多下划线，需要转义。
+由于Macdown开启了Underline，下划线包围的表示添加下划线（斜体只能使用**标记）。在计算机编程语言中定义的变量名往往包含很多下划线，需要转义。
 
 
 ###URL autolinking（支持）
@@ -87,11 +87,15 @@ Where Markdown transforms underscores (_) into italics, GFM ignores underscores 
 ###Syntax highlighting（支持）
 We use Linguist to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing the languages [YAML](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) file.
 
+`ruby代码片段示例：`
+
 ```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
+
+`OC代码片段示例：`
 
 ```Objective-C++
 //
@@ -209,5 +213,7 @@ Term 3
 
 	> part of definition D
 
+[1]: https://code.google.com/p/google-code-prettify/
+[2]: http://highlightjs.org/
 
 [^stackedit]:here is the footprint
