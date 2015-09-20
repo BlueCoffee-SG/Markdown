@@ -28,7 +28,10 @@ Markdown允许人们『使用易读易写的纯文本格式编写文档，然后
 [用 Markdown 制作简历](http://www.tinylab.org/write-resume-with-markdown/)  
 [用 Markdown 写文档](http://www.tinylab.org/use-markdown-to-write-document/)  
 [使用Markdown写文档](http://blog.csdn.net/xiahouzuoxin/article/details/19752603)  
-[Markdown写作浅谈](http://www.yangzhiping.com/tech/r-markdown-knitr.html)
+[Markdown写作浅谈](http://www.yangzhiping.com/tech/r-markdown-knitr.html)  
+
+[Markdown中如何插入视频？](http://segmentfault.com/q/1010000000424925)  
+[markdown语法插入优酷视频的方法](http://www.wooaii.com/archives/3474.html)  
 
 
 
