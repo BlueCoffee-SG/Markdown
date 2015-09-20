@@ -6,6 +6,7 @@ Cmd Markdown编辑、预览的渲染效果很漂亮，且预览生成内容目�
 - 如果使用Eclipse，可以安装[Markdown Editor plugin for Eclipse](http://www.winterwell.com/software/markdown-editor.php)。
 - 本人目前日常主要使用***Macdown+StackEdit***。
 
+[The Best Markdown Editor for Windows](http://www.sitepoint.com/best-markdown-editors-windows/)
 [Markdown编辑器之比较](http://www.jianshu.com/p/dcffb6f60fe2)
 
 #1.在线markdown
@@ -95,7 +96,10 @@ Markdown Editor plugin for Eclipse
 >Markdown editor for developers.
 
 ##[Macdown](http://macdown.uranusjr.com)
+>MacDown is an open source Markdown editor for OS X, released under the MIT License. It is heavily influenced by Chen Luo’s Mou. 
+>
 >+ [Mac 下两款 Markdown 编辑器 Mou/MacDown 大 PK](http://www.macgg.com/archives/34004.html)
+>+ [Macdown Preferences for Markdown Extras](https://github.com/fan2/Markdown/blob/master/Macdown%20Preferences%20for%20Markdown%20Extras.md)
 
 ##[typora](http://typora.io)
 >a minimal markdown editor  
@@ -181,6 +185,13 @@ Markdown Editor plugin for Eclipse
 >
 >+ [Ulysses III 这款写作软件的使用体验如何？](http://www.zhihu.com/question/20927359)
 >+ [Markdown 编辑器佼佼者：Ulysses III 上手初体验](http://sspai.com/27336)
+
+#4.开源Markdown解析器
+##[CocoaMarkdown](https://github.com/indragiek/CocoaMarkdown)
+
+> Markdown parsing and rendering for iOS and OS X
+> 
+> CocoaMarkdown is a cross-platform framework for parsing and rendering Markdown, built on top of the [C reference implementation](https://github.com/jgm/CommonMark) of [CommonMark](http://commonmark.org/).
 
 [maxiang-desktop]: http://maxiang.info/client_zh
 [maxiang4chrome]: https://chrome.google.com/webstore/detail/kidnkfckhbdkfgbicccmdggmpgogehop
