@@ -49,12 +49,14 @@ Cmd Markdown编辑、预览的渲染效果很漂亮，且预览生成内容目�
 ##[StackEdit](https://stackedit.io/editor)
 
 >StackEdit is a full-featured, [open-source](https://github.com/benweet/stackedit/) Markdown editor based on ***PageDown***, the Markdown library used by Stack Overflow and the other Stack Exchange sites.
->***In－browser*** markdow editor, Unrivalled writing experience.  
->StackEdit stores your documents in your [browser's local storage](https://developer.mozilla.org/en-US/docs/Web/Guide/DOM/Storage#localStorage), which means all your documents are automatically *saved locally* and are accessible ***offline***!  
 >
 >+ StackEdit provides very handy formatting buttons and shortcuts, thanks to PageDown, the WYSIWYG-style markdown editor used by **[Stack Overflow](http://stackoverflow.com/)**.
 >+ StackEdit integrates MathJax to render mathematics from LaTeX expressions inside your markdown document, as you would do on **[Stack Exchange](http://stackexchange.com/)**.
 >
+>***In－browser*** markdow editor, Unrivalled writing experience.  
+>StackEdit stores your documents in your [browser's local storage](https://developer.mozilla.org/en-US/docs/Web/Guide/DOM/Storage#localStorage), which means all your documents are automatically *saved locally* and are accessible ***offline***!  
+> StackEdit is accessible offline after the application has been _loaded for the first time_.
+> 
 >StackEdit can:
 >
 > - Manage multiple Markdown documents *online* or *offline*
