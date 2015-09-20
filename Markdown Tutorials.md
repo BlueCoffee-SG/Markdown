@@ -7,6 +7,8 @@ Markdown允许人们『使用易读易写的纯文本格式编写文档，然后
 [认识与入门 Markdown](http://sspai.com/25137)  
 
 [Markdown: Syntax](http://daringfireball.net/projects/markdown/syntax)  
+[Markdown 语法说明](https://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md)
+
 [markdown简明语法](http://lutaf.com/markdown-simple-usage.htm)  
 [markdown简明语法](http://ibruce.info/2013/11/26/markdown/)  
 [Markdown简易语法](http://maybeiwill.me/markdown/)  
@@ -14,11 +16,18 @@ Markdown允许人们『使用易读易写的纯文本格式编写文档，然后
 [简书-Markdown 新手指南](http://www.jianshu.com/p/q81RER)  
 [简书-Markdown 简明教程](http://www.jianshu.com/p/7bd23251da0a)  
 
+[Writing on GitHub / GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+[Github Flavored Markdown介绍](http://www.jianshu.com/p/cfPxyr)  
+
 [CSDN Markdown简明教程](http://edu.csdn.net/course/detail/553)  
 [欢迎使用Markdown编辑器写CSDN博客](http://blog.csdn.net/testcs_dn/article/details/43315335)  
+[博客园支持github flavored markdown！](http://www.cnblogs.com/cmt/p/markdown_github.html)  
 
 [Docker 快速上手：用 Docker + GitBook 写书](http://www.tinylab.org/docker-quick-start-docker-gitbook-writing-a-book/)  
 [用 Markdown 高效地写幻灯片](http://www.tinylab.org/?p=3801&preview=true)  
 [用 Markdown 制作简历](http://www.tinylab.org/write-resume-with-markdown/)  
 [用 Markdown 写文档](http://www.tinylab.org/use-markdown-to-write-document/)  
+[使用Markdown写文档](http://blog.csdn.net/xiahouzuoxin/article/details/19752603)
+
+
 
