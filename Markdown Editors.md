@@ -6,7 +6,7 @@ Cmd Markdown编辑、预览的渲染效果很漂亮，且预览生成内容目�
 - 如果使用Eclipse，可以安装[Markdown Editor plugin for Eclipse](http://www.winterwell.com/software/markdown-editor.php)。
 - 本人目前日常主要使用***Macdown+StackEdit***。
 
-[The Best Markdown Editor for Windows](http://www.sitepoint.com/best-markdown-editors-windows/)
+[The Best Markdown Editor for Windows](http://www.sitepoint.com/best-markdown-editors-windows/)  
 [Markdown编辑器之比较](http://www.jianshu.com/p/dcffb6f60fe2)
 
 #1.在线markdown
