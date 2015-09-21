@@ -1,3 +1,4 @@
+[TOC]
 
 - 在线编辑器首推StackEdit，它是以Chrome插件形式运行的Web App，即使离线也可打开浏览器使用。它支持从URL或本地磁盘导入文件编辑，编辑实时保存到浏览器本地存储中（可方便进行管理）。
 StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数统计和HTML Code。编辑完成可将文档从浏览器导出（下载）到本地磁盘，支持导出Markdown、HTML和PDF格式；同时也支持直接直接发布到网上（Publish/Export to the web），例如Blogger、WordPress、DropBox、Google Drive、GitHub/Gist等。
