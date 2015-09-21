@@ -32,6 +32,3 @@ Markdown允许人们『使用易读易写的纯文本格式编写文档，然后
 
 [Markdown中如何插入视频？](http://segmentfault.com/q/1010000000424925)  
 [markdown语法插入优酷视频的方法](http://www.wooaii.com/archives/3474.html)  
-
-
-
