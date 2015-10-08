@@ -97,7 +97,7 @@ puts markdown.to_html
 
 `OC代码片段示例：`
 
-```Objective-C++
+```obj-c
 //
 //  main.m
 //  EmptyApplication
