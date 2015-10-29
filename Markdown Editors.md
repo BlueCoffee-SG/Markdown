@@ -1,18 +1,23 @@
-[TOC]
+<!--[TOC]-->
 
 - 在线编辑器首推StackEdit，它是以Chrome插件形式运行的Web App，即使离线也可打开浏览器使用。它支持从URL或本地磁盘导入文件编辑，编辑实时保存到浏览器本地存储中（可方便进行管理）。
 StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数统计和HTML Code。编辑完成可将文档从浏览器导出（下载）到本地磁盘，支持导出Markdown、HTML和PDF格式；同时也支持直接直接发布到网上（Publish/Export to the web），例如Blogger、WordPress、DropBox、Google Drive、GitHub/Gist等。
-- 客户端推荐***Macdown***（开源Mou）和作业部落***Cmd Markdown***（或专业的Markdown Plus）。
+- 客户端推荐***Macdown***（开源Mou）、**Haroopad** 或 作业部落***Cmd Markdown***（或专业的Markdown Plus）。
 - 如果使用Eclipse，可以安装[Markdown Editor plugin for Eclipse](http://www.winterwell.com/software/markdown-editor.php)。
-- 本人目前日常主要使用***Macdown+StackEdit***，推荐尝试功能全面和富有特色的Haroopad。
+- 浏览器撰写邮件可使用[Markdown-Here](http://markdown-here.com/)插件。
+- 本人日常主要混用以下编辑软件：
+    - 顺手速记：备忘录
+    - 大纲勾勒：**FoldingText**
+    - 文本编辑：**vim + SublimeText**
+    - markdown：***Macdown*** + **StackEdit/Classeur**
 
 [The Best Markdown Editor for Windows](http://www.sitepoint.com/best-markdown-editors-windows/)  
 [Markdown编辑器之比较](http://www.jianshu.com/p/dcffb6f60fe2)
 
 ##1.Markdown Online
 ###[MaHua](http://mahua.jser.me/)
->一个简单的在线编辑markdown文档的编辑器
->向Mac下优秀的markdown编辑器mou致敬
+>一个简单的在线编辑markdown文档的编辑器，向Mac下优秀的markdown编辑器mou致敬。  
+>支持行号、编辑和预览主题配置、VIM快捷键等。
 
 ![MaHua](http://mahua.jser.me/mahua-logo.jpg)
 
@@ -35,6 +40,14 @@ StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数�
 > Editor.md 是一款开源的、可嵌入的 Markdown 在线编辑器（组件），基于 CodeMirror、jQuery 和 Marked 构建。
 
 ![Editor.md](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+
+###[Markable](http://markable.in/editor/)
+> Markable —— A remarkable online markdown editor.
+
+![Markable](http://markable.in/site_media/static/images/screenshot.png)
+
+###[lepture editor](http://lab.lepture.com/editor/)
+> [改造了一个Markdown在线编辑器](http://segmentfault.com/a/1190000002724430)
 
 ###[简书](http://www.jianshu.com/)
 > 交流故事，沟通想法
@@ -126,6 +139,11 @@ Markdown Editor plugin for Eclipse
 >Besides common markdown, GitHub flavored markdown, it also supports task lists, emojis, Font Awesome icons, Ionicons icons, mathematical formulae, flowcharts, sequence diagrams, gantt diagrams, Vim mode and Emacs mode.  
 >提供[Windows App](https://s.tylingsoft.com/mdp/win/mdp-1.4.3.zip)和[Mac App](https://itunes.apple.com/us/app/markdown-plus/id972585766?mt=8)（$4.99）。
 
+###[Classeur](https://app.classeur.io/)
+>[Re-enjoy writing, with Markdown.](classeur.app.md)  
+>简洁，轻巧的 Markdown 写作工具。  
+> **StackEdit** 的孪生版本，提供了增强优化设计的Chrome/Mac APP。
+
 3.[Markdown Client](http://www.csdn.net/article/2014-05-05/2819623)
 ----
 ###[Mou](http://25.io/mou/)
@@ -134,19 +152,24 @@ Markdown Editor plugin for Eclipse
 ![Mou](http://25.io/mou/img/1@2x.png)
 
 ###[Macdown](http://macdown.uranusjr.com)
->MacDown is an open source Markdown editor for OS X, released under the MIT License. It is heavily influenced by Chen Luo’s Mou. 
+>MacDown is an open source Markdown editor for OS X, released under the MIT License.  
+>It is heavily influenced by Chen Luo’s Mou. 
 
 ![MacDown](http://d.pr/i/PTTC+)
 
->推荐主题：
+>**Editor主题**：
 >
->+ Night Theme: Mou Night+, Tomorrow+
->+ Light Theme: Mou Fresh Air+, Solarized (Light)+
+>>+ Night Theme: Mou Night+, Tomorrow+
+>>+ Light Theme: Mou Fresh Air+, Solarized (Light)+
+>
+>**Render CSS**：
+>
+>>GitHub2
 >
 >参考：
 >
->+ [Mac 下两款 Markdown 编辑器 Mou/MacDown 大 PK](http://www.macgg.com/archives/34004.html)
->+ [Macdown Preferences for Markdown Extras](https://github.com/fan2/Markdown/blob/master/Macdown%20Preferences%20for%20Markdown%20Extras.md)
+>+ [Mac 下两款 Markdown 编辑器 Mou/MacDown 大 PK](http://www.macgg.com/archives/34004.html)  
+>+ [Macdown Preferences for Markdown Extras](https://github.com/fan2/Markdown/blob/master/Macdown%20Preferences%20for%20Markdown%20Extras.md)  
 
 ###[Haroopad](http://pad.haroopress.com/)
 >The Markdown enabled Next Document Processor  
@@ -170,7 +193,7 @@ Markdown Editor plugin for Eclipse
 >**Comparation**:
 >
 > + 个人还是蛮喜欢haroopad支持行号、折叠显示以及自动完成提示等编辑特性。
-> + 在Editor和Viewer的渲染方面还是有些bug，期望改进。
+> + 在Editor和Viewer的渲染方面还是有些[bug](https://github.com/rhiokim/haroopad/issues/536)，期望改进。
 
 ###[MarkdownPad](http://www.markdownpad.com/)
 > MarkdownPad is a full-featured Markdown editor for Windows.
@@ -216,6 +239,33 @@ Markdown Editor plugin for Eclipse
 >
 >在Mac App Store上提供了轻度免费的 [MWeb Lite](https://itunes.apple.com/cn/app/mweb-lite-pro-markdown-writing/id979033429?l=zh&ls=1&mt=12) 和专业收费的 [MWeb](https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&ls=1&mt=12)（$9.9）。
 >
+
+###FoldingText + Marked
+####[FoldingText](http://www.foldingtext.com/)
+>"plain text productivity"  
+>Remember, it's all just text.  
+>FoldingText uses [Markdown](http://daringfireball.net/projects/markdown/) formatting to give structure to your text files.
+> 出自TaskPaper和WriteRoom的同名作者Jesse Grosjean之手。
+> 
+> 和其它的markdown editor完全不同的是FoldingText文件**`.ft`**表面上是个纯文本，在程序背后是用树形结构进行组织的。树状结构的每个结节叫`node`，文本中的任何一段都是一个`node`。  
+> FT Outliner提供针对类似vim text object粒度的`Folding`、`Focus`、`Move & Organize`等操作。  
+> 
+> FoldingText支持**Plugins**和**AppleScript**扩展：
+>> 可安装插件[`rendered_images_for_folding_text`](https://github.com/carolineartz/rendered_images_for_folding_text) 支持 [@img](http://support.foldingtext.com/t/markdown-image-support/397) 渲染  
+>> 调用AppleScript生成[TOC](http://support.foldingtext.com/t/toc-table-of-content-generator/295)、[table](http://support.foldingtext.com/t/scripting-easy-creation-of-text-tables-flat-and-nested/283) 或 调用 Marked 2 预览。 
+>
+> + [FoldingText - 伪装成 markdown 编辑器的 outliner](http://www.v2ex.com/t/123024)
+> + [RobTrew / tree-tools](https://github.com/RobTrew/tree-tools)
+> + [jamiekowalski / foldingtext-extra](https://github.com/jamiekowalski/foldingtext-extra)
+
+####Marked
+> Marked 是一个 JavaScript 编写的全功能 Markdown 解析和编译器。  
+> marked 的目的是快速的编译**超大块**的Markdown文本，而不必担心结果会出乎意料或者花费很长时间。  
+> marked 最初是为 Node.JS 编写，现在已完全兼容客户端浏览器。新版本号称速度比C语言写的Markdown转换工具[Discount](http://www.oschina.net/p/discount) 还要快。  
+> 鉴于纯文本的FoldingText没有完整的Markdown预览功能，一般搭配Marked 2辅助预览。可以[使用脚本](http://support.foldingtext.com/t/how-to-install-a-script/75/5) [OpenFTDocinMarked.applescript](https://github.com/RobTrew/txtquery-tools/blob/master/utilities/OpenFTDocinMarked.applescript) [调用Marked 2打开预览当前FT文档](http://support.foldingtext.com/t/script-to-open-the-current-foldingtext-file-in-brett-terpstras-marked/189)。  
+> 
+> + [Marked高效的Markdown解析器](http://blog.fens.me/nodejs-markdown-marked/)  
+> + [Marked 2 使用方法集锦：基础篇](http://www.waerfa.com/marked-2-basic-skills)
 
 ##4.专业文档编辑器
 ###[R Markdown](http://rmarkdown.rstudio.com/)
