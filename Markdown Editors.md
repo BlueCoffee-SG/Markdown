@@ -101,8 +101,6 @@ StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数�
 > - [推荐的MarkDown在线编辑器 StackEdit](http://www.xuanfengge.com/markdown-to-recommend-online-editor-stackedit.html)
 > - [功能强大的Markdown编辑器StackEdit](http://www.guokr.com/post/544861/)
 
-Markdown Editor plugin for Eclipse
-
 ##2.Markdown Online+Client
 ###[小书匠](http://markdown.xiaoshujiang.com/)  
 ![小书匠](http://markdown.xiaoshujiang.com/img/avatar_d_256x256.png)
@@ -248,7 +246,7 @@ Markdown Editor plugin for Eclipse
 > 出自TaskPaper和WriteRoom的同名作者Jesse Grosjean之手。
 > 
 > 和其它的markdown editor完全不同的是FoldingText文件**`.ft`**表面上是个纯文本，在程序背后是用树形结构进行组织的。树状结构的每个结节叫`node`，文本中的任何一段都是一个`node`。  
-> FT Outliner提供针对类似vim text object粒度的`Folding`、`Focus`、`Move & Organize`等操作。  
+> FT Outliner提供针对类似vim text object粒度的`Folding`、`Focus`、`Move & Organize`等操作。可针对当前缩进Level、Heading进行折叠或聚焦编辑。  
 > 
 > FoldingText支持**Plugins**和**AppleScript**扩展：
 >> 可安装插件[`rendered_images_for_folding_text`](https://github.com/carolineartz/rendered_images_for_folding_text) 支持 [@img](http://support.foldingtext.com/t/markdown-image-support/397) 渲染  
