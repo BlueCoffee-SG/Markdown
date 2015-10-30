@@ -1,4 +1,4 @@
-<!--[TOC]-->
+[TOC]
 
 - 在线编辑器首推StackEdit，它是以Chrome插件形式运行的Web App，即使离线也可打开浏览器使用。它支持从URL或本地磁盘导入文件编辑，编辑实时保存到浏览器本地存储中（可方便进行管理）。
 StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数统计和HTML Code。编辑完成可将文档从浏览器导出（下载）到本地磁盘，支持导出Markdown、HTML和PDF格式；同时也支持直接直接发布到网上（Publish/Export to the web），例如Blogger、WordPress、DropBox、Google Drive、GitHub/Gist等。
@@ -12,7 +12,7 @@ StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数�
     - markdown：***Macdown*** + **StackEdit/Classeur**
 
 [The Best Markdown Editor for Windows](http://www.sitepoint.com/best-markdown-editors-windows/)  
-[Markdown编辑器之比较](http://www.jianshu.com/p/dcffb6f60fe2)
+[Markdown编辑器之比较](http://www.jianshu.com/p/dcffb6f60fe2)  
 
 ##1.Markdown Online
 ###[MaHua](http://mahua.jser.me/)
@@ -257,13 +257,27 @@ StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数�
 > + [jamiekowalski / foldingtext-extra](https://github.com/jamiekowalski/foldingtext-extra)
 
 ####Marked
+>**Marked** - smart tools for smart writers  
+>
+>Marked is a previewer for Markdown files. Use it with your favorite text editor and it updates every time you save.   
+>With robust features for previewing, reviewing and exporting beautiful documents, you can work in plain text while reveling in rich formatting.  
+>
 > Marked 是一个 JavaScript 编写的全功能 Markdown 解析和编译器。  
-> marked 的目的是快速的编译**超大块**的Markdown文本，而不必担心结果会出乎意料或者花费很长时间。  
-> marked 最初是为 Node.JS 编写，现在已完全兼容客户端浏览器。新版本号称速度比C语言写的Markdown转换工具[Discount](http://www.oschina.net/p/discount) 还要快。  
+> Marked 的目的是快速的编译**超大块**的Markdown文本，而不必担心结果会出乎意料或者花费很长时间。  
+> Marked 最初是为 Node.JS 编写，现在已完全兼容客户端浏览器。新版本号称速度比C语言写的Markdown转换工具[Discount](http://www.oschina.net/p/discount) 还要快。  
 > 鉴于纯文本的FoldingText没有完整的Markdown预览功能，一般搭配Marked 2辅助预览。可以[使用脚本](http://support.foldingtext.com/t/how-to-install-a-script/75/5) [OpenFTDocinMarked.applescript](https://github.com/RobTrew/txtquery-tools/blob/master/utilities/OpenFTDocinMarked.applescript) [调用Marked 2打开预览当前FT文档](http://support.foldingtext.com/t/script-to-open-the-current-foldingtext-file-in-brett-terpstras-marked/189)。  
 > 
 > + [Marked高效的Markdown解析器](http://blog.fens.me/nodejs-markdown-marked/)  
 > + [Marked 2 使用方法集锦：基础篇](http://www.waerfa.com/marked-2-basic-skills)
+
+###[MultiMarkdown Composer](http://multimarkdown.com/)
+[MultiMarkdown Composer 2](http://brettterpstra.com/2013/02/06/mac-app-review-multimarkdown-composer-2/) is the best MultiMarkdown editor just got better!  
+
+**MultiMarkdown Composer**亦出自`Marked`作者[Brett Terpstra](http://brettterpstra.com/contact/)之手。  
+> - [MultiMarkdown Composer 2 is a powerful, flexible Markdown-based text editor](http://www.engadget.com/2013/02/05/multimarkdown-composer-2-is-a-powerful-flexible-markdown-based/)  
+> - [My Favourite Text Editors for OSX – MultiMarkdown Composer](http://gregferro.com/my-favourite-text-editors-for-osx-multimarkdown-composer/)  
+> - [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
+> - [Markdown 语法写作入门指南](http://wenku.baidu.com/view/8502de3b03d8ce2f006623c1.html)
 
 ##4.专业文档编辑器
 ###[R Markdown](http://rmarkdown.rstudio.com/)
@@ -317,6 +331,14 @@ a universal document converter
 >
 >+ [Ulysses III 这款写作软件的使用体验如何？](http://www.zhihu.com/question/20927359)
 >+ [Markdown 编辑器佼佼者：Ulysses III 上手初体验](http://sspai.com/27336)
+
+###[Scrivener](http://www.literatureandlatte.com/)
+Scrivener is a powerful content-generation tool for writers that allows you to concentrate on composing and structuring long and difficult documents. While it gives you complete control of the formatting, its focus is on helping you get to the end of that awkward first draft.  
+
+![Scrivener](http://www.literatureandlatte.com/gfx/11106057-homepage-sliced_04.jpg)
+
+> - [Mac 专业写作工具：Scrivener](http://www.kankanews.com/ICkengine/archives/136402.shtml)
+> - [Scrivener使用multimarkdown的总结](http://www.douban.com/note/278837465/)  
 
 ##5.开源Markdown解析器
 ###[CocoaMarkdown](https://github.com/indragiek/CocoaMarkdown)
