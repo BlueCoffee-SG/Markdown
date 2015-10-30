@@ -4,10 +4,13 @@ Markdown是一种轻量级标记语言，创始人为John Gruber。
 Markdown允许人们『使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML或HTML文档』
 
 [怎样引导新手使用 Markdown？](http://www.zhihu.com/question/20409634)  
-[认识与入门 Markdown](http://sspai.com/25137)
+[认识与入门 Markdown](http://sspai.com/25137)  
+[全面切换至Markdown](http://www.houqun.me/articles/turn-to-use-markdown-to-write.html)
 
 [Markdown: Syntax](http://daringfireball.net/projects/markdown/syntax)  
-[Markdown 语法说明](https://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md)
+Markdown 语法说明：[gitcafe](https://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md) [wowubuntu](http://wowubuntu.com/markdown/)  
+[MultiMarkdown User's Guide](http://fletcher.github.io/MultiMarkdown-4/)  
+[MultiMarkdown Guide](https://rawgit.com/fletcher/human-markdown-reference/master/index.html)
 
 [markdown简明语法](http://lutaf.com/markdown-simple-usage.htm)  
 [markdown简明语法](http://ibruce.info/2013/11/26/markdown/)  
