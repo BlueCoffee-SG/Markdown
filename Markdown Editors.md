@@ -139,6 +139,9 @@ StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数�
 
 ###[Classeur](https://app.classeur.io/)
 >[Re-enjoy writing, with Markdown.](classeur.app.md)  
+
+![Classeur](http://classeur.io/img/logo.png)
+
 >简洁，轻巧的 Markdown 写作工具。  
 > **StackEdit** 的孪生版本，提供了增强优化设计的Chrome/Mac APP。
 
