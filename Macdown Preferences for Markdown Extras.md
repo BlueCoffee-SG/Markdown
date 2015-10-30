@@ -1,5 +1,7 @@
+Macdown Preferences for [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
+===
 
-[TOC]
+<!--[TOC]-->
 
 ------
 
@@ -53,7 +55,7 @@ http://macdown.uranusjr.com/
 选择样式（GitHub2）。
 
 - [x] Syntax highlighted code block  
-Theme：`Tomorrow`  
+Theme：`Coy` or `Tomorrow`  
 Accessory：`Language name`  
  - [x] Show line numbers
 
@@ -64,9 +66,10 @@ Accessory：`Language name`
 - [x] Task list syntax 
 
 - [x] Detect table of contents token  
- 参考下文《Tables》。
+ github不支持`TOC`标记。
 - [x] Render newline literally  
-非块中自动检测自然行，而无需末尾添加两个空格。
+非块中自动检测自然行，而无需末尾添加两个空格。    
+github不完全支持自然行，还是建议关闭此项。  
 - [x] Scale preview based on editor font size
 
 
