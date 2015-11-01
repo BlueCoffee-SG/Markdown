@@ -172,7 +172,7 @@ Haroopad：`++underline++`
 
 ### 删除线（Strikethrough）
 **说明：**
-在 HTML 中，可以使用 `<del>` 标签来定义文档中已被删除的文本（配合 `<[ins]>` 标签来描述文档中的更新和修正）。  
+在 HTML 中，可以使用 `<del>` 标签来定义文档中已被删除的文本（配合 `<ins>` 标签来描述文档中的更新和修正）。  
 标准 markdown 没有提供对应的标签支持，GFM（[Github Flavored Markdown][]） 提供了扩展支持，使用两个波浪符号来给文本添加删除线。
 
 **语法：**
@@ -433,6 +433,7 @@ GFM 等 Markdown 扩展支持任务列表、有序列表和无序列表。
 ```
 
 示例效果：
+
 -   Red
 -   Green
 -   Blue
@@ -443,12 +444,12 @@ GFM 等 Markdown 扩展支持任务列表、有序列表和无序列表。
 ```Markdown
 - 链接（Hyperlink）
  - 自动链接
- - 文字（text href）
-   - 行内式
-    - 参考式
+ - 文字（text href） <!--行首1个空格-->
+     - 行内式 <!--行首5个空格-->
+     - 参考式
  - 图片（image href）
-   - 插入图片
-    - 图片链接
+     - 插入图片
+     - 图片链接
  - 锚点（inner link）
 - 引用（Blockquote）
 ```
@@ -458,11 +459,11 @@ GFM 等 Markdown 扩展支持任务列表、有序列表和无序列表。
 - 链接（Hyperlink）
  - 自动链接
  - 文字（text href）
-   - 行内式
-    - 参考式
+     - 行内式
+     - 参考式
  - 图片（image href）
-   - 插入图片
-    - 图片链接
+     - 插入图片
+     - 图片链接
  - 锚点（inner link）
 - 引用（Blockquote）
 
