@@ -55,7 +55,8 @@ Markdown 内嵌 HTML：[字体、字号与颜色][HTML_IN_MARKDOWN_FONT] / [背�
 [Markdown中如何插入视频][]  
 [markdown语法插入优酷视频的方法]
 
-##Hyperlink Reference IDs
+##<!--Hyperlink Reference IDs-->
+
 <!--##概述入门-->
 [怎样引导新手使用 Markdown]:http://www.zhihu.com/question/20409634
 [认识与入门 Markdown]:http://sspai.com/25137
@@ -82,7 +83,6 @@ Markdown 内嵌 HTML：[字体、字号与颜色][HTML_IN_MARKDOWN_FONT] / [背�
 [markdown-simple-usage-lutaf]:http://lutaf.com/markdown-simple-usage.htm
 [markdown-simple-usage-ibruce]:http://ibruce.info/2013/11/26/markdown/
 [markdown-simple-usage-maybeiwill]:http://maybeiwill.me/markdown/
-
 [JIANSHU_MARKDOWN_GUIDE]:http://www.jianshu.com/p/q81RER
 [JIANSHU_MARKDOWN_USAGE]:http://www.jianshu.com/p/7bd23251da0a
 
