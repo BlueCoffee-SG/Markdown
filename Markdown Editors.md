@@ -1,23 +1,23 @@
-[TOC]
+<!--[TOC]-->
 
 - 在线编辑器首推StackEdit，它是以Chrome插件形式运行的Web App，即使离线也可打开浏览器使用。它支持从URL或本地磁盘导入文件编辑，编辑实时保存到浏览器本地存储中（可方便进行管理）。
-StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数统计和HTML Code。编辑完成可将文档从浏览器导出（下载）到本地磁盘，支持导出Markdown、HTML和PDF格式；同时也支持直接直接发布到网上（Publish/Export to the web），例如Blogger、WordPress、DropBox、Google Drive、GitHub/Gist等。
+	StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数统计和HTML Code。编辑完成可将文档从浏览器导出（下载）到本地磁盘，支持导出Markdown、HTML和PDF格式；同时也支持直接直接发布到网上（Publish/Export to the web），例如Blogger、WordPress、DropBox、Google Drive、GitHub/Gist等。
 - 客户端推荐***Macdown***（开源Mou）、**Haroopad** 或 作业部落***Cmd Markdown***（或专业的Markdown Plus）。
 - 如果使用Eclipse，可以安装[Markdown Editor plugin for Eclipse](http://www.winterwell.com/software/markdown-editor.php)。
 - 浏览器撰写邮件可使用[Markdown-Here](http://markdown-here.com/)插件。
 - 本人日常主要混用以下编辑软件：
-    - 顺手速记：备忘录
-    - 大纲勾勒：**FoldingText**
-    - 文本编辑：**vim + SublimeText**
-    - markdown：***Macdown*** + **StackEdit/Classeur**
+ - 顺手速记：备忘录
+ - 大纲勾勒：**FoldingText**
+ - 文本编辑：**vim + SublimeText**
+ - markdown：***Macdown*** + **StackEdit/Classeur**
 
 [The Best Markdown Editor for Windows](http://www.sitepoint.com/best-markdown-editors-windows/)  
 [Markdown编辑器之比较](http://www.jianshu.com/p/dcffb6f60fe2)  
 
 ##1.Markdown Online
 ###[MaHua](http://mahua.jser.me/)
->一个简单的在线编辑markdown文档的编辑器，向Mac下优秀的markdown编辑器mou致敬。  
->支持行号、编辑和预览主题配置、VIM快捷键等。
+> 一个简单的在线编辑markdown文档的编辑器，向Mac下优秀的markdown编辑器mou致敬。  
+> 支持行号、编辑和预览主题配置、VIM快捷键等。
 
 ![MaHua](http://mahua.jser.me/mahua-logo.jpg)
 
@@ -186,10 +186,15 @@ StackEdit 支持切换到预览阅读模式，提供文档结构大纲、字数�
 > + Line Number, Markdown Folding, Auto Completion
 > + GFM + Extensions, MathJax, Diagram
 >
->**Various Themes**:
+>**Editor Themes**:
 >
 > + default: solarized dark
-> + recommended: erlang dark, monokai
+> + recommended: 3024-day, **paraiso-light**; monokai, **erlang dark**, paraiso-dark.
+> 
+>**Preview Themes**:
+>
+> + default: haroopad
+> + recommended: metro vibes dark, **node dark**
 > 
 >**Comparation**:
 >
