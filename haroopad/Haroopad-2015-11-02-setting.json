@@ -1,0 +1,45 @@
+{
+  "Code": {
+    "theme": "foundation",
+    "displayLineNumber": false
+  },
+  "Editor": {
+    "theme": "paraiso-light",
+    "displayLineNumber": true,
+    "vimKeyBinding": false,
+    "autoPairCharacters": true,
+    "useMarkdownFolding": true,
+    "tabSize": 2,
+    "indentUnit": 2,
+    "indentWithTabs": true,
+    "displayActiveLine": true,
+    "fontSize": 13,
+    "userTheme": "default"
+  },
+  "General": {
+    "enableSyncScroll": true,
+    "playKeypressSound": false,
+    "enableAutoComplete": true,
+    "enableLastFileRestore": true,
+    "displayLanguage": "zh-cn",
+    "dateFormat": "LLL"
+  },
+  "Markdown": {
+    "tables": true,
+    "footnotes": true,
+    "breaks": true,
+    "sanitize": false,
+    "smartLists": true,
+    "smartypants": true,
+    "mathjax": true,
+    "dollarSign": true
+  },
+  "Viewer": {
+    "theme": "node-dark",
+    "clickableLink": true,
+    "fontSize": 12,
+    "userTheme": "default"
+  },
+  "__layout_mode": "layout0",
+  "_version": "0.13.1"
+}
