@@ -251,6 +251,9 @@
 >"plain text productivity"  
 >Remember, it's all just text.  
 >FoldingText uses [Markdown](http://daringfireball.net/projects/markdown/) formatting to give structure to your text files.
+>Marked picks up your changes every time you save in any editor.
+Marked 2 detects changes and updates faster than ever. It will even scroll to your most recent edit automatically, keeping your attention on your writing, not your preview.
+>
 > 出自TaskPaper和WriteRoom的同名作者Jesse Grosjean之手。
 > 
 > 和其它的markdown editor完全不同的是FoldingText文件**`.ft`**表面上是个纯文本，在程序背后是用树形结构进行组织的。树状结构的每个结节叫`node`，文本中的任何一段都是一个`node`。  
@@ -264,7 +267,7 @@
 > + [RobTrew / tree-tools](https://github.com/RobTrew/tree-tools)
 > + [jamiekowalski / foldingtext-extra](https://github.com/jamiekowalski/foldingtext-extra)
 
-####Marked
+#### [Marked](http://marked2app.com/)
 >**Marked** - smart tools for smart writers  
 >
 >Marked is a previewer for Markdown files. Use it with your favorite text editor and it updates every time you save.   
