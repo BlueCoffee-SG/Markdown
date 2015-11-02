@@ -130,8 +130,8 @@ Some of these words _are emphasized also_.
 Some of these words *are emphasized*.  
 Some of these words _are emphasized also_.
 
-**[GFM][Github Flavored Markdown] 保持词内下划线：**
-鉴于C语言等源码中，通常采用下划线定义变量，因此 GitHub Flavored Markdown 中忽略单词内的下划线，同时建议使用星号（*）闭包斜体。
+**GFM（[Github Flavored Markdown][]）保持词内下划线：**
+鉴于C语言等源码中，通常采用下划线定义变量，因此 GFM 中忽略单词内的下划线，同时建议使用星号（*）闭包斜体。
 
 _ _ _
 下划线闭包单词斜体：wow _great_ stuff (源码：`wow _great_ stuff`)
@@ -181,10 +181,11 @@ Haroopad：++underline++
 ### 删除线（Strikethrough）
 **说明：**  
 在 HTML 中，可以使用 `<del>` 标签来定义文档中已被删除的文本（配合 `<ins>` 标签来描述文档中的更新和修正）。  
-标准 markdown 没有提供对应的标签支持，GFM（[Github Flavored Markdown][]） 提供了扩展支持，使用两个波浪符号（~~）包围来给文本添加删除线。
+标准 markdown 没有提供对应的标签支持，GFM 提供了扩展支持，使用两个波浪符号（~~）包围来给文本添加删除线。
 
-**语法：**  
-`~~Strikethrough~~`
+**语法：**
+
+	~~Strikethrough~~
 
 **示例：**  
 ~~Strikethrough~~
@@ -281,13 +282,13 @@ daringfirefall logo:
 当然，你也可以像文字链接那样添加 title 以供鼠标悬停提示。
 
 **说明：**  
-Markdown 中的段落（包括图片）默认顶格左对齐，若要将图片居中，可以直接内嵌 HTML 的 `<img>` 标签，设置其*align*属性。如果还不行，可以通过封裹一层 div 设置其 `style="text-align:center"` 实现：
+Markdown 中的段落（包括图片）默认顶格左对齐，若要将图片居中，可以直接内嵌 HTML 的 `<img>` 标签，设置`align="middle"`。如果还不行，可以尝试封裹一层 div 设置 `style="text-align:center"` 实现：
 
 ```HTML
-<div style="text-align:center"><img src="http://my.csdn.net/uploads/avatar/9/D/B/1_phunxm.jpg" /></div>
+<div style="text-align:center"><img src="http://my.csdn.net/uploads/avatar/9/D/B/1_phunxm.jpg" align="middle"  alt="程序猿-弦苦" /></div>
 ```
 
-<div style="text-align:center"><img src="http://my.csdn.net/uploads/avatar/9/D/B/1_phunxm.jpg" /></div>
+<div style="text-align:center"><img src="http://my.csdn.net/uploads/avatar/9/D/B/1_phunxm.jpg" align="middle"  alt="程序猿-弦苦" /></div>
 
 #### 图片链接
 如果拷贝了别人的图片插入到自己的博客中，最好在图片上给出一个超链接指向源头，方便追溯出处。  
