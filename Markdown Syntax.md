@@ -397,7 +397,7 @@ Use the`` `printf()` ``function.(\`\` \`printf()\` \`\`\`)
 	pre 格式存在以下缺陷：
 
 	 - 对多tab及空格的缩进支持不完善！
-	 - 将宏符号#（#include、#import）[误解][haroopad_bug_#536]为H1，可能会影响解析器的TOC！
+	 - 将宏符号#（#include、#import）误解为H1，可能会影响解析器的TOC！
 	 - 将顶格空白行（包括行首带tab）误认为Paragraph Break，而割断代码块成片段！
 
 - Fenced Code Block  
