@@ -7,15 +7,16 @@ Markdown 沿用 [HTML Comment][HTML_COMMENT_REFID] 注释格式：
 `<!-- This text will not appear in the browser window. -->`
 <!-- This text will not appear in the browser window. -->
 
-**注释适用场景示例：**  
-1.CSDN 博客默认会在网页生成TOC，而 GitHub 仍不支持`[TOC]`，因此在发布 Markdown 博客时可注释掉开头的 [TOC] 标签，在需要查看 OUTLINE 时再打开。  
+**注释适用场景示例：**
+
+1. CSDN 博客默认会在网页生成TOC，而 GitHub 仍不支持`[TOC]`，因此在发布 Markdown 博客时可注释掉开头的 [TOC] 标签，在需要查看 OUTLINE 时再打开。  
 `<!--[TOC]-->`
 
-2.在博客 Markdown 源码开头，我通常使用注释来备注 git commit-hash-id 和 commit-date 信息，以便修订变更时回溯。  
+2. 在博客 Markdown 源码开头，我通常使用注释来备注 git commit-hash-id 和 commit-date 信息，以便修订变更时回溯。  
 `<!--commit 5326f29752b7ee3472aa00b40574bd585e3ef25b-->`
 `<!--Mon Nov 2 00:36:40 2015 +0800-->`
 
-3.在使用 Markdown 写作博客时，我喜欢采用参考式链接，然后在文末专门开辟一节用于定义文中用到的所有脚注和参考链接。借助 Haroopad/FoldingText/Marked2 的折叠特性，我习惯在末尾添加一行 Comment Heading，用于在阅读 Markdown 源码时折叠隐藏文末的参考区。  
+3. 在使用 Markdown 写作博客时，我喜欢采用参考式链接，然后在文末专门开辟一节用于定义文中用到的所有脚注和参考链接。借助 Haroopad/FoldingText/Marked2 的折叠特性，我习惯在末尾添加一行 Comment Heading，用于在阅读 Markdown 源码时折叠隐藏文末的参考区。  
 `##<!--以下是本文的脚注和超链接-->`
 
 ## <font color='red'>标题（Header）</font>[^Header]
@@ -59,11 +60,12 @@ Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 
 > 在显示上看起来像是空的，例如只包含空格或（和）制表符的行，便会被视为空行。
 
-**空行适用场景说明：**  
-1.空行的上一句末无需再添加两个空格或`<br/>`换行了。  
-2.句段之间引入空行，相当于间隔成段落（对应 HTML 的 `<p>` 标签）。  
-3.尽管 Markdown Render 会对各阶 Heading（H1-H6）有特殊的格式渲染来凸显层级，但还是建议在章节（Section/Chapter）末尾适时插入空行，以示行文分割且方便阅读。  
-4.一般建议在分割线（Horizontal Rules）的首行，块引用（Blockquote）、预格式化（Preformatted Code Block）、列表（List）、表格（Table）等区块元素的前后插入空行。
+**空行适用场景说明：**
+
+1. 空行的上一句末无需再添加两个空格或`<br/>`换行了。  
+2. 句段之间引入空行，相当于间隔成段落（对应 HTML 的 `<p>` 标签）。  
+3. 尽管 Markdown Render 会对各阶 Heading（H1-H6）有特殊的格式渲染来凸显层级，但还是建议在章节（Section/Chapter）末尾适时插入空行，以示行文分割且方便阅读。  
+4. 一般建议在分割线（Horizontal Rules）的首行，块引用（Blockquote）、预格式化（Preformatted Code Block）、列表（List）、表格（Table）等区块元素的前后插入空行。
 
 ## 符号（Punctuation Characters）
 ### 转义字符
