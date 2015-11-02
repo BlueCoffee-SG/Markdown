@@ -1,9 +1,9 @@
-#markdown教程
+# Markdown教程
 
 Markdown是一种轻量级标记语言，创始人为John Gruber。  
 Markdown允许人们『使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML或HTML文档』。  
 
-##宗旨
+## 宗旨
 Markdown 的目标是实现「易读易写」（easy-to-read and easy-to-write ）。
 
 可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。
@@ -14,43 +14,46 @@ Markdown 的目标是实现「易读易写」（easy-to-read and easy-to-write �
 - Markdown 的列表看起来，嗯，就是列表。
 * Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。
 
-##概述入门
+## 概述入门
 [怎样引导新手使用 Markdown][]  
 [认识与入门 Markdown][]  
 [全面切换至 Markdown][]  
 [使用 Markdown 写文档][]  
 [Markdown 工具链]
 
-##官方教程
-[Markdown: Basics][] / [Markdown 快速入门][]  
-[Markdown: Syntax][] / [Markdown 语法说明][]  
+## 官方教程
+[Markdown: Basics] / [Markdown 快速入门][]  
+[Markdown: Syntax] / [Markdown 语法说明]
 
-##Extra Extension
-###Github Flavored Markdown
+## Markdown 扩展
+### GFM
 [Writing on GitHub / GitHub Flavored Markdown][]  
-[Github Flavored Markdown介绍][]
+[Github Flavored Markdown 介绍]
 
-###MultiMarkdown
+### MultiMarkdown
 [MultiMarkdown User's Guide][]  
-[MultiMarkdown CheatSheet][]
+[MultiMarkdown CheatSheet]
 
-##简明教程
-[Markdown简明教程][]  
-markdown简明语法：[lutaf][markdown-simple-usage-lutaf] / [ibruce][markdown-simple-usage-ibruce] / [maybeiwill][markdown-simple-usage-maybeiwill]  
-简书-Markdown 教程：[新手指南][JIANSHU_MARKDOWN_GUIDE] / [简明教程][JIANSHU_MARKDOWN_USAGE]
+### Extras
+[Markdown的各种扩展]
 
-##CSDN Markdown
+## 简明教程
+[Markdown 简明教程] /  [Markdown 示例]  
+markdown 简明语法：[lutaf][markdown-simple-usage-lutaf] / [ibruce][markdown-simple-usage-ibruce] / [maybeiwill][markdown-simple-usage-maybeiwill]  
+简书 Markdown 教程：[新手指南][JIANSHU_MARKDOWN_GUIDE] / [简明教程][JIANSHU_MARKDOWN_USAGE]
+
+## CSDN Markdown
 [博客园支持 GFM][CNBLOGS_MARKDOWN]  
 CSDN Markdown 简明教程视频：[官方][CSDN_MARKDOWN_TUTORIAL_OFFICIAL] / [优酷][CSDN_MARKDOWN_TUTORIAL_YOUKU]  
 使用CSDN Markdown编辑器：[介绍1][CSDN_MARKDOWN_USAGE_1] / [介绍2][CSDN_MARKDOWN_USAGE_2]  
-[CSDN-Markdown语法集锦]
+CSDN-Markdown 语法： [基本语法][CSDN_MARKDOWN_BASIC] / [扩展语法][CSDN_MARKDOWN_EXTENSION] / [语法集锦][CSDN_MARKDOWN_ASSEMBLE]
 
-##写作进阶
+## 写作进阶
 [Markdown 写作浅谈][]  
 [Docker 快速上手：用 Docker + GitBook 写书][]  
 tinylab Markdown 写作教程：[撰写文档][tinylab_markdown_doc] / [制作简历][tinylab_markdown_resume] / [写幻灯片][tinylab_markdown_ppt]
 
-##inner HTML
+## inner HTML
 Markdown 内嵌 HTML：[字体、字号与颜色][HTML_IN_MARKDOWN_FONT] / [背景色][HTML_IN_MARKDOWN_BGCOLOR]  
 [Markdown中如何插入视频][]  
 [markdown语法插入优酷视频的方法]
@@ -72,14 +75,15 @@ Markdown 内嵌 HTML：[字体、字号与颜色][HTML_IN_MARKDOWN_FONT] / [背�
 
 <!--###Github Flavored Markdown-->
 [Writing on GitHub / GitHub Flavored Markdown]:https://help.github.com/articles/github-flavored-markdown/
-[Github Flavored Markdown介绍]:http://www.jianshu.com/p/cfPxyr
+[Github Flavored Markdown 介绍]:http://www.jianshu.com/p/cfPxyr
 
 <!--###MultiMarkdown-->
 [MultiMarkdown User's Guide]:http://fletcher.github.io/MultiMarkdown-4/
 [MultiMarkdown CheatSheet]:https://rawgit.com/fletcher/human-markdown-reference/master/index.html
 
 <!--##简明教程-->
-[Markdown简明教程]:http://blog.csdn.net/pxzy/article/details/22045059
+[Markdown 简明教程]:http://blog.csdn.net/pxzy/article/details/22045059
+[Markdown 示例]:http://blog.csdn.net/chenguangxing3/article/details/25346493
 [markdown-simple-usage-lutaf]:http://lutaf.com/markdown-simple-usage.htm
 [markdown-simple-usage-ibruce]:http://ibruce.info/2013/11/26/markdown/
 [markdown-simple-usage-maybeiwill]:http://maybeiwill.me/markdown/
@@ -92,7 +96,9 @@ Markdown 内嵌 HTML：[字体、字号与颜色][HTML_IN_MARKDOWN_FONT] / [背�
 [CSDN_MARKDOWN_TUTORIAL_YOUKU]:http://www.youku.com/playlist_show/id_23771112.html
 [CSDN_MARKDOWN_USAGE_1]:http://blog.csdn.net/bendanban/article/details/44156803
 [CSDN_MARKDOWN_USAGE_2]:http://blog.csdn.net/testcs_dn/article/details/43315335
-[CSDN-Markdown语法集锦]:http://blog.csdn.net/bone_ace/article/details/46400975
+[CSDN_MARKDOWN_BASIC]:http://it.taocms.org/03/7250.htm
+[CSDN_MARKDOWN_EXTENSION]:http://it.taocms.org/03/7248.htm
+[CSDN_MARKDOWN_ASSEMBLE]:http://blog.csdn.net/bone_ace/article/details/46400975
 
 <!--##写作进阶-->
 [Markdown 写作浅谈]:http://www.yangzhiping.com/tech/r-markdown-knitr.html
