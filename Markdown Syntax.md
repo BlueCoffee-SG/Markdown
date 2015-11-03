@@ -26,7 +26,7 @@ Markdown 沿用 [HTML Comment][HTML_COMMENT_REFID] 注释格式：
 Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 
 ### Setext Heading Format（2 level）
-类 Setext 形式是用底线的形式，使用三个或以上 = 底线标记最高阶标题，使用三个或以上 - 底线标记第二阶标题。例如：
+类 Setext 形式是用底线的形式，使用三个或以上连续 = 底线标记最高阶标题，使用三个或以上连续 - 底线标记第二阶标题。例如：
 
 	This is an H1
 	===
@@ -50,7 +50,8 @@ Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 ## 句段（Sentence / Paragraph）
 ### 换行
 标准 Markdown 不支持自然换行（literal new line），有些扩展的 Markdown Render 支持自然换行。  
-`#` 号标识的 Heading（H1-H6） 会自然换行，普通句段之间若要强制换行，可以在自然换行行尾追加两个（或以上）空格来实现。
+`#` 号标识的 Heading（H1-H6） 会自然换行，普通句段之间若要强制换行，可以在自然换行行尾追加两个（或以上）空格来实现。  
+由于不同的 Markdown Editor 的 Rendering 效果不一，建议按照标准 Markdown 书写，这样发布到不同的渲染引擎下才能取得最优的兼容性。例如，在某些 Markdown Editor 中，你可能需要在 bullet list item 或 ordered list item 行尾追加两个空格换行来续接后面的混合编排。
 
 **适时内嵌 HTML 的 `<br>` 控制换行**  
 由于空格在 Markdown 中主要是起着控制排版的作用，因此在某些复杂的区块元素中，例如下文提到的 Table 表格中的 td 元素文本中，只能通过内嵌 HTML 的`<br>`（XHTML 自闭合写作 `<br />`）标签来实现局部换行。
@@ -62,10 +63,10 @@ Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 
 **空行适用场景说明：**
 
-1. 空行的上一句末无需再添加两个空格或`<br/>`换行了。  
+1. 空行的上一句末无需再添加两个空格或 `<br/>` 换行了。  
 2. 句段之间引入空行，相当于间隔成段落（对应 HTML 的 `<p>` 标签）。  
 3. 尽管 Markdown Render 会对各阶 Heading（H1-H6）有特殊的格式渲染来凸显层级，但还是建议在章节（Section/Chapter）末尾适时插入空行，以示行文分割且方便阅读。  
-4. 一般建议在分割线（Horizontal Rules）的首行，块引用（Blockquote）、预格式化（Preformatted Code Block）、列表（List）、表格（Table）等区块元素的前后插入空行。
+4. 为了更优的阅读感和兼容性，建议在分割线（Horizontal Rules）的上面留一空行，块引用（Blockquote）、预格式化（Preformatted Code Block）、列表（List）、表格（Table）等区块元素的上下各插入空行。
 
 ## 符号（Punctuation Characters）
 ### 转义字符
@@ -109,8 +110,8 @@ _ _ _
 	- - -
 	-----
 
-**注意：**
-> 采用减号（-）分割时，最好空格隔开或上面空一行，不然三个以上连续的减号会误将上一行文字升级为二级标题！
+**注意：**  
+采用减号（-）分割时，最好空格隔开或上面空一行，不然三个以上连续的减号会误将上一行文字升级为二级标题！
 
 ## 文本格式（Text Styling）
 文本格式包括强调、加粗、突出、下划线、删除线、脚标等增强修饰和丰富表现。
@@ -131,7 +132,7 @@ Some of these words *are emphasized*.
 Some of these words _are emphasized also_.
 
 **GFM（[Github Flavored Markdown][]）保持词内下划线：**
-鉴于C语言等源码中，通常采用下划线定义变量，因此 GFM 中忽略单词内的下划线，同时建议使用星号（*）闭包斜体。
+鉴于C语言等源码中，通常采用下划线定义变量，因此 GFM 忽略单词内的下划线，同时建议使用星号（*）来包裹斜体。
 
 _ _ _
 下划线闭包单词斜体：wow _great_ stuff (源码：`wow _great_ stuff`)
@@ -209,7 +210,7 @@ H~2~O = H<sub>2</sub>O is a liquid.
 
 ## 链接（Hyperlink）
 ### 自动链接
-当我们在书写一个网址时，有些 Markdown Render 能自动生成标题与网址一致的链接，这种链接也即**自动链接**。  
+当我们在书写一个网址时，有些 Markdown Render 能自动生成标题（title）与网址（href URL）一致的链接，这种链接也即**自动链接**。  
 Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要用尖括号包起来的文字， Markdown 就会自动把它转化成链接。  
 对于 HTTP(s) 协议开头的超链接地址，甚至无需添加尖括号明示，也会生成自动链接。  
 
@@ -219,7 +220,7 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 Markdown 支持两种形式的超文本链接语法格式： 行内式（Inline）和参考式（Reference）两种形式。  
 不管是哪一种，链接文字都是用方括号（[square brackets]）来标记。  
 
-#### 行内式
+#### 行内式（Inline）
 只要在方块括号后面紧接着圆括号并插入链接网址即可在一行内构建链接，其语法格式为`[text](url)`，HTML 等效源码为 `<a href="url">text</a>`。  
 如果是要链接到本机资源，可以使用相对路径（./path/to/your/resource）。
 
@@ -239,12 +240,12 @@ _ _ _
 - - -
 将鼠标悬停在超链接文本上将会提示 “Markdown Official Website”。
 
-#### 参考式
+#### 参考式（Reference）
 参考式的链接是在链接文字的括号后面再接上另一个方括号，在第二个方括号里面填入用以辨识链接的标记id，然后在其他地方给出该标记id真正的链接地址。
 
 _ _ _
-1.先定义参考refid：`[text][refid]`  
-2.再定义refid所指：`[refid]:URL`
+1. 先定义参考refid：`[text][refid]`  
+2. 再定义refid所指：`[refid]:URL`
 
 - - -
 以下参考间接定义指向 Daring Fireball Markdown 首页的超链接：
@@ -261,13 +262,15 @@ _ _ _
 - - -
 **说明：**
 
-1. 你也可以选择性地在两个方括号中间加上一个空格。  
-2. refid 所指 href URL 在文件任意处给出定义即可。    
-3. `[refid]:URL` 的 URL 后面可以选择性地用单引号、双引号或是括弧闭包起来标记 title。  
-下面这三种链接的定义都是相同的：  
-`[foo]: http://example.com/  "Optional Title Here"`  
-`[foo]: http://example.com/  'Optional Title Here'`  
-`[foo]: http://example.com/  (Optional Title Here)`
+1. 你也可以选择性地在两个方括号中间加上一个空格：`[text] [refid]`。由于 Markdown 不支持自然换行，将两个方括号在连续两行书写也是没问题的。中间用空行隔开，则被认为是两条精简格式的参考链接。    
+2. refid 可以与 text 一致，从而进一步精简参考链接的书写格式：    
+	- 此时 `[refid]` 中的 refid 可以省略置空为 `[]` ：先定义 `[text][]` ，再定义 `[text]:URL` 。
+	- 你甚至可以将 `[text][]` 中的空中括号也省掉不写，进一步简写为 `[text]` ，后面再定义 `[text]:URL` 。  
+3. refid 所指 href URL 在文件任意处给出定义即可。`[refid]:URL` 的 URL 后面可以选择性地用单引号、双引号或是括弧闭包起来标记 title。  
+	下面这三种链接的定义都是相同的：  
+	`[foo]: http://example.com/  "Optional Title Here"`  
+	`[foo]: http://example.com/  'Optional Title Here'`  
+	`[foo]: http://example.com/  (Optional Title Here)`
 
 ### 图片（image href）
 #### 插入图片
@@ -303,6 +306,7 @@ _ _ _
 [![](http://pad.haroopress.com/assets/images/logo-small.png "haroopad")](http://pad.haroopress.com/)
 
 ### 锚点（inner link）
+#### 书签（Bookmark）
 HTML 中的 `<a>` 标签最重要的属性是 href ，它指示的链接目标，既可以是外部站点，也可以是页内锚点。页内锚点可以实现类似书签跳转的功能，最典型的就是点击 TOC 中的目录书签跳转到指定章节阅读。  
 构建页内锚点的语法，类似参考式链接：
 
@@ -315,6 +319,31 @@ _ _ _
 例如，我们在文末定义了id为end的 EOF（End Of File）：`<p id="end">The end！</p>`，然后通过`<a href="#end">Goto the End!</a>`指定书签“Goto the End!”跳转到文末“The End!”处：
 
 <a href="#end">Goto the End!</a>
+
+#### 脚注（Footnote）
+上面我们定义了书签 `Goto the End!` ，点击该书签将跳转到文末 id 为 `#end` 的锚点，使得我们能快速翻到文末。那怎么再跳转回刚才书签所在的阅读点呢？下面来介绍一下具备回环跳转效果的脚注。
+
+**脚注**用于为正文中的某个条目添加补充注释，对词条的引文出处进行标注或对专业术语予以解释，跟参考文献一样。脚注一般位于文档的末尾，文内则以数字标注。
+
+脚注的写法和极简参考式链接书写格式比较类似：
+
+_ _ _
+1. 先在需要脚注的单词（terminology）后面添加 `[^Footnote]` ： `terminology[^Footnote]` 
+ 2. 再在文末 glossary 区域定义脚注（添加注解）： `[^Footnote]：explanatory notes`
+
+- - -
+以下是本文针对第二章标题 “标题（Header）”的着色添加的脚注：
+
+```Markdown
+## <font color='red'>标题（Header）</font>[^Header]
+
+[^Header]:这里的源码为`<font color='red'>标题（Header）</font>`，尝试使用 font.color 着色。
+```
+
+**说明：**
+
+1. 被添加脚注的词条后面会出现一个超链接数字（有的渲染为上标格式），点击数字跳转到文末 glossary 区域该脚注的定义处。  
+2. 文末 glossary 区域该脚注定义的行尾会添加一个回车符号（&crarr;），点击可回到被标注的脚注点。
 
 ## 引用（Blockquote）
 HTML 中的 `<blockquote>` 标签定义摘自另一个源的块引用。  
