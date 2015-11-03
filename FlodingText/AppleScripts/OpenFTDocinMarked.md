@@ -6,20 +6,25 @@
 
 1-Show Script menu in menu bar
 ----
-![Show Script menu in menu bar](OpenFTDocinMarked/1-Show Script menu in menu bar.png)
 
-2-`SystemUIServer` would like to control this computer using accessibility features
+![Show_Script_menu_in_menu_bar](OpenFTDocinMarked/1-Show_Script_menu_in_menu_bar.png)
+
+2-grant `SystemUIServer` for control accessibility
 ----
-![2-SystemUIServer would like to control this computer using accessibility features](OpenFTDocinMarked/2-SystemUIServer would like to control this computer using accessibility features.png)
+
+![SystemUIServer_control_accessibility](OpenFTDocinMarked/2-SystemUIServer_control_accessibility.png)
 
 3-Open `FoldingText Scripts` Folder
 ----
-![3-Open FoldingText Scripts Folder](OpenFTDocinMarked/3-Open FoldingText Scripts Folder.png)
+
+![Open_FoldingText_Scripts_Folder](OpenFTDocinMarked/3-Open_FoldingText_Scripts_Folder.png)
 
 4-load OpenFTDocInMarked
 ----
-![4-load OpenFTDocInMarked](OpenFTDocinMarked/4-load OpenFTDocInMarked.png)
+
+![load_OpenFTDocInMarked](OpenFTDocinMarked/4-load_OpenFTDocInMarked.png)
 
 5-OpenFTDocInMarked Demonstration
 ----
-![5-OpenFTDocInMarked](OpenFTDocinMarked/5-OpenFTDocInMarked.png)
+
+![OpenFTDocInMarked](OpenFTDocinMarked/5-OpenFTDocInMarked.png)
