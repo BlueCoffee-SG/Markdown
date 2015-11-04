@@ -2,7 +2,7 @@
 
 ## 注释（Comment）
 注释是写作者自己的标注记录，不被浏览器解析渲染。  
-HTML 以`<!--`开头，以`-->`结尾的闭包定义注释，不在正文中显示。  
+HTML 以`<!--`开头，以`-->`结尾的闭包定义注释（支持跨行），不在正文中显示。  
 Markdown 沿用 [HTML Comment][HTML_COMMENT_REFID] 注释格式：  
 `<!-- This text will not appear in the browser window. -->`
 <!-- This text will not appear in the browser window. -->
@@ -13,7 +13,7 @@ Markdown 沿用 [HTML Comment][HTML_COMMENT_REFID] 注释格式：
 `<!--[TOC]-->`
 
 2. 在博客 Markdown 源码开头，我通常使用注释来备注 git commit-hash-id 和 commit-date 信息，以便修订变更时回溯。  
-`<!--commit 5326f29752b7ee3472aa00b40574bd585e3ef25b-->`
+`<!--commit 5326f29752b7ee3472aa00b40574bd585e3ef25b-->`  
 `<!--Mon Nov 2 00:36:40 2015 +0800-->`
 
 3. 在使用 Markdown 写作博客时，我喜欢采用参考式链接，然后在文末专门开辟一节用于定义文中用到的所有脚注和参考链接。借助 Haroopad/FoldingText/Marked2 的折叠特性，我习惯在末尾添加一行 Comment Heading，用于在阅读 Markdown 源码时折叠隐藏文末的参考区。  
@@ -59,14 +59,14 @@ Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 ### 分段
 段落是由一个或多个连续的文本行组成，它的前后往往需要**空行**予以明示分隔。
 
-> 在显示上看起来像是空的，例如只包含空格或（和）制表符的行，便会被视为空行。
+> 在显示上看起来像是空的，例如只包含空格或（和）制表符（tab）的行，便会被视为空行。
 
 **空行适用场景说明：**
 
 1. 空行的上一句末无需再添加两个空格或 `<br/>` 换行了。  
 2. 句段之间引入空行，相当于间隔成段落（对应 HTML 的 `<p>` 标签）。  
 3. 尽管 Markdown Render 会对各阶 Heading（H1-H6）有特殊的格式渲染来凸显层级，但还是建议在章节（Section/Chapter）末尾适时插入空行，以示行文分割且方便阅读。  
-4. 为了更优的阅读感和兼容性，建议在分割线（Horizontal Rules）的上面留一空行，块引用（Blockquote）、预格式化（Preformatted Code Block）、列表（List）、表格（Table）等区块元素的上下各插入空行。
+4. 为了更优的 *阅读感* 和 *兼容性*，建议在分割线（Horizontal Rules）的上面留一空行，块引用（Blockquote）、预格式化（Preformatted Code Block）、列表（List）、表格（Table）等区块元素的上下各插入空行。
 
 ## 符号（Punctuation Characters）
 ### 转义字符
@@ -82,16 +82,16 @@ Markdown 精挑细选了一些符号组成了一套基于文本的标记语法�
 \#：行首的 <kbd>#</kbd> 号默认为H1，这里使用反斜杠转义显示原义字符。  
 
 ### 字符实体
-在 Markdown 中，空格和制表符（tab）往往用于格式控制，例如：
+在 Markdown 中，空格和 tab 往往用于格式控制，例如：
 
-- 行首的四个空格表示 `<pre>`；
-- 引用、列表的 bullet 符号前的空行用于缩进层级；
+- 行首插入 tab 或 四个空格缩进表示 `<pre>` 预格式化；
+- 引用、列表的 bullet 标记符前的 tab 或 空格 用于缩进嵌套层级；
 - ...
 
-普通段落一般都是顶格开始，无法使用空格或制表符来缩进，包括引用标记符（>）、列表标记符（bullet list indicator）后面的空格都无法实现缩进。  
-如果硬要输入空格显示占位缩进效果，可以嵌入空格对应的 [HTML Entity][] 实体码。HTML 转义字符串（Escape Sequence），即字符实体（Character Entity），由三部分构成：
+普通段落一般都是顶格开始，无法使用空格或 tab 来缩进，包括引用标记符（>）、列表标记符（bullet list indicator）后面的空格都无法实现缩进。
+如果硬要输入空格显示占位缩进效果，可以嵌入空格对应的 [HTML Entity][] 实体码。HTML 转义字符串（Escape Sequence），即字符实体（Character Entity）。字符实体由三部分构成：
 
-1. 第一部分是一个`&`符号，英文叫 ampersand；
+1. 第一部分是一个 `&` 符号；
 2. 第二部分是实体（Entity）名字，或者是 `#` 加上实体编号（[Entity Code][]）；
 3. 第三部分是一个分号（`;`）。
 
@@ -151,7 +151,8 @@ Or, if you prefer, __use two underscores instead__.
 
 **示例：**  
 Use two asterisks for **strong emphasis**.  
-Or, if you prefer, __use two underscores instead__.
+Or, if you prefer, __use two underscores instead__.  
+A ***section surrounded with three asterisks*** will be  specially emphasized.
 
 ### 突出（Mark/Highlight）
 **说明：**  
@@ -209,7 +210,7 @@ HTML 语法：`<sub>subscript</sub>`
 H~2~O = H<sub>2</sub>O is a liquid.
 
 ## 链接（Hyperlink）
-### 自动链接
+### 自动链接（Autolink）
 当我们在书写一个网址时，有些 Markdown Render 能自动生成标题（title）与网址（href URL）一致的链接，这种链接也即**自动链接**。  
 Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要用尖括号包起来的文字， Markdown 就会自动把它转化成链接。  
 对于 HTTP(s) 协议开头的超链接地址，甚至无需添加尖括号明示，也会生成自动链接。  
@@ -312,8 +313,8 @@ HTML 中的 `<a>` 标签最重要的属性是 href ，它指示的链接目标�
 
 _ _ _
 1. 先定义锚点id：`<a href="#auchor_id">bookmark_text</a>`  
-2. 再定义一个id为auchor_id的对象（这里以`<p>`为例）：`<p id="auchor_id">auchor_text</p>` 
- 
+2. 再定义一个id为auchor_id的对象（这里以`<p>`为例）：`<p id="auchor_id">auchor_text</p>`
+
 - - -
 
 例如，我们在文末定义了id为end的 EOF（End Of File）：`<p id="end">The end！</p>`，然后通过`<a href="#end">Goto the End!</a>`指定书签“Goto the End!”跳转到文末“The End!”处：
@@ -328,7 +329,7 @@ _ _ _
 脚注的写法和极简参考式链接书写格式比较类似：
 
 _ _ _
-1. 先在需要脚注的单词（terminology）后面添加 `[^Footnote]` ： `terminology[^Footnote]` 
+1. 先在需要脚注的单词（terminology）后面添加 `[^Footnote]` ： `terminology[^Footnote]`
  2. 再在文末 glossary 区域定义脚注（添加注解）： `[^Footnote]：explanatory notes`
 
 - - -
@@ -414,23 +415,41 @@ Use the`` `printf()` ``function.(\`\` \`printf()\` \`\`\`)
 **语法：**
 
 - Preformatted Code Block  
-	在句段的行首插入1个tab制表符或4个空格，则表示代码块。  
+	在句段的行首插入1个 tab 或4个空格，则表示代码块。  
 - [Fenced Code Block]  
 	在句段行首和行末用三个反引号换行闭包，并在行首三个反引号后添加 [YAML][] 语言标识。
 
 **示例：**
 
-- Preformatted Code Block  
-	将一段代码块整体向右缩进（<kbd>⌘</kbd> + <kbd>]</kbd>）即可测试。
+_ _ _
+**1.Preformatted Code Block**
 
-	pre 格式存在以下缺陷：
+将一段代码块整体向右缩进（<kbd>⌘</kbd> + <kbd>]</kbd>）即可测试。
 
-	 - 对多tab及空格的缩进支持不完善！
-	 - 将宏符号#（#include、#import）误解为H1，可能会影响解析器的TOC！
-	 - 将顶格空白行（包括行首带tab）误认为Paragraph Break，而割断代码块成片段！
+（1）以tab开头：
 
-- Fenced Code Block  
-	以下演示了插入一段 Objective-C 代码：
+	these lines begin with tab will be shown as pre code block.
+	these lines begin with tab will be shown as pre code block.
+	these lines begin with tab will be shown as pre code block.
+	
+（2）以四个空格开头：
+
+    these lines begin with 4 spaces will also be shown as pre code block.
+    these lines begin with 4 spaces will also be shown as pre code block.
+    these lines begin with 4 spaces will also be shown as pre code block.
+
+**注意：**  
+pre 格式存在以下缺陷：
+
+ - 对多tab及空格的缩进支持不完善！
+ - 将宏符号#（#include、#import）误解为H1，可能会影响解析器的TOC！
+ - 将顶格空白行（包括行首带tab）误认为Paragraph Break，而割断代码块成片段！
+
+- - - 
+
+**2.Fenced Code Block**
+
+以下演示了插入一段 Objective-C 代码：
 
 	> 首行：\`\`\`obj-c  
 	> 中间：Objective-C Code Block  
@@ -464,7 +483,7 @@ int main(int argc, char * argv[]) {
 GFM 等 Markdown 扩展支持和无序列表、有序列表和任务列表。
 
 ### 无序列表（Unordered List）
-无序列表项目的行首使用星号、加号或减号作为列表标记：
+无序列表项目的行首使用星号（或加号，或减号）加空格作为列表标记：
 
 ```Markdown
 - bullet list item 1 begin with a '-'
@@ -478,33 +497,37 @@ GFM 等 Markdown 扩展支持和无序列表、有序列表和任务列表。
 + bullet list item 2 begin with a '+'
 * bullet list item 3 begin with a '*'
 
-和引用一样，无序列表可以通过在列表标记前面增加多重空格（或 tab）来实现嵌套效果。  
+通过在列表标记前面增加 tab 阶次可以实现嵌套效果（nested list）。  
 以下是针对本文 TOC 中【链接】这一章节的目录：
 
 ```Markdown
 - 链接（Hyperlink）
- - 自动链接
- - 文字（text href） <!--行首1个空格-->
-     - 行内式 <!--行首5个空格-->
-     - 参考式
- - 图片（image href）
-     - 插入图片
-     - 图片链接
- - 锚点（inner link）
+	- 自动链接（Autolink） <!--行首缩进1个tab-->
+	- 文字（text href）
+		- 行内式（Inline） <!--行首缩进2个tab-->
+		- 参考式（Reference）
+	- 图片（image href）
+		- 插入图片
+		- 图片链接
+	- 锚点（inner link）
+		- 书签（Bookmark）
+		- 脚注（Footnote）
 - 引用（Blockquote）
 ```
 
 - - -
 
 - 链接（Hyperlink）
- - 自动链接
- - 文字（text href）
-     - 行内式
-     - 参考式
- - 图片（image href）
-     - 插入图片
-     - 图片链接
- - 锚点（inner link）
+	- 自动链接（Autolink）
+	- 文字（text href）
+		- 行内式（Inline）
+		- 参考式（Reference）
+	- 图片（image href）
+		- 插入图片
+		- 图片链接
+	- 锚点（inner link）
+		- 书签（Bookmark）
+		- 脚注（Footnote）
 - 引用（Blockquote）
 
 ### 有序列表（Ordered List）
@@ -613,7 +636,7 @@ $$E=mc^2$$
 
 [^LaTeX]: [LaTeX](http://www.latex-project.org/)是一种基于 [ΤΕΧ](http://www.ctex.org/documents/shredder/tex_frame.html)的排版系统，它通过\section和\paragraph等语句，规定了每一句话在文章中所从属的层次，从而极大方便了对各个层次批量处理。可参考 [TeX 与 LaTeX](http://blog.csdn.net/dbzhang800/article/details/6820659)、[LaTeX 入门文档](http://liam0205.me/2014/09/08/latex-introduction/) 和 [LaTeX 入门教程](http://www.douban.com/note/330524120/)。
 
-[^MathJax]: [MatchJax](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) 是一个JavaScript引擎，用来显示网络上的数学公式。MathJax可以解析Latex、MathML和ASCIIMathML的标记语言。 
+[^MathJax]: [MatchJax](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) 是一个JavaScript引擎，用来显示网络上的数学公式。MathJax可以解析Latex、MathML和ASCIIMathML的标记语言。
 
 [HTML_COMMENT_REFID]:http://home.wangjianshuo.com/cn/20070526_aeaeaehtmleccommentie.htm
 
@@ -642,4 +665,3 @@ $$E=mc^2$$
 [YAML--想要爱你很容易]:http://www.ibm.com/developerworks/cn/xml/x-1103linrr/
 
 [Mathjax与LaTex公式简介]:http://mlworks.cn/posts/introduction-to-mathjax-and-latex-expression/
-
