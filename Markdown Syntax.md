@@ -330,7 +330,7 @@ _ _ _
 
 _ _ _
 1. 先在需要脚注的单词（terminology）后面添加 `[^Footnote]` ： `terminology[^Footnote]`
- 2. 再在文末 glossary 区域定义脚注（添加注解）： `[^Footnote]：explanatory notes`
+2. 再在文末 glossary 区域定义脚注（添加注解）： `[^Footnote]：explanatory notes`
 
 - - -
 以下是本文针对第二章标题 “标题（Header）”的着色添加的脚注：
