@@ -131,6 +131,24 @@ BreadSchedule.timer
 - 11:01 Ferment 3 hours
 - 2:01 PM Bake 40 minutes
 
+## View
+### Fold
+点击标题前面的 `#` 号可对章节进行折叠(展开)。
+
+功能               | 快捷键
+------------------|-------------------------------------
+Fold              | <kbd>⌘</kbd><kbd>/</kbd>
+Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd>
+Collapse by Level | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd>
+
+### Focus
+
+操作              | 快捷键                                | 功能
+------------------|--------------------------------------|---
+Focus             | <kbd>⌘</kbd><kbd>u</kbd>             | 聚焦当前section
+Focus Out         | <kbd>⇧</kbd><kbd>⌘</kbd><kbd>u</kbd> | 展开到上一级section
+Focus Heading     | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>u</kbd> | 查看TOC浮窗
+
 ## References
 [Customizing FoldingText](http://computers.tutsplus.com/tutorials/customizing-foldingtext--cms-21674)
 
