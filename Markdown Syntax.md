@@ -50,7 +50,7 @@ Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 ## 句段（Sentence / Paragraph）
 ### 换行
 标准 Markdown 不支持自然换行（literal new line），有些扩展的 Markdown Render 支持自然换行。  
-`#` 号标识的 Heading（H1-H6） 会自然换行，普通句段之间若要强制换行，可以在自然换行行尾追加两个（或以上）空格来实现。  
+`#` 号标识的 Heading（H1-H6） 会自然换行，普通句段之间若要强制换行（Manual Line Break），可以在自然换行行尾追加两个（或以上）空格来实现。  
 由于不同的 Markdown Editor 的 Rendering 效果不一，建议按照标准 Markdown 书写，这样发布到不同的渲染引擎下才能取得最优的兼容性。例如，在某些 Markdown Editor 中，你可能需要在 bullet list item 或 ordered list item 行尾追加两个空格换行来续接后面的混合编排。
 
 **适时内嵌 HTML 的 `<br>` 控制换行**  
@@ -131,12 +131,12 @@ Some of these words _are emphasized also_.
 Some of these words *are emphasized*.  
 Some of these words _are emphasized also_.
 
-**GFM（[Github Flavored Markdown][]）保持词内下划线：**
+**GFM（[Github Flavored Markdown][]）建议：**  
 鉴于C语言等源码中，通常采用下划线定义变量，因此 GFM 忽略单词内的下划线，同时建议使用星号（*）来包裹斜体。
 
 _ _ _
 下划线闭包单词斜体：wow _great_ stuff (源码：`wow _great_ stuff`)
-忽略单词内的下划线：wow_great_stuff
+GFM 忽略单词内的下划线：wow_great_stuff
 
 ### 加粗（Bold/Strong）
 **说明：**  
@@ -147,6 +147,7 @@ _ _ _
 ```Markdown
 Use two asterisks for **strong emphasis**.
 Or, if you prefer, __use two underscores instead__.
+A ***section surrounded with three asterisks*** will be  specially emphasized.
 ```
 
 **示例：**  
@@ -529,6 +530,10 @@ GFM 等 Markdown 扩展支持和无序列表、有序列表和任务列表。
 		- 书签（Bookmark）
 		- 脚注（Footnote）
 - 引用（Blockquote）
+
+**缩进控制符：空格 or TAB？**  
+在列表标记前面插入空格也可以实现缩进控制嵌套效果，但不同的 Markdown Render 对控制层级的空格个数要求不一。  
+为了取得最佳的兼容性，建议使用 **tab** 来控制嵌套层级（nested hierarchy），以期在不同的渲染引擎下都能达到预期的显示效果。当然，前提是使用hard tabs（tab characters），而soft tabs（spaces）。
 
 ### 有序列表（Ordered List）
 有序列表项目的行首则使用数字接一个英文句点标记：
