@@ -1,13 +1,11 @@
-Macdown Preferences for [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
+[TOC]
+
+Macdown Preferences for [MultiMarkdown][]
 ===
-
-<!--[TOC]-->
-
-------
 
 ##Macdown Preferences
 ###Markdown
-![1-Macdown-Markdown](macdown preferences/1-Macdown-Markdown.png)
+![1-Macdown-Markdown](macdown/1-Macdown-Markdown.png)
 
 ####Document formatting
 - [x] Smartpants  
@@ -28,8 +26,9 @@ Macdown Preferences for [MultiMarkdown](http://fletcherpenney.net/multimarkdown/
 * [x] Underline  
 _underline_
 * [x] Quote 
- > Blockquote
-`Inline Code`
+> Blockquote
+
+	`Inline Code`
 
 * [x] Highlight  
 ==Highlight==
@@ -41,37 +40,39 @@ http://macdown.uranusjr.com/
 参见下文。
 
 ###Editor
-![2-Macdown-Editor](macdown preferences/2-Macdown-Editor.png)
+![2-Macdown-Editor](macdown/2-Macdown-Editor.png)
 
 - Base Font  
-配置字体。
+	配置字体。
 - Theme  
-选择主题（Tomorrow+ Rich）。
+	选择主题（Mou Night+）。
+- Behavior
+	- [ ] Insert spaces instead of tabs
+	建议不勾选此项（soft tabs），使用原生hard tabs（tabs characters）。
 
 ###Rendering
-![3-Macdown-Rendering](macdown preferences/3-Macdown-Rendering.png)
+![3-Macdown-Rendering](macdown/3-Macdown-Rendering.png)
 
 - CSS  
-选择样式（GitHub2）。
+	选择样式（GitHub2）。
 
 - [x] Syntax highlighted code block  
-Theme：`Coy` or `Tomorrow`  
-Accessory：`Language name`  
- - [x] Show line numbers
+	Theme：`Coy` or `Tomorrow`  
+	Accessory：`Language name`  
+	- [x] Show line numbers
 
 - [x] TeX-like math syntax 
- - [x] Use dollar sign ($) as inline delimiter  
- 参考下文《MathJax》。
+	- [x] Use dollar sign ($) as inline delimiter  
+	参考下文《MathJax》。
 
 - [x] Task list syntax 
 
 - [x] Detect table of contents token  
- github不支持`TOC`标记。
-- [x] Render newline literally  
-非块中自动检测自然行，而无需末尾添加两个空格。    
-github不完全支持自然行，还是建议关闭此项。  
+	github不支持`TOC`标记。
+- [ ] Render newline literally  
+	非块中自动检测自然行，而无需末尾添加两个空格。  
+	github不完全支持自然行，还是建议关闭此项。
 - [x] Scale preview based on editor font size
-
 
 ##Macdown对GFM的支持
 ###Multiple underscores in words（不支持）
@@ -81,8 +82,7 @@ Where Markdown transforms underscores (_) into italics, GFM ignores underscores 
     wow_great_stuff
     do_this_and_do_that_and_another_thing.
 
-由于Macdown开启了Underline，下划线包围的表示添加下划线（斜体只能使用**标记）。在计算机编程语言中定义的变量名往往包含很多下划线，需要转义。
-
+由于Macdown开启了Underline，下划线包围的表示添加下划线（斜体只能使用*标记）。在计算机编程语言中定义的变量名往往包含很多下划线，需要转义。
 
 ###URL autolinking（支持）
 ###Strikethrough（支持）
@@ -125,14 +125,14 @@ StackEdit supports [**Markdown Extra** Plugins for Pagedown](https://github.com/
 
 ##Macdown支持的Mardown Extras
 ###Tables
+
 Item     | Value
 -------- | ---
-Computer | $1600
-Phone    | $12
-Pipe     | $1
+Computer | `$1600`
+Phone    | `$12`
+Pipe     | `$1`
 
 ### Fenced code blocks
-
 GitHub's fenced code blocks are also supported with **Highlight.js** syntax highlighting:
 
 ```
@@ -144,14 +144,11 @@ var bar = 0;
 
 > **Note:** You can find more information:
 
-> - about **Prettify** syntax highlighting [here][5],
-> - about **Highlight.js** syntax highlighting [here][6].
+> - about **Prettify** syntax highlighting [here][prettify],
+> - about **Highlight.js** syntax highlighting [here][highlightjs].
 
 ### Footnotes（支持）
-
 You can create footnotes like this[^footnote].
-
-  [^footnote]: Here is the *text* of the **footnote**.
 
 ### SmartyPants（支持）
 
@@ -165,11 +162,9 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 
 
 ### Table of contents（支持）
-
 You can insert a table of contents using the marker `[TOC]`:
 
 ### MathJax（支持）
-
 You can render *LaTeX* mathematical expressions using **MathJax**, as on [math.stackexchange.com][1]:
 The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
 
@@ -180,7 +175,6 @@ $$
 Macdown不支持的Mardown Extras
 ----
 ### UML diagrams(不支持)
-
 You can also render sequence diagrams like this:
 
 ```sequence
@@ -203,6 +197,7 @@ cond(no)->op
 ``` 
 
 ### Definition Lists（不支持）
+
 Term 1
 Term 2
 :   Definition A
@@ -216,7 +211,11 @@ Term 3
 
 	> part of definition D
 
-[1]: https://code.google.com/p/google-code-prettify/
-[2]: http://highlightjs.org/
+## <!--以下是本文的脚注和超链接-->
+[^footnote]: Here is the *text* of the **footnote**.
 
-[^stackedit]:here is the footprint
+[MultiMarkdown]:http://fletcherpenney.net/multimarkdown/
+
+[prettify]: https://code.google.com/p/google-code-prettify/
+[highlightjs]: http://highlightjs.org/
+
