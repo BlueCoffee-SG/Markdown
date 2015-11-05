@@ -135,19 +135,19 @@ BreadSchedule.timer
 ### Fold
 点击标题前面的 `#` 号可对章节进行折叠(展开)。
 
-功能               | 快捷键
-------------------|-------------------------------------
-Fold              | <kbd>⌘</kbd><kbd>/</kbd>
-Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd>
-Collapse by Level | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd>
+功能               | 快捷键                                | 功能
+------------------|--------------------------------------|-------
+Fold              | <kbd>⌘</kbd><kbd>/</kbd>             | 折叠/展开<br>折叠所有子级header标题<br>展开所有子级header内容
+Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd> | 折叠<br>显示各子级header标题<br>可重复操作，继续折叠子级
+Collapse by Level | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd> | 展开<br>逆行expand
 
 ### Focus
 
 操作              | 快捷键                                | 功能
 ------------------|--------------------------------------|---
 Focus             | <kbd>⌘</kbd><kbd>u</kbd>             | 聚焦当前section
-Focus Out         | <kbd>⇧</kbd><kbd>⌘</kbd><kbd>u</kbd> | 展开到上一级section
-Focus Heading     | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>u</kbd> | 查看TOC浮窗
+Focus Out         | <kbd>⇧</kbd><kbd>⌘</kbd><kbd>u</kbd> | 展开到上一级section<br>可重复操作，逐级向上展开
+Focus Heading     | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>u</kbd> | 查看TOC浮窗<br/>可⬆️/⬇️移动，点击跳转
 
 ## References
 [Customizing FoldingText](http://computers.tutsplus.com/tutorials/customizing-foldingtext--cms-21674)
