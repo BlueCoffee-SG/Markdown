@@ -53,8 +53,9 @@ Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 `#` 号标识的 Heading（H1-H6） 会自然换行，普通句段之间若要强制换行（Manual Line Break），可以在自然换行行尾追加两个（或以上）空格来实现。  
 由于不同的 Markdown Editor 的 Rendering 效果不一，建议按照标准 Markdown 书写，这样发布到不同的渲染引擎下才能取得最优的兼容性。例如，在某些 Markdown Editor 中，你可能需要在 bullet list item 或 ordered list item 行尾追加两个空格换行来续接后面的混合编排。
 
-**适时内嵌 HTML 的 `<br>` 控制换行**  
-由于空格在 Markdown 中主要是起着控制排版的作用，因此在某些复杂的区块元素中，例如下文提到的 Table 表格中的 td 元素文本中，只能通过内嵌 HTML 的`<br>`（XHTML 自闭合写作 `<br />`）标签来实现局部换行。
+**适时内嵌 HTML 的 `<br>` 控制换行**
+
+> 由于空格在 Markdown 中主要是起着控制排版的作用，因此在某些复杂的区块元素中，例如下文提到的 Table 表格中的 td 元素文本中，只能通过内嵌 HTML 的`<br>`（XHTML 自闭合写作 `<br />`）标签来实现局部换行。
 
 ### 分段
 段落是由一个或多个连续的文本行组成，它的前后往往需要**空行**予以明示分隔。
@@ -110,8 +111,9 @@ _ _ _
 	- - -
 	-----
 
-**注意：**  
-采用减号（-）分割时，最好空格隔开或上面空一行，不然三个以上连续的减号会误将上一行文字升级为二级标题！
+**注意：**
+
+> 采用减号（-）分割时，最好空格隔开或上面空一行，不然三个以上连续的减号会误将上一行文字升级为二级标题！
 
 ## 文本格式（Text Styling）
 文本格式包括强调、加粗、突出、下划线、删除线、脚标等增强修饰和丰富表现。
@@ -131,12 +133,11 @@ Some of these words _are emphasized also_.
 Some of these words *are emphasized*.  
 Some of these words _are emphasized also_.
 
-**GFM（[Github Flavored Markdown][]）建议：**  
-鉴于C语言等源码中，通常采用下划线定义变量，因此 GFM 忽略单词内的下划线，同时建议使用星号（*）来包裹斜体。
+**GFM（[Github Flavored Markdown][]）建议：**
 
-_ _ _
-下划线闭包单词斜体：wow _great_ stuff (源码：`wow _great_ stuff`)
-GFM 忽略单词内的下划线：wow_great_stuff
+> 鉴于C语言等源码中，通常采用下划线定义变量，因此 GFM 忽略单词内的下划线，同时建议使用星号（*）来包裹斜体。
+>> 下划线闭包单词斜体：wow _great_ stuff (源码：`wow _great_ stuff`)
+>> GFM 忽略单词内的下划线：wow_great_stuff
 
 ### 加粗（Bold/Strong）
 **说明：**  
@@ -344,12 +345,12 @@ _ _ _
 
 **说明：**
 
-1. 被添加脚注的词条后面会出现一个超链接数字（有的渲染为上标格式），点击数字跳转到文末 glossary 区域该脚注的定义处。  
-2. 文末 glossary 区域该脚注定义的行尾会添加一个回车符号（&crarr;），点击可回到被标注的脚注点。
+> 1. 被添加脚注的词条后面会出现一个超链接数字（有的渲染为上标格式），点击数字跳转到文末 glossary 区域该脚注的定义处。  
+> 2. 文末 glossary 区域该脚注定义的行尾会添加一个回车符号（&crarr;），点击可回到被标注的脚注点。
 
 ## 引用（Blockquote）
 HTML 中的 `<blockquote>` 标签定义摘自另一个源的块引用。  
-`<blockquote>` 与 `</blockquote>` 之间的所有文本都会从常规文本中分离出来，经常会在左右两边进行**缩进**，而且有时会使用**斜体**。也就是说，块引用拥有它们自己的<u>空间</u>。
+`<blockquote>` 与 `</blockquote>` 之间的所有文本都会从常规文本中分离出来，经常会在左右两边进行**缩进**，而且有时会使用**斜体**。也就是说，块引用拥有它们自己的<u>空间</u>。本文大量使用引用（复合列表）来标识特殊说明或注意事项。
 
 Markdown 标记区块引用是使用类似 email 的引用方式，在断好的行前加上 `>` ：
 
@@ -368,7 +369,7 @@ Markdown 标记区块引用是使用类似 email 的引用方式，在断好的�
 > 梦
 >> 梦中梦
 >>> 盗梦空间
-
+>
 >> 梦中梦
 
 > 梦
@@ -377,14 +378,15 @@ Markdown 标记区块引用是使用类似 email 的引用方式，在断好的�
 > 梦
 >> 梦中梦
 >>> 盗梦空间
-
+>
 >> 梦中梦
 
 > 梦
 
-**说明：**  
-若使用引用格式插入代码，行首的缩进格式丢失，需要自行补充空格占位符。  
-一般不建议使用 blockquote（`>`）格式引用源代码，应采用 pre 格式引用代码。
+**说明：**
+
+> 1. 若使用引用格式插入代码，行首的缩进格式丢失，需要自行补充空格占位符。  
+> 2. 一般不建议使用 blockquote（`>`）格式引用源代码，应采用 pre 格式引用代码。
 
 ## 代码（Code）
 如果要标记行内代码片段，可以用**反引号闭包**；如果要插入跨行片段或块，可使用**预格式化**语法。  
@@ -439,22 +441,33 @@ _ _ _
     these lines begin with 4 spaces will also be shown as pre code block.
     these lines begin with 4 spaces will also be shown as pre code block.
 
-**注意：**  
-pre 格式存在以下缺陷：
+**注意：**
 
- - 对多tab及空格的缩进支持不完善！
- - 将宏符号#（#include、#import）误解为H1，可能会影响解析器的TOC！
- - 将顶格空白行（包括行首带tab）误认为Paragraph Break，而割断代码块成片段！
+> pre 格式存在以下缺陷：
+
+> - 对多tab及空格的缩进支持不完善！
+> - 将宏符号#（#include、#import）误解为H1，可能会影响解析器的TOC！
+> - 将顶格空白行（包括行首带tab）误认为Paragraph Break，而割断代码块成片段！
 
 - - - 
 
 **2.Fenced Code Block**
 
-以下演示了插入一段 Objective-C 代码：
+- 以下演示插入一句 python 代码：
 
-	> 首行：\`\`\`obj-c  
-	> 中间：Objective-C Code Block  
-	> 末行：\`\`\`
+> 首行：\~\~\~python  
+> 中间：print('Hello world!')  
+> 末行：\~\~\~
+
+~~~python
+print('Hello world!')
+~~~
+
+- 以下演示插入一段 Objective-C 代码：
+
+> 首行：\`\`\`obj-c  
+> 中间：Objective-C Code Block  
+> 末行：\`\`\`
 
 ```obj-c
 //
@@ -477,8 +490,8 @@ int main(int argc, char * argv[]) {
 
 **注意：**
 
-- Haroopad 编辑器将上述代码中的`#import`的第一个有效字符`#`[误解为 H1][haroopad_bug_#536]，导致 TOC 错乱或  Heading Focus Folding 失效。此时，可以在Fenced Code Block 行首添加空格或 tab 缩进。
-- 关于 GitHub 配置 Fenced Code Block 语法高亮所使用的 YAML ，可参考[初探YAML][]、[YAML学习][]、[YAML学习总结][]、[YAML--想要爱你很容易][]。
+> 1. Haroopad 编辑器将上述代码中的`#import`的第一个有效字符`#`[误解为 H1][haroopad_bug_#536]，导致 TOC 错乱或  Heading Focus Folding 失效。此时，可以在Fenced Code Block 行首添加空格或 tab 缩进。
+> 2. 关于 GitHub 配置 Fenced Code Block 语法高亮所使用的 YAML 标记 ，可参考[初探YAML][]、[YAML学习][]、[YAML学习总结][]、[YAML--想要爱你很容易][]。
 
 ## 列表（List）
 GFM 等 Markdown 扩展支持和无序列表、有序列表和任务列表。
@@ -531,9 +544,10 @@ GFM 等 Markdown 扩展支持和无序列表、有序列表和任务列表。
 		- 脚注（Footnote）
 - 引用（Blockquote）
 
-**缩进控制符：空格 or TAB？**  
-在列表标记前面插入空格也可以实现缩进控制嵌套效果，但不同的 Markdown Render 对控制层级的空格个数要求不一。  
-为了取得最佳的兼容性，建议使用 **tab** 来控制嵌套层级（nested hierarchy），以期在不同的渲染引擎下都能达到预期的显示效果。当然，前提是使用hard tabs（tab characters），而soft tabs（spaces）。
+**缩进控制符：空格 or TAB？**
+
+> 1. 在列表标记前面插入空格也可以实现缩进控制嵌套效果，但不同的 Markdown Render 对控制层级的空格个数要求不一。  
+> 2. 为了取得最佳的兼容性，建议使用 **tab** 来控制嵌套层级（nested hierarchy），以期在不同的渲染引擎下都能达到预期的显示效果。当然，前提是使用hard tabs（tab characters），而soft tabs（spaces）。
 
 ### 有序列表（Ordered List）
 有序列表项目的行首则使用数字接一个英文句点标记：
