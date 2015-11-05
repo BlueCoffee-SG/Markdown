@@ -137,9 +137,9 @@ BreadSchedule.timer
 
 功能               | 快捷键                                | 功能
 ------------------|--------------------------------------|-------
-Fold              | <kbd>⌘</kbd><kbd>/</kbd>             | 折叠/展开<br>折叠所有子级header标题<br>展开所有子级header内容
-Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd> | 折叠<br>显示各子级header标题<br>可重复操作，继续折叠子级
-Collapse by Level | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd> | 展开<br>逆行expand
+Fold              | <kbd>⌘</kbd><kbd>/</kbd>             | 折叠/展开当前级别section<br>- 折叠所有子级header标题<br>- 展开所有子级header内容
+Collapse by Level | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd> | 逐级折叠<br>- 显示各子级header标题<br>- 可重复操作，继续折叠子级
+Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd> | 逐级展开，逆行expand<br>可重复操作，逐级展开子级标题和内容
 
 ### Focus
 
