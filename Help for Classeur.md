@@ -27,5 +27,4 @@ Status Bar & Side Bar
 
 Preview Mode（Hide the Editor）
 ----
-![6-press minus button to enter Preview Mode](6-Preview_Mode.png)
-
+![6-press minus button to enter Preview Mode](classeur/6-press_minus_button_to_enter_Preview_Mode.png)
