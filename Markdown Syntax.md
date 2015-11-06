@@ -44,6 +44,7 @@ Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 	##### 这是五级标题（H5）#####  
 	###### 这是六级标题（H6）######
 
+为兼容和阅感起见，建议最后一个 `#` 号和标题之间加插一个空格。  
 行首的 `#` 号个数决定标题阶数，行中（末）的 `#` 号则被视作普通字符。  
 为美观起见，你也可以选择性地「闭合」类 atx 样式的标题，在行尾加上对应或不限数量的 # 号。
 
@@ -136,7 +137,7 @@ Some of these words _are emphasized also_.
 **GFM（[Github Flavored Markdown][]）建议：**
 
 > 鉴于C语言等源码中，通常采用下划线定义变量，因此 GFM 忽略单词内的下划线，同时建议使用星号（*）来包裹斜体。
->> 下划线闭包单词斜体：wow _great_ stuff (源码：`wow _great_ stuff`)
+>> 下划线闭包单词斜体：wow _great_ stuff (源码：`wow _great_ stuff`)  
 >> GFM 忽略单词内的下划线：wow_great_stuff
 
 ### 加粗（Bold/Strong）
@@ -404,7 +405,7 @@ Use the \`printf()\` function.(此处使用了反斜杠转义)
 
 **示例：**
 
-Use the `printf()` function.(\`printf()\`)
+Use the `printf()` function.(\`printf()\`)  
 Use the`` `printf()` ``function.(\`\` \`printf()\` \`\`\`)
 
 ### 代码块（Code Blocks）
@@ -421,6 +422,16 @@ Use the`` `printf()` ``function.(\`\` \`printf()\` \`\`\`)
 	在句段的行首插入1个 tab 或4个空格，则表示代码块。  
 - [Fenced Code Block]  
 	在句段行首和行末用三个反引号换行闭包，并在行首三个反引号后添加 [YAML][] 语言标识。
+
+language    | aliases
+------------|---------
+`Markdown`    | 无别名，注意区分大小写
+`HTML`        | `xhtml`
+`JavaScript`  | `js`、`node`
+`C`           | 无别名，注意区分大小写
+`C++`         | `cpp`
+`Objective-C` | `obj-c`、`objc`、`objectivec`
+`VimL`        | `vim`、`nvim`
 
 **示例：**
 
