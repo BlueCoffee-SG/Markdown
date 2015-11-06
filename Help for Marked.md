@@ -67,7 +67,7 @@ Shortcut  |  Function                       |  Comment
 `b` / `G`     | Jump to bottom like vim         | 跳转到底部(bottom)
 `j` / `k`     | Scroll Down/Up like vim         | 上/下滚动，亦适用于MiniMap
 `J` / `K`     | Scroll Down/Up Faster           | 快速上/下滚动，亦适用于MiniMap
-`Space` / <kbd>⇧</kbd>`Space`  | Page Down/Up   | 上/下翻页
+`Space` / <kbd>⇧</kbd>`Space`  | Page Down/Up   | 下/上翻页
 `s`         | Auto-Scroll                     | 自动滚屏
 <kbd>⇧</kbd><kbd>→</kbd>/<kbd>⇧</kbd><kbd>←</kbd> | Speed up/Slow down auto-scroll | 加速/减速自动滚屏
 
