@@ -2,7 +2,7 @@
 
 ## 注释（Comment）
 注释是写作者自己的标注记录，不被浏览器解析渲染。  
-HTML 以`<!--`开头，以`-->`结尾的闭包定义注释（支持跨行），不在正文中显示。  
+HTML 以 `<!--` 开头，以 `-->` 结尾的闭包定义注释（支持跨行），不在正文中显示。  
 Markdown 沿用 [HTML Comment][HTML_COMMENT_REFID] 注释格式：  
 `<!-- This text will not appear in the browser window. -->`
 <!-- This text will not appear in the browser window. -->
@@ -12,7 +12,7 @@ Markdown 沿用 [HTML Comment][HTML_COMMENT_REFID] 注释格式：
 1. CSDN 博客默认会在网页生成TOC，而 GitHub 仍不支持`[TOC]`，因此在发布 Markdown 博客时可注释掉开头的 [TOC] 标签，在需要查看 OUTLINE 时再打开。  
 `<!--[TOC]-->`
 
-2. 在博客 Markdown 源码开头，我通常使用注释来备注 git commit-hash-id 和 commit-date 信息，以便修订变更时回溯。  
+2. 在博客 Markdown 源码开头，我通常使用注释来备注 git commit-hash-id 和 commit-date 信息（git log -p ），以便修订变更时回溯。  
 `<!--commit 5326f29752b7ee3472aa00b40574bd585e3ef25b-->`  
 `<!--Mon Nov 2 00:36:40 2015 +0800-->`
 
