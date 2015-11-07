@@ -28,14 +28,18 @@ Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 ### Setext Heading Format（2 level）
 类 Setext 形式是用底线的形式，使用三个或以上连续 = 底线标记最高阶标题，使用三个或以上连续 - 底线标记第二阶标题。例如：
 
+1. equal signs for first-level headers:
+
 	This is an H1
 	===
+
+2. dashes for second-level headers:
 
 	This is an H2
 	----
 
 ### Atx Heading Format（6 level）
-类 Atx 形式则是在行首插入 1 到 6 个 # ，对应 6 阶标题（对应 HTML 中的 `<h1>` - `<h6>` 标签）。例如：
+类 Atx 形式则是在行首插入 1 到 6 个 # （hash character），对应 6 阶标题（对应 HTML 中的 `<h1>` - `<h6>` 标签）。例如：
 
 	# 这是一级标题（H1，通常用于文档标题）  
 	## 这是二级标题（H2，渲染器会自动添加 hr 底线）  
@@ -78,7 +82,7 @@ Markdown 精挑细选了一些符号组成了一套基于文本的标记语法�
 * 多行行首添加 +（或 - 或 \*），看起来就是列表。
 * 句段行首添加 > 号来引用区块，就像你曾在电子邮件中见过的那样。
 
-可以使用反斜杠（\\）转义输入 Markdown 标记符号的原义字符。  
+可以使用反斜杠（\\，backslash）转义输入 Markdown 标记符号的原义字符。  
 
 - - -
 \#：行首的 <kbd>#</kbd> 号默认为H1，这里使用反斜杠转义显示原义字符。  
@@ -90,12 +94,12 @@ Markdown 精挑细选了一些符号组成了一套基于文本的标记语法�
 - 引用、列表的 bullet 标记符前的 tab 或 空格 用于缩进嵌套层级；
 - ...
 
-普通段落一般都是顶格开始，无法使用空格或 tab 来缩进，包括引用标记符（>）、列表标记符（bullet list indicator）后面的空格都无法实现缩进。
+普通段落一般都是顶格开始，无法使用空格或 tab 来缩进，包括引用标记符（>）、列表标记符（bullet list indicator）后面的空格都无法实现缩进。  
 如果硬要输入空格显示占位缩进效果，可以嵌入空格对应的 [HTML Entity][] 实体码。HTML 转义字符串（Escape Sequence），即字符实体（Character Entity）。字符实体由三部分构成：
 
-1. 第一部分是一个 `&` 符号；
+1. 第一部分是一个 `&` （ampersand）符号；
 2. 第二部分是实体（Entity）名字，或者是 `#` 加上实体编号（[Entity Code][]）；
-3. 第三部分是一个分号（`;`）。
+3. 第三部分是一个分号 `;` （semicolon）。
 
 _ _ _
   普通自然行行首敲2个空格无占位缩进效果。  
@@ -104,7 +108,7 @@ _ _ _
 &emsp;&emsp;&#8195;&#8195;该行行首添加了4个全方大的空白：em space（`&emsp;`或`&#8195;`）
 
 ## 分隔线（Horizontal Rules）
-你可以在一行中用三个以上的星号（*）或减号（-）或底线（_）来建立一个水平分隔线，对应 HTML 中的 `<hr>` 标签，用于Sentence/Section/Page Break。  
+你可以在一行中用三个以上的星号（asterisks：*）或减号（hyphens：-）或底线（underscores：_）来建立一个水平分隔线，对应 HTML 中的 `<hr>` 标签，用于Sentence/Section/Page Break。  
 行内不能有其他东西，但你可以在星号或是减号中间插入空格。  
 下面每种写法都可以建立起分隔线：
 
@@ -160,7 +164,7 @@ A ***section surrounded with three asterisks*** will be  specially emphasized.
 ### 突出（Mark/Highlight）
 **说明：**  
 在 HTML 中，可以使用 `<mark>` 标签来高亮显示文字，以达到醒目的目的。  
-标准 markdown 没有提供对应的标签支持，Macdown 和 Haroopad 均使用两个等号包围来突出高亮显示。
+标准 markdown 没有提供对应的标签支持，Macdown 和 Haroopad 均使用两个等号（equal signs：=）包围来突出高亮显示。
 
 **语法：**  
 Macdown 和 Haroopad：`==Highlight==`
@@ -172,8 +176,8 @@ Macdown 和 Haroopad：==Highlight==
 ### 下划线（Underline）
 **说明：**  
 在 HTML 中，可以使用 `<u>` 标签来为文本添加下划线。  
-标准 markdown 没有提供对应的标签支持，MMD（[MultiMarkdown][]） 提供了扩展支持。  
-Macdown 使用星号表示强调，使用下划线表示下划线原义；Haroopad 则使用两个加号来标记下划线。
+标准 markdown 没有提供对应的标签支持，MMD（[MultiMarkdown][]）提供了扩展支持。  
+Macdown 使用星号表示强调，使用下划线表示下划线原义；Haroopad 则使用两个加号（plus sign：+）来标记下划线。
 
 **语法：**  
 Macdown：`_underline_`  
@@ -186,7 +190,7 @@ Haroopad：++underline++
 ### 删除线（Strikethrough）
 **说明：**  
 在 HTML 中，可以使用 `<del>` 标签来定义文档中已被删除的文本（配合 `<ins>` 标签来描述文档中的更新和修正）。  
-标准 markdown 没有提供对应的标签支持，GFM 提供了扩展支持，使用两个波浪符号（~~）包围来给文本添加删除线。
+标准 markdown 没有提供对应的标签支持，GFM 提供了扩展支持，使用两个波浪符号（two wavy line:~~）包围来给文本添加删除线。
 
 **语法：**
 
@@ -199,7 +203,7 @@ Haroopad：++underline++
 标准 Markdown 不支持脚标，只能通过内嵌 HTML 的`<sup>`和`<sub>`标签来实现。
 
 #### 上脚标：
-Haroopad 语法：`^Superscript^`  
+Haroopad 语法（Caret）：`^Superscript^`  
 HTML 语法：`<sup>superscript</sup>`
 
 **示例：**  
@@ -222,10 +226,10 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 
 ### 文字（text href）
 Markdown 支持两种形式的超文本链接语法格式： 行内式（Inline）和参考式（Reference）两种形式。  
-不管是哪一种，链接文字都是用方括号（[square brackets]）来标记。  
+不管是哪一种，链接文字都是用方括号（square brackets：[]）来标记。  
 
 #### 行内式（Inline）
-只要在方块括号后面紧接着圆括号并插入链接网址即可在一行内构建链接，其语法格式为`[text](url)`，HTML 等效源码为 `<a href="url">text</a>`。  
+只要在方块括号后面紧接着圆括号（parenthesis or round brackets）并插入链接网址即可在一行内构建链接，其语法格式为`[text](url)`，HTML 等效源码为 `<a href="url">text</a>`。  
 如果是要链接到本机资源，可以使用相对路径（./path/to/your/resource）。
 
 以下定义了一个指向 Daring Fireball Markdown 首页的超链接：
@@ -279,7 +283,7 @@ _ _ _
 ### 图片（image href）
 #### 插入图片
 Markdown 使用一种和文本链接很相似的语法来插入图片，同样也允许两种样式： 行内式和参考式。  
-不同的是，需要在链接文字方括号之前添加一个感叹号（!），其语法格式为 `![alt_text](url)`，HTML 等效源码为 `<img src="url" alt="text" />`，其中alt_text可以置空。  
+不同的是，需要在链接文字方括号之前添加一个感叹号（exclamation mark：!），其语法格式为 `![alt_text](url)`，HTML 等效源码为 `<img src="url" alt="text" />`，其中alt_text可以置空。  
 
 _ _ _
 daringfirefall logo:  
@@ -353,7 +357,7 @@ _ _ _
 HTML 中的 `<blockquote>` 标签定义摘自另一个源的块引用。  
 `<blockquote>` 与 `</blockquote>` 之间的所有文本都会从常规文本中分离出来，经常会在左右两边进行**缩进**，而且有时会使用**斜体**。也就是说，块引用拥有它们自己的<u>空间</u>。本文大量使用引用（复合列表）来标识特殊说明或注意事项。
 
-Markdown 标记区块引用是使用类似 email 的引用方式，在断好的行前加上 `>` ：
+Markdown 标记区块引用是使用类似 email 的引用方式，在断好的行前加上 `>` （more than or greater than sign）：
 
 ```Markdown
 > 爱上一个人  
@@ -387,10 +391,11 @@ Markdown 标记区块引用是使用类似 email 的引用方式，在断好的�
 **说明：**
 
 > 1. 若使用引用格式插入代码，行首的缩进格式丢失，需要自行补充空格占位符。  
-> 2. 一般不建议使用 blockquote（`>`）格式引用源代码，应采用 pre 格式引用代码。
+> 2. 一般不建议使用 blockquote（`>`）格式引用源代码，应采用 pre 格式引用代码。  
+> 3. 嵌套深入浅出时，需要添加空行（blank line）或者空引用行（additional levels of \>）。
 
 ## 代码（Code）
-如果要标记行内代码片段，可以用**反引号闭包**；如果要插入跨行片段或块，可使用**预格式化**语法。  
+如果要标记行内代码片段，可以用**反引号**（backtick quotes）闭包；如果要插入跨行片段或块，可使用**预格式化**语法。  
 本文在示范 Markdown 语法源码时，独行单句采用了行内代码格式，跨行代码片段则采用了代码块格式。
 
 ### 行内代码（Inline Code）
@@ -508,12 +513,12 @@ int main(int argc, char * argv[]) {
 GFM 等 Markdown 扩展支持和无序列表、有序列表和任务列表。
 
 ### 无序列表（Unordered List）
-无序列表项目的行首使用星号（或加号，或减号）加空格作为列表标记：
+无序列表（unordered, bulleted）项目的行首使用星号（或加号，或减号）加空格作为列表标记（list markers）：
 
 ```Markdown
-- bullet list item 1 begin with a '-'
-+ bullet list item 2 begin with a '+'
-* bullet list item 3 begin with a '*'
+- bullet list item 1 begin with a hyphens '-'
++ bullet list item 2 begin with a pluses '+'
+* bullet list item 3 begin with an asterisks '*'
 ```
 
 示例效果：
@@ -561,7 +566,7 @@ GFM 等 Markdown 扩展支持和无序列表、有序列表和任务列表。
 > 2. 为了取得最佳的兼容性，建议使用 **tab** 来控制嵌套层级（nested hierarchy），以期在不同的渲染引擎下都能达到预期的显示效果。当然，前提是使用hard tabs（tab characters），而soft tabs（spaces）。
 
 ### 有序列表（Ordered List）
-有序列表项目的行首则使用数字接一个英文句点标记：
+有序列表（ordered / numbered）项目的行首则使用数字接一个英文句点标记（use numbers followed by periods）：
 
 ```Markdown
 1. GETTING STARTED  
@@ -605,7 +610,7 @@ GFM 扩展支持把列表变成带勾选框的任务列表，只需要在列表�
 2. [x] task4 done
 
 ## 表格（Table）
-You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:
+You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|` (vertical bar):
 
 First Header  | Second Header
 ------------- | -------------
