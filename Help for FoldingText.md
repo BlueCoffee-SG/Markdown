@@ -132,6 +132,8 @@ BreadSchedule.timer
 - 2:01 PM Bake 40 minutes
 
 ## View
+通过快捷键 <kbd>^</kbd><kbd>c</kbd> 可以清除当前光标所在单词的格式（Clear Formatting）。
+
 ### Fold
 点击标题前面的 `#` 号可对章节进行折叠(展开)。
 
