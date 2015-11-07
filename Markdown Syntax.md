@@ -401,7 +401,7 @@ Markdown 标记区块引用是使用类似 email 的引用方式，在断好的�
 ### 行内代码（Inline Code）
 **说明：**
 
-如果要标记行内代码片段，可以用反引号（backtick quotes）闭包，对应 HTML 中的 `<code>` 标签（把文本变成等宽字体，暗示是源程序代码）。  
+如果要标记行内代码片段，可以用反引号（backtick quotes）包裹，对应 HTML 中的 `<code>` 标签（把文本变成等宽字体，暗示是源程序代码）。  
 如果要在代码区段内插入反引号，可以用多个反引号来开启和结束代码区段。  
 
 **语法：**
@@ -469,15 +469,17 @@ _ _ _
 
 **2.Fenced Code Block**
 
+Fenced Code Block 以三个反引号（backtick quotes：`，有的支持波浪线\~）包裹，第一行的三个反引号之后可以冠上编程语言的 YAML 标记识别语法高亮。
+
 - 以下演示插入一句 python 代码：
 
-> 首行：\~\~\~python  
+> 首行：\`\`\`python  
 > 中间：print('Hello world!')  
-> 末行：\~\~\~
+> 末行：\`\`\`
 
-~~~python
+```python
 print('Hello world!')
-~~~
+```
 
 - 以下演示插入一段 Objective-C 代码：
 
