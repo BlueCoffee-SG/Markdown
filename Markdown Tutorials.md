@@ -80,6 +80,7 @@ Markdown 内嵌 HTML：[字体、字号与颜色][HTML_IN_MARKDOWN_FONT] / [背�
 <!--###MultiMarkdown-->
 [MultiMarkdown User's Guide]:http://fletcher.github.io/MultiMarkdown-4/
 [MultiMarkdown CheatSheet]:https://rawgit.com/fletcher/human-markdown-reference/master/index.html
+[Markdown的各种扩展]:http://www.pchou.info/open-source/2014/07/07/something-about-markdown.html
 
 <!--##简明教程-->
 [Markdown 简明教程]:http://blog.csdn.net/pxzy/article/details/22045059
