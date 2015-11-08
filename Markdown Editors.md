@@ -272,6 +272,16 @@ EverEdit 和 typora一样，也是一款集编辑与预览于一身的Markdown�
 > [EverEdit – 轻量级纯文本编辑器](http://www.appinn.com/everedit/)  
 > [Everedit 与 SublimeText 横向对比](http://www.appcheers.com/everedit-vs-sublime.html)
 
+#### [Smark](http://git.oschina.net/elerao/Smark)（Win+Mac+Linux）
+Smark 依赖于 pandoc、Qt 4.8 和 MathJax，跨平台支持 Windows / Linux 等主流系统。  
+Smark 在后台调用 pandoc 将当前编辑的 markdown 内容转化为 HTML，而后将 HTML 在 smark 中的浏览器中显示出来。
+
+- 简洁友好，尽可能凸显正在编辑的内容；
+- 用户可配置的 Markdown 语法高亮显示；
+- 可通过用户指明 CSS 文件定义显示式样；
+- 完美支持 LaTex 数学公式、脚注、尾注等，支持使用本地 MathJax 调用，不需要在线访问 MathJax CDN；
+- 多种格式文件导出支持，可将当前 Markdown 文件另存为 HTML、 Miscrosoft Word、OpenOffice / LibreOffice ODT Document、Latex、PDF、reStructured Text、Media Wiki markup、epub 以及 plain txt 等格式文件输出；
+
 #### [Atom](https://atom.io/)（Win+Mac+Linux）
 A hackable text editor for the 21st Century
 
