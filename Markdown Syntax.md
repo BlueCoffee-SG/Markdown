@@ -56,7 +56,7 @@ Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 ### 换行
 标准 Markdown 不支持自然换行（literal new line），有些扩展的 Markdown Render 支持自然换行。  
 `#` 号标识的 Heading（H1-H6） 会自然换行，普通句段之间若要强制换行（Manual Line Break），可以在自然换行行尾追加两个（或以上）空格来实现。  
-由于不同的 Markdown Editor 的 Rendering 效果不一，建议按照标准 Markdown 书写，这样发布到不同的渲染引擎下才能取得最优的兼容性。例如，在某些 Markdown Editor 中，你可能需要在 bullet list item 或 ordered list item 行尾追加两个空格换行来续接后面的混合编排。
+由于不同的 Markdown Editor 的 Rendering 效果不一，建议按照标准 Markdown 书写，这样发布到不同的渲染引擎下才能取得最优的兼容性。例如：你可能需要在两行连续的以 `>` 开头的引用之间加入两个空格硬换行来避免粘连；在某些 Markdown Editor 中，你可能需要在 bullet list item 行尾追加两个空格硬换行来续接后面的混合编排。
 
 **适时内嵌 HTML 的 `<br>` 控制换行**
 
