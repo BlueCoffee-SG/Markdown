@@ -131,13 +131,37 @@ BreadSchedule.timer
 - 11:01 Ferment 3 hours
 - 2:01 PM Bake 40 minutes
 
-## View
-通过快捷键 <kbd>^</kbd><kbd>c</kbd> 可以清除当前光标所在单词的格式（Clear Formatting）。
+## Edit
+针对选中或光标所在元素/secion，可执行以下快捷操作：
 
+操作               | 快捷键                    | 功能
+------------------|--------------------------|------------
+Clear Formatting  | <kbd>^</kbd><kbd>c</kbd>| 清除当前光标所在或所选的格式
+
+操作               | 快捷键                    | 功能
+------------------|--------------------------|------------
+H1                | <kbd>⌘</kbd><kbd>1</kbd> | 提升为1级标题
+H2                | <kbd>⌘</kbd><kbd>2</kbd> | 提升为2级标题
+Hn{3,4,5}         | <kbd>⌘</kbd><kbd>n{3,4,5}</kbd> | 提升为n级标题
+H6                | <kbd>⌘</kbd><kbd>6</kbd> | 提升为6级标题
+
+操作    | 快捷键                    | 功能
+-------|--------------------------|------------
+Bold   | <kbd>⌘</kbd><kbd>b</kbd> | 加粗所选内容
+Italic | <kbd>⌘</kbd><kbd>i</kbd> | 斜体所选内容
+Add Link | <kbd>⌘</kbd><kbd>k</kbd> | 为所选内容添加超链接
+Inline Code | <kbd>⇧</kbd><kbd>⌘</kbd><kbd>c</kbd> | 所选格式化为行内代码
+
+操作               | 快捷键                    | 功能
+------------------|--------------------------|------------
+Unordered List    | <kbd>⌘</kbd><kbd>l</kbd> | 格式化为无序列表
+Ordered List      | <kbd>⇧</kbd><kbd>⌘</kbd><kbd>l</kbd> | 格式化为有序列表
+
+## View
 ### Fold
 点击标题前面的 `#` 号可对章节进行折叠(展开)。
 
-功能               | 快捷键                                | 功能
+操作               | 快捷键                                | 功能
 ------------------|--------------------------------------|-------
 Fold              | <kbd>⌘</kbd><kbd>/</kbd>             | 折叠/展开当前级别section<br>光标在标题或内容区都可以<br>- 折叠所有子级header标题<br>- 展开所有子级header内容
 Collapse by Level | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd> | 逐级折叠<br>光标行下必须有子层级<br>- 显示各子级header标题<br>- 可重复操作，继续折叠子级
