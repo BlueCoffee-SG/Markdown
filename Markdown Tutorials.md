@@ -46,7 +46,8 @@ markdown 简明语法：[lutaf][markdown-simple-usage-lutaf] / [ibruce][markdown
 [博客园支持 GFM][CNBLOGS_MARKDOWN]  
 CSDN Markdown 简明教程视频：[官方][CSDN_MARKDOWN_TUTORIAL_OFFICIAL] / [优酷][CSDN_MARKDOWN_TUTORIAL_YOUKU]  
 使用CSDN Markdown编辑器：[介绍1][CSDN_MARKDOWN_USAGE_1] / [介绍2][CSDN_MARKDOWN_USAGE_2]  
-CSDN-Markdown 语法： [基本语法][CSDN_MARKDOWN_BASIC] / [扩展语法][CSDN_MARKDOWN_EXTENSION] / [语法集锦][CSDN_MARKDOWN_ASSEMBLE]
+CSDN-Markdown 语法： [基本语法][CSDN_MARKDOWN_BASIC] / [扩展语法][CSDN_MARKDOWN_EXTENSION] / [语法集锦][CSDN_MARKDOWN_ASSEMBLE]  
+[CSDN Markdown与其他markdown编辑器的功能对比]
 
 ## 写作进阶
 [Markdown 写作浅谈][]  
@@ -100,6 +101,7 @@ Markdown 内嵌 HTML：[字体、字号与颜色][HTML_IN_MARKDOWN_FONT] / [背�
 [CSDN_MARKDOWN_BASIC]:http://it.taocms.org/03/7250.htm
 [CSDN_MARKDOWN_EXTENSION]:http://it.taocms.org/03/7248.htm
 [CSDN_MARKDOWN_ASSEMBLE]:http://blog.csdn.net/bone_ace/article/details/46400975
+[CSDN Markdown与其他markdown编辑器的功能对比]:http://www.jianshu.com/p/3b4df7857ce7
 
 <!--##写作进阶-->
 [Markdown 写作浅谈]:http://www.yangzhiping.com/tech/r-markdown-knitr.html
