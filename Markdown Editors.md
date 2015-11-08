@@ -88,7 +88,7 @@ StackEdit 以 Mou 那种左编辑右预览的 WYSIWYG 分栏呈现，支持切�
 - 支持从URL或本地磁盘导入文件编辑，编辑实时保存到浏览器本地存储（[browser's local storage](https://developer.mozilla.org/en-US/docs/Web/Guide/DOM/Storage#localStorage)）中；同时也提供了类 [MarkDrop](http://www.cultofmac.com/258241/markdrop-new-minimalistic-markdown-editor-mac) 的分享以及云存储的同步支持。  
 - 编辑完成可将文档从浏览器导出（下载）到本地磁盘，支持导出Markdown、HTML和PDF格式；同时也支持直接直接发布到网上（Publish/Export to the web），例如Blogger、WordPress、DropBox、Google Drive、GitHub/Gist等。
  
-> [推荐的MarkDown在线编辑器 StackEdit](http://www.xuanfengge.com/markdown-to-recommend-online-editor-stackedit.html)
+> [推荐的MarkDown在线编辑器 StackEdit](http://www.xuanfengge.com/markdown-to-recommend-online-editor-stackedit.html)  
 > [功能强大的Markdown编辑器StackEdit](http://www.guokr.com/post/544861/)
 
 ### [Classeur](https://app.classeur.io/)
@@ -182,8 +182,8 @@ FoldingText支持 **Plugins** 和 **AppleScript** 扩展：
 - 可安装插件[`rendered_images_for_folding_text`](https://github.com/carolineartz/rendered_images_for_folding_text) 支持 [@img](http://support.foldingtext.com/t/markdown-image-support/397) 渲染  
 - 调用AppleScript生成[TOC](http://support.foldingtext.com/t/toc-table-of-content-generator/295)、[table](http://support.foldingtext.com/t/scripting-easy-creation-of-text-tables-flat-and-nested/283) 或 调用 Marked 2 预览。 
 
-> [FoldingText - 伪装成 markdown 编辑器的 outliner](http://www.v2ex.com/t/123024)
-> [RobTrew / tree-tools](https://github.com/RobTrew/tree-tools)
+> [FoldingText - 伪装成 markdown 编辑器的 outliner](http://www.v2ex.com/t/123024)  
+> [RobTrew / tree-tools](https://github.com/RobTrew/tree-tools)  
 > [jamiekowalski / foldingtext-extra](https://github.com/jamiekowalski/foldingtext-extra)
 
 #### [Marked](http://marked2app.com/)
@@ -249,7 +249,7 @@ a minimal markdown editor
 
 将「写字」和「预览」这两件事情合并了，即时输入即时输出，即现在很流行的 WYSIWYG（What You See Is What You Get）。  
 
-> [Typora：没有 Preview 窗口的奇怪文本编辑器](http://www.waerfa.com/typora)
+> [Typora：没有 Preview 窗口的奇怪文本编辑器](http://www.waerfa.com/typora)  
 > [让 Markdown 写作更简单，免费极简编辑器：Typora](http://sspai.com/30292)
 
 #### [MWeb](http://coderforart.com/mweb-zh.html)（Mac）
@@ -269,7 +269,7 @@ MWeb 是一站式的 Markdown 编辑和静态网站生成解决方案。
 EverEdit是一个快速、轻量级和易于扩展的集文本、源代码编辑于一身的高性能纯文本编辑器。  
 EverEdit 和 typora一样，也是一款集编辑与预览于一身的Markdown编辑器。
 
-> [EverEdit – 轻量级纯文本编辑器](http://www.appinn.com/everedit/)
+> [EverEdit – 轻量级纯文本编辑器](http://www.appinn.com/everedit/)  
 > [Everedit 与 SublimeText 横向对比](http://www.appcheers.com/everedit-vs-sublime.html)
 
 #### [Atom](https://atom.io/)（Win+Mac+Linux）
@@ -306,12 +306,12 @@ iA structures, designs and builds websites, apps and videos, reducing form and c
 
 [Mac版iA Writer](https://itunes.apple.com/us/app/ia-writer-pro/id775737590?mt=12&ign-mpt=uo%3D4)售价\$19.99；[iOS版iA Writer](https://itunes.apple.com/us/app/ia-writer-pro/id775737172?mt=8&ign-mpt=uo%3D4)售价\$9.99。
 
-> [iA Writer创始人：文本编辑器应该像手术刀](http://tech.qq.com/a/20120416/000233.htm)
-> [iA Writer：终于，你可以专心写作了](http://lab.feng.com/iPad/app/application/2012-07-31/iA_Writer_Finally_432286.shtml)
+> [iA Writer创始人：文本编辑器应该像手术刀](http://tech.qq.com/a/20120416/000233.htm)  
+> [iA Writer：终于，你可以专心写作了](http://lab.feng.com/iPad/app/application/2012-07-31/iA_Writer_Finally_432286.shtml)  
 > [简单优雅写字工具iA Writer](http://4g.zol.com.cn/510/5104051.html)  
 > [扁平化终于来到：iA Writer 2.0](http://sspai.com/25993)  
-> [重新找回写作的本质：Writer Pro](http://sspai.com/25723)
-> [专注写作 iA Writer Pro：给你独一无二的写作体验](http://www.iapps.im/single/28017)
+> [重新找回写作的本质：Writer Pro](http://sspai.com/25723)  
+> [专注写作 iA Writer Pro：给你独一无二的写作体验](http://www.iapps.im/single/28017)  
 > [iA Writer 和 Byword 哪个更好？](http://www.zhihu.com/question/20129290)
 
 ### [Byword](http://bywordapp.com/)
@@ -328,7 +328,7 @@ Ulysses iii 是一款功能强大的文本编辑器，它具备全新的Soulmen�
 Ulysses 是一款非常强大的 Markdown 工具。相对其他的纯 Markdown 工具，它添加了一些快捷操作。比如添加图片、链接等方式。  
 它与其他同类产品最大的差异就是它的文档管理系统。通过 iCloud 的存储，你再也不用担心到处去找文档存放位置，左侧的管理目录都帮你搞定了。如果你需要进行一篇较长的文章编写，它也将是一个不错的选择。  
 
-> [Ulysses III 这款写作软件的使用体验如何？](http://www.zhihu.com/question/20927359)
+> [Ulysses III 这款写作软件的使用体验如何？](http://www.zhihu.com/question/20927359)  
 > [Markdown 编辑器佼佼者：Ulysses III 上手初体验](http://sspai.com/27336)
 
 ### [Scrivener](http://www.literatureandlatte.com/)
@@ -338,7 +338,7 @@ Scrivener is a powerful content-generation tool for writers that allows you to c
 
 Scrivener 是 Mac 平台上功能重量级的 Markdown 編輯器，可以在個文檔之間建立 reference 之類的聯繫，是做大型項目（論文、書籍）的首選。
 
-> [Mac 专业写作工具：Scrivener](http://www.kankanews.com/ICkengine/archives/136402.shtml)
+> [Mac 专业写作工具：Scrivener](http://www.kankanews.com/ICkengine/archives/136402.shtml)  
 > [Scrivener使用multimarkdown的总结](http://www.douban.com/note/278837465/)  
 
 ## 5.MultiMarkdown
@@ -353,18 +353,17 @@ Dynamic Documents for R
  
 R Markdown is an authoring format that enables easy creation of dynamic documents, presentations, and reports from R. It combines the core syntax of markdown (an easy-to-write plain text format) with embedded R code chunks that are run so their output can be included in the final document. R Markdown documents are fully reproducible (they can be automatically regenerated whenever underlying R code or data changes).
 
-> [如何开始R语言](http://blog.sina.com.cn/s/blog_403aa80a0101aowm.html)
-> [R语言学习笔记](http://blog.csdn.net/jack237/article/details/8210598)
+> [如何开始R语言](http://blog.sina.com.cn/s/blog_403aa80a0101aowm.html)  
+> [R语言学习笔记](http://blog.csdn.net/jack237/article/details/8210598)  
 > [R语言为Hadoop注入统计血脉](http://www.csdn.net/article/2014-02-28/2818579-r-hadoop-intro)
 
 ### [MultiMarkdown Composer](http://multimarkdown.com/)（Mac）
-[MultiMarkdown Composer 2](http://brettterpstra.com/2013/02/06/mac-app-review-multimarkdown-composer-2/) is the best MultiMarkdown editor just got better!  
+[MultiMarkdown Composer 2](http://brettterpstra.com/2013/02/06/mac-app-review-multimarkdown-composer-2/) is the best [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) editor just got better!  
 
-**MultiMarkdown Composer**亦出自`Marked`作者[Brett Terpstra](http://brettterpstra.com/contact/)之手。
+**MultiMarkdown Composer** 亦出自 `Marked` 作者[Brett Terpstra](http://brettterpstra.com/contact/)之手。
 
 > [MultiMarkdown Composer 2 is a powerful, flexible Markdown-based text editor](http://www.engadget.com/2013/02/05/multimarkdown-composer-2-is-a-powerful-flexible-markdown-based/)  
 > [My Favourite Text Editors for OSX – MultiMarkdown Composer](http://gregferro.com/my-favourite-text-editors-for-osx-multimarkdown-composer/)  
-> [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 > [Markdown 语法写作入门指南](http://wenku.baidu.com/view/8502de3b03d8ce2f006623c1.html)
 
 ### [Pandoc](http://pandoc.org/)
@@ -372,9 +371,9 @@ a universal document converter
 
 Markdown+Pandoc 可以把自己的写作内容，变成已有的任何格式的文件，包括很炫的 slide，html5。
 
-> [Pandoc Extras](https://github.com/jgm/pandoc/wiki/Pandoc-Extras)
-> [神器Pandoc的安装与使用](http://zhouyichu.com/misc/Pandoc.html)
-> [Markdown写作进阶：Pandoc入门浅谈](http://www.yangzhiping.com/tech/pandoc.html)
+> [Pandoc Extras](https://github.com/jgm/pandoc/wiki/Pandoc-Extras)  
+> [神器Pandoc的安装与使用](http://zhouyichu.com/misc/Pandoc.html)  
+> [Markdown写作进阶：Pandoc入门浅谈](http://www.yangzhiping.com/tech/pandoc.html)  
 > [Markdown+Pandoc，打通写作界的任督二脉！](http://blog.csdn.net/duqi_yc/article/details/8974041)
 
 ## 6.开源Markdown解析器
