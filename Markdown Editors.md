@@ -52,6 +52,12 @@ A strongly specified, highly compatible implementation of Markdown
 ### [Markdown Live Editor](http://jrmoran.com/playground/markdown-live-editor/)
 Markdown live editor built using WMD and other open source tools.
 
+### [Draft](https://draftin.com/)
+WRITE BETTER WITH DRAFT  
+EASY VERSION CONTROL AND COLLABORATION FOR WRITERS
+
+"When I'm not writing on paper, I write with Draft."
+
 ### [Editor.md](https://pandao.github.io/editor.md/)
 The open source embeddable online markdown editor (component), based on CodeMirror & jQuery & Marked.  
 Editor.md 是一款开源的、可嵌入的 Markdown 在线编辑器（组件），基于 CodeMirror、jQuery 和 Marked 构建。
