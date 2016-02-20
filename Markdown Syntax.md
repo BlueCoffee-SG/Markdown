@@ -26,7 +26,7 @@ Markdown 沿用 [HTML Comment][HTML_COMMENT_REFID] 注释格式：
 Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 
 ### Setext Heading Format（2 level）
-类 Setext 形式是用底线的形式，使用三个或以上连续 = 底线标记最高阶标题，使用三个或以上连续 - 底线标记第二阶标题。例如：
+类 Setext 形式是用底线的形式，使用三个或以上连续 =（equal signs）底线标记最高阶标题，使用三个或以上连续 -（dashes）底线标记第二阶标题。例如：
 
 1. equal signs for first-level headers:
 
@@ -42,25 +42,24 @@ Markdown 支持两种标题的语法，类 [Setext][] 和类 [atx][] 形式。
 类 Atx 形式则是在行首插入 1 到 6 个 # （hash character），对应 6 阶标题（对应 HTML 中的 `<h1>` - `<h6>` 标签）。例如：
 
 	# 这是一级标题（H1，通常用于文档标题）  
-	## 这是二级标题（H2，渲染器会自动添加 hr 底线）  
+	## 这是二级标题（H2，有些渲染器会为二级标题添加 hr 底线）  
 	### 这是三级标题（H3）  
 	#### 这是四级标题（H4）  
 	##### 这是五级标题（H5）#####  
 	###### 这是六级标题（H6）######
 
-为兼容和阅感起见，建议最后一个 `#` 号和标题之间加插一个空格。  
-行首的 `#` 号个数决定标题阶数，行中（末）的 `#` 号则被视作普通字符。  
-为美观起见，你也可以选择性地「闭合」类 atx 样式的标题，在行尾加上对应或不限数量的 # 号。
+行首的 `#` 号个数决定标题阶数，为兼容和阅感起见，建议最后一个 `#` 号和标题文字之间加插一个空格。  
+行中（末）的 `#` 号则被视作普通字符。为美观起见，你也可以选择性地「闭合」类 atx 样式的标题，在行尾加上对应或不限数量的 # 号。
 
 ## 句段（Sentence / Paragraph）
 ### 换行
-标准 Markdown 不支持自然换行（literal new line），有些扩展的 Markdown Render 支持自然换行。  
+标准 Markdown 不支持自然换行（literal new line），有些渲染器扩展支持自然换行。  
 `#` 号标识的 Heading（H1-H6） 会自然换行，普通句段之间若要强制换行（Manual Line Break），可以在自然换行行尾追加两个（或以上）空格来实现。  
-由于不同的 Markdown Editor 的 Rendering 效果不一，建议按照标准 Markdown 书写，这样发布到不同的渲染引擎下才能取得最优的兼容性。例如：你可能需要在两行连续的以 `>` 开头的引用之间加入两个空格硬换行来避免粘连；在某些 Markdown Editor 中，你可能需要在 bullet list item 行尾追加两个空格硬换行来续接后面的混合编排。
+由于不同的 Markdown Editor 的渲染效果不一，建议按照标准 Markdown 书写，这样发布到不同的渲染引擎下才能取得最优的兼容性。例如：你可能需要在两行连续的以 `>` 开头的引用之间加入两个空格硬换行来避免粘连；在某些 Markdown Editor 中，你可能需要在 bullet list item 行尾追加两个空格硬换行来续接后面的混合编排。
 
 **适时内嵌 HTML 的 `<br>` 控制换行**
 
-> 由于空格在 Markdown 中主要是起着控制排版的作用，因此在某些复杂的区块元素中，例如下文提到的 Table 表格中的 td 元素文本中，只能通过内嵌 HTML 的`<br>`（XHTML 自闭合写作 `<br />`）标签来实现局部换行。
+> 由于空格在 Markdown 中主要是起着控制排版的作用，因此在某些复杂的区块元素中，例如下文提到的 Table 表格中的 td 元素中，只能通过内嵌 HTML 的`<br>`（XHTML 自闭合写作 `<br />`）标签来实现局部换行。
 
 ### 分段
 段落是由一个或多个连续的文本行组成，它的前后往往需要**空行**予以明示分隔。
@@ -85,7 +84,7 @@ Markdown 精挑细选了一些符号组成了一套基于文本的标记语法�
 可以使用反斜杠（\\，backslash）转义输入 Markdown 标记符号的原义字符。  
 
 - - -
-\#：行首的 <kbd>#</kbd> 号默认为H1，这里使用反斜杠转义显示原义字符。  
+\#：行首的 <kbd>#</kbd>（此处使用 kbd 闭包显示键盘文本）号默认为H1，这里使用反斜杠转义显示原义字符。  
 
 ### 字符实体
 在 Markdown 中，空格和 tab 往往用于格式控制，例如：
@@ -104,7 +103,7 @@ Markdown 精挑细选了一些符号组成了一套基于文本的标记语法�
 _ _ _
   普通自然行行首敲2个空格无占位缩进效果。  
 &nbsp;&nbsp;&#160;&#160;该行行首添加了4个不断行的空白格：no-break space(`&nbsp;`或`&#160;`）  
-&ensp;&ensp;&ensp;&ensp;该行行首添加了4个半方大的空白：en space（`&ensp;`或`&#8194;`）  
+&ensp;&ensp;&#8194;&#8194;该行行首添加了4个半方大的空白：en space（`&ensp;`或`&#8194;`）  
 &emsp;&emsp;&#8195;&#8195;该行行首添加了4个全方大的空白：em space（`&emsp;`或`&#8195;`）
 
 ## 分隔线（Horizontal Rules）
@@ -207,14 +206,14 @@ Haroopad 语法（Caret）：`^Superscript^`
 HTML 语法：`<sup>superscript</sup>`
 
 **示例：**  
-2^10^ = 2<sup>10</sup> = 1024;
+`2^10^` = 2<sup>10</sup> = 1024;
 
 #### 下脚标：
 Haroopad 语法：`~Subscript~`  
 HTML 语法：`<sub>subscript</sub>`
 
 **示例：**  
-H~2~O = H<sub>2</sub>O is a liquid.
+`H~2~O` = H<sub>2</sub>O is a liquid.
 
 ## 链接（Hyperlink）
 ### 自动链接（Autolink）
@@ -246,7 +245,7 @@ _ _ _
 [Daring Fireball Markdown](http://daringfireball.net/projects/markdown/ "Markdown Official Website")
 
 - - -
-将鼠标悬停在超链接文本上将会提示 “Markdown Official Website”。
+当鼠标悬停在超链接文本上时，将会提示 “Markdown Official Website”。
 
 #### 参考式（Reference）
 参考式的链接是在链接文字的括号后面再接上另一个方括号，在第二个方括号里面填入用以辨识链接的标记id，然后在其他地方给出该标记id真正的链接地址。
@@ -270,7 +269,7 @@ _ _ _
 - - -
 **说明：**
 
-1. 你也可以选择性地在两个方括号中间加上一个空格：`[text] [refid]`。由于 Markdown 不支持自然换行，将两个方括号在连续两行书写也是没问题的。中间用空行隔开，则被认为是两条精简格式的参考链接。    
+1. 你也可以选择性地在两个方括号中间加上一个空格：`[text] [refid]`。由于 Markdown 不支持自然换行，将两个方括号在连续两行书写也是没问题的。中间用空行隔开，则被认为是两条精简格式的参考链接。  
 2. refid 可以与 text 一致，从而进一步精简参考链接的书写格式：    
 	- 此时 `[refid]` 中的 refid 可以省略置空为 `[]` ：先定义 `[text][]` ，再定义 `[text]:URL` 。
 	- 你甚至可以将 `[text][]` 中的空中括号也省掉不写，进一步简写为 `[text]` ，后面再定义 `[text]:URL` 。  
@@ -296,10 +295,10 @@ daringfirefall logo:
 Markdown 中的段落（包括图片）默认顶格左对齐，若要将图片居中，可以直接内嵌 HTML 的 `<img>` 标签，设置`align="middle"`。如果还不行，可以尝试封裹一层 div 设置 `style="text-align:center"` 实现：
 
 ```HTML
-<div style="text-align:center"><img src="http://my.csdn.net/uploads/avatar/9/D/B/1_phunxm.jpg" align="middle"  alt="程序猿-弦苦" /></div>
+<div style="text-align:center"><img src="http://avatar.csdn.net/9/D/B/1_phunxm.jpg" align="middle"  alt="程序猿-弦苦" /></div>
 ```
 
-<div style="text-align:center"><img src="http://my.csdn.net/uploads/avatar/9/D/B/1_phunxm.jpg" align="middle"  alt="程序猿-弦苦" /></div>
+<div style="text-align:center"><img src="http://avatar.csdn.net/9/D/B/1_phunxm.jpg" align="middle"  alt="程序猿-弦苦" /></div>
 
 #### 图片链接
 如果拷贝了别人的图片插入到自己的博客中，最好在图片上给出一个超链接指向源头，方便追溯出处。  
@@ -473,9 +472,9 @@ Fenced Code Block 以三个反引号（backtick quotes：`，有的支持波浪�
 
 - 以下演示插入一句 python 代码：
 
-> 首行：\`\`\`python  
+> 首行（三个反引号开头）：\`\`\`python  
 > 中间：print('Hello world!')  
-> 末行：\`\`\`
+> 末行（三个反引号结尾）：\`\`\`
 
 ```python
 print('Hello world!')
@@ -508,8 +507,8 @@ int main(int argc, char * argv[]) {
 
 **注意：**
 
-> 1. Haroopad 编辑器将上述代码中的`#import`的第一个有效字符`#`[误解为 H1][haroopad_bug_#536]，导致 TOC 错乱或  Heading Focus Folding 失效。此时，可以在Fenced Code Block 行首添加空格或 tab 缩进。
-> 2. 关于 GitHub 配置 Fenced Code Block 语法高亮所使用的 YAML 标记 ，可参考[初探YAML][]、[YAML学习][]、[YAML学习总结][]、[YAML--想要爱你很容易][]。
+> 1. Haroopad 编辑器将上述代码中的`#import`的第一个有效字符`#`[误解为 H1][haroopad_bug_#536]，导致 TOC 错乱或  Heading Focus Folding 失效。此时，可尝试在 Fenced Code Block 行首添加空格或 tab 缩进。
+> 2. 关于 GitHub 配置 Fenced Code Block 语法高亮所使用的 YAML 标记 ，可参考 [初探YAML][]、[YAML学习][]、[YAML学习总结][]、[YAML--想要爱你很容易][]。
 
 ## 列表（List）
 GFM 等 Markdown 扩展支持和无序列表、有序列表和任务列表。
@@ -565,7 +564,7 @@ GFM 等 Markdown 扩展支持和无序列表、有序列表和任务列表。
 **缩进控制符：空格 or TAB？**
 
 > 1. 在列表标记前面插入空格也可以实现缩进控制嵌套效果，但不同的 Markdown Render 对控制层级的空格个数要求不一。  
-> 2. 为了取得最佳的兼容性，建议使用 **tab** 来控制嵌套层级（nested hierarchy），以期在不同的渲染引擎下都能达到预期的显示效果。当然，前提是使用hard tabs（tab characters），而soft tabs（spaces）。
+> 2. 为了取得最佳的兼容性，建议使用 **tab** 来控制嵌套层级（nested hierarchy），以期在不同的渲染引擎下都能达到预期的显示效果。当然，前提是使用 hard tabs（tab characters），而非 soft tabs（spaces）。
 
 ### 有序列表（Ordered List）
 有序列表（ordered / numbered）项目的行首则使用数字接一个英文句点标记（use numbers followed by periods）：
