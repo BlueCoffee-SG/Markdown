@@ -17,11 +17,11 @@
 	- MarkdownPad：功能全面完善
 	- Visul Studio Code：轻量级，智能化，跨平台。
 
-**本人 Mac 日常写作伴侣：**
+**Mac 写作伴侣：**
 
-- 速记备忘：备忘录
-- 大纲勾勒：**FoldingText**
-- Markdown 博客：**FoldingText** + **Marked2**
+- 速记备忘：[**Notes**](http://www.macobserver.com/tmo/article/how-to-effectively-use-the-notes-app-in-ios-and-os-x)（备忘录）
+- 提纲挈领：**[OmniOutliner](https://www.omnigroup.com/omnioutliner/)**
+- 博客撰写：**[FoldingText](https://github.com/fan2/Markdown/blob/master/Help%20for%20FoldingText.md)** + **[Marked2](https://github.com/fan2/Markdown/blob/master/Help%20for%20Marked.md)**
 
 [Markdown 文本编辑器](http://www.zhihu.com/question/19637157)  
 [Markdown 编辑器之比较](http://www.jianshu.com/p/dcffb6f60fe2)  
