@@ -52,6 +52,7 @@ Shortcut  |  Function                       |  Comment
 Shortcut  |  Function                       |  Comment
 ----------|---------------------------------|----------------------
 `h` / `?`     | Show/Hide Help HUD              | 打开/关闭帮助导航仪浮层
+<kbd>⌥</kbd><kbd>⌘</kbd><kbd>k</kbd>     | 调出热键参考悬浮窗
 
 #### 主题
 默认主题（theme style）是Swiss，可切换测试 GitHub（<kbd>⌘</kbd><kbd>4</kbd>）主题。  
