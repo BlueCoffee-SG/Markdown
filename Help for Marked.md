@@ -1,5 +1,6 @@
 
 # [Marked](http://marked2app.com/)
+[Marked 2 使用方法集锦：开篇](http://www.waerfa.com/marked-2-intro)  
 [Marked 2 使用方法集锦：基础篇](http://www.waerfa.com/marked-2-basic-skills)
 
 ## Folding Text 调起 Marked 2
