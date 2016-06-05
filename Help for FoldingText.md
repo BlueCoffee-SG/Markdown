@@ -171,9 +171,10 @@ Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd> | 逐级展开，
 
 操作              | 快捷键                                | 功能
 ------------------|--------------------------------------|---
-Focus             | <kbd>⌘</kbd><kbd>u</kbd>             | 聚焦当前section
-Focus Out         | <kbd>⇧</kbd><kbd>⌘</kbd><kbd>u</kbd> | 展开到上一级section<br>可重复操作，逐级向上展开
-Focus Heading     | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>u</kbd> | 查看TOC浮窗<br/>可⬆️/⬇️移动，点击跳转
+Focus             | <kbd>⌘</kbd><kbd>U</kbd>             | 聚焦当前section
+Focus Out         | <kbd>⇧</kbd><kbd>⌘</kbd><kbd>U</kbd> | 展开到上一级section<br>可重复操作，逐级向上展开
+Focus Heading     | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>U</kbd> | 查看TOC浮窗<br/>可⬆️/⬇️移动，点击跳转
+Outline View      | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>T</kbd> | 查看TOC侧边栏
 
 ## References
 [Customizing FoldingText](http://computers.tutsplus.com/tutorials/customizing-foldingtext--cms-21674)
