@@ -12,11 +12,11 @@ Markdown 沿用 [HTML Comment][HTML_COMMENT_REFID] 注释格式：
 1. CSDN 博客默认会在网页生成TOC，而 GitHub 仍不支持`[TOC]`，因此在发布 Markdown 博客时可注释掉开头的 [TOC] 标签，在需要查看 OUTLINE 时再打开。  
 `<!--[TOC]-->`
 
-2. 在博客 Markdown 源码开头，我通常使用注释来备注 git commit-hash-id 和 commit-date 信息（git log -p ），以便修订变更时回溯。  
+2. 在博客 Markdown 源码开头，本人通常使用注释来备注 git commit-hash-id 和 commit-date 信息（git log -p ），以便修订变更时回溯。  
 `<!--commit 5326f29752b7ee3472aa00b40574bd585e3ef25b-->`  
 `<!--Mon Nov 2 00:36:40 2015 +0800-->`
 
-3. 在使用 Markdown 写作博客时，我喜欢采用参考式链接，然后在文末专门开辟一节用于定义文中用到的所有脚注和参考链接。借助 Haroopad/FoldingText/Marked2 的折叠特性，我习惯在末尾添加一行 Comment Heading，用于在阅读 Markdown 源码时折叠隐藏文末的参考区。  
+3. 在使用 Markdown 写作博客时，本人喜欢采用参考式链接，然后在文末专门开辟一节用于定义文中用到的所有脚注和参考链接。借助 Haroopad/FoldingText/Marked2 的折叠特性，本人习惯在末尾添加一行 Comment Heading，用于在阅读 Markdown 源码时折叠隐藏文末的参考区。  
 `##<!--以下是本文的脚注和超链接-->`
 
 ## <font color='red'>标题（Header）</font>[^Header]
@@ -84,27 +84,38 @@ Markdown 精挑细选了一些符号组成了一套基于文本的标记语法�
 可以使用反斜杠（\\，backslash）转义输入 Markdown 标记符号的原义字符。  
 
 - - -
-\#：行首的 <kbd>#</kbd>（此处使用 kbd 闭包显示键盘文本）号默认为H1，这里使用反斜杠转义显示原义字符。  
+\#：行首的 <kbd>#</kbd>（此处使用 kbd 闭包显示按键字幕）号默认为H1，这里使用反斜杠转义显示原义字符。  
 
 ### 字符实体
 在 Markdown 中，空格和 tab 往往用于格式控制，例如：
 
-- 行首插入 tab 或 四个空格缩进表示 `<pre>` 预格式化；
+- 行首插入 tab 或 四个空格 缩进表示 `<pre>` 预格式化；
 - 引用、列表的 bullet 标记符前的 tab 或 空格 用于缩进嵌套层级；
 - ...
 
-普通段落一般都是顶格开始，无法使用空格或 tab 来缩进，包括引用标记符（>）、列表标记符（bullet list indicator）后面的空格都无法实现缩进。  
+普通段落一般都是顶格开始，无法使用 空格 或 tab 来缩进，包括引用标记符（>）、列表标记符（bullet list indicator）后面的空格都无法实现缩进。  
 如果硬要输入空格显示占位缩进效果，可以嵌入空格对应的 [HTML Entity][] 实体码。HTML 转义字符串（Escape Sequence），即字符实体（Character Entity）。字符实体由三部分构成：
 
 1. 第一部分是一个 `&` （ampersand）符号；
-2. 第二部分是实体（Entity）名字，或者是 `#` 加上实体编号（[Entity Code][]）；
+2. 第二部分是实体（Entity）名字；或者 `#` 加上实体编号（[Entity Code][]）；
 3. 第三部分是一个分号 `;` （semicolon）。
 
+[HTML提供了5种空格实体][]（[space entity][]），它们拥有不同的宽度，非断行空格（`&nbsp;`）是常规空格的宽度，可运行于所有主流浏览器。其他几种空格（ `&ensp;`、`&emsp;`、`&thinsp;`、`&zwnj;`、`&zwj;`）在不同浏览器中宽度各异。
+
+entity | code    | full-name      | width
+-------|---------|----------------|----------
+`&nbsp;` | `&#160;`  | no-break space | 键盘空格（space bar）
+`&ensp;` | `&#8194;` | en space       | 半角空格（half-width）
+`&emsp;` | `&#8195;` | em space       | 全角空格（full-width）
+
+1. 在HTML中，使用`&nbsp;`产生的空格是不会累加的（只算1个）；要使用html实体表示才可累加。  
+2. `&ensp;`中的en是字体排印学的计量单位，为em宽度的一半，名义上是小写字母n的宽度。此空格传承空格家族一贯的特性：透明的！此空格有个相当稳健的特性，就是其占据的宽度正好是1/2个中文宽度，而且基本上不受字体影响。  
+3. `&emsp;`中的em是字体排印学的计量单位，相当于当前指定的点数。此空格也传承空格家族一贯的特性：透明的！此空格也有个相当稳健的特性，就是其占据的宽度正好是1个中文宽度，而且基本上不受字体影响。  
 _ _ _
   普通自然行行首敲2个空格无占位缩进效果。  
-&nbsp;&nbsp;&#160;&#160;该行行首添加了4个不断行的空白格：no-break space(`&nbsp;`或`&#160;`）  
-&ensp;&ensp;&#8194;&#8194;该行行首添加了4个半方大的空白：en space（`&ensp;`或`&#8194;`）  
-&emsp;&emsp;&#8195;&#8195;该行行首添加了4个全方大的空白：em space（`&emsp;`或`&#8195;`）
+&nbsp;&nbsp;&nbsp;&nbsp;该行行首添加了4个`&nbsp;`。  
+&ensp;&ensp;&ensp;&ensp;该行行首添加了4个`&ensp;`。  
+&emsp;&emsp;&emsp;&emsp;该行行首添加了4个`&emsp;`。
 
 ## 分隔线（Horizontal Rules）
 你可以在一行中用三个以上的星号（asterisks：*）或减号（hyphens：-）或底线（underscores：_）来建立一个水平分隔线，对应 HTML 中的 `<hr>` 标签，用于Sentence/Section/Page Break。  
@@ -218,7 +229,7 @@ HTML 语法：`<sub>subscript</sub>`
 ## 链接（Hyperlink）
 ### 自动链接（Autolink）
 当我们在书写一个网址时，有些 Markdown Render 能自动生成标题（title）与网址（href URL）一致的链接，这种链接也即**自动链接**。  
-Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要用尖括号包起来的文字， Markdown 就会自动把它转化成链接。  
+Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要用尖括号包起来的文字， Markdown 就会自动识别转化成链接。  
 对于 HTTP(s) 协议开头的超链接地址，甚至无需添加尖括号明示，也会生成自动链接。  
 
 <http://daringfireball.net/projects/markdown/>
@@ -269,7 +280,7 @@ _ _ _
 - - -
 **说明：**
 
-1. 你也可以选择性地在两个方括号中间加上一个空格：`[text] [refid]`。由于 Markdown 不支持自然换行，将两个方括号在连续两行书写也是没问题的。中间用空行隔开，则被认为是两条精简格式的参考链接。  
+1. 也可选择性地在两个方括号中间加上一个空格：`[text] [refid]`。由于 Markdown 不支持自然换行，将两个方括号在连续两行书写也是没问题的。中间用空行隔开，则被认为是两条精简格式的参考链接。  
 2. refid 可以与 text 一致，从而进一步精简参考链接的书写格式：    
 	- 此时 `[refid]` 中的 refid 可以省略置空为 `[]` ：先定义 `[text][]` ，再定义 `[text]:URL` 。
 	- 你甚至可以将 `[text][]` 中的空中括号也省掉不写，进一步简写为 `[text]` ，后面再定义 `[text]:URL` 。  
@@ -302,7 +313,7 @@ Markdown 中的段落（包括图片）默认顶格左对齐，若要将图片�
 
 #### 图片链接
 如果拷贝了别人的图片插入到自己的博客中，最好在图片上给出一个超链接指向源头，方便追溯出处。  
-我们在 Markdown 图片标记`![]()`外面再嵌套一层`[]()`即可建立图片超链接，点击图片即可跳转到链接地址。  
+我们在 Markdown 图片标记`![]()`外面再嵌套一层`[]()`即可建立图片超链接，点击图片即可跳转到链接源地址。  
 图片链接的格式看起来大概是这样的:  
 `[![](img_url)](ref_url)`
 
@@ -423,7 +434,7 @@ Use the`` `printf()` ``function.(\`\` \`printf()\` \`\`\`)
 **语法：**
 
 - Preformatted Code Block  
-	在句段的行首插入1个 tab 或4个空格，则表示代码块。  
+	在句段的行首插入1个tab 或 4个空格，则表示代码块。  
 - [Fenced Code Block]  
 	在句段行首和行末用三个反引号换行闭包，并在行首三个反引号后添加 [YAML][] 语言标识。
 
@@ -450,7 +461,7 @@ _ _ _
 	these lines begin with tab will be shown as pre code block.
 	these lines begin with tab will be shown as pre code block.
 	
-（2）以四个空格开头：
+（2）以4个空格开头：
 
     these lines begin with 4 spaces will also be shown as pre code block.
     these lines begin with 4 spaces will also be shown as pre code block.
@@ -528,7 +539,7 @@ GFM 等 Markdown 扩展支持和无序列表、有序列表和任务列表。
 + bullet list item 2 begin with a '+'
 * bullet list item 3 begin with a '*'
 
-通过在列表标记前面增加 tab 阶次可以实现嵌套效果（nested list）。  
+通过在列表标记前面增加 tab 阶次来实现嵌套效果（nested list）。  
 以下是针对本文 TOC 中【链接】这一章节的目录：
 
 ```Markdown
@@ -685,6 +696,8 @@ $$E=mc^2$$
 
 [HTML Entity]:http://114.xixik.com/character/
 [Entity Code]:http://entity-lookup.leftlogic.com/
+[HTML提供了5种空格实体]:http://www.oicqzone.com/pc/2015083122336.html
+[space entity]:http://www.cnblogs.com/BaishangBloom/p/4642519.html
 
 [CriticMarkup]:http://www.criticmarkup.com/
 [MultiMarkdown]:http://fletcherpenney.net/multimarkdown/
