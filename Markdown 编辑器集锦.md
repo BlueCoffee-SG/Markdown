@@ -2,20 +2,20 @@
 <!-- http://blog.csdn.net/phunxm/article/details/50706386 -->
 
 **Web App 推荐：**
-    
+​    
 - StackEdit / Classeur
 
 **客户端推荐：**
 
 1. Mac 端
-	- Macdown：开源 Mou，优于 Mou
-	- Haroopad：支持行号、折叠、自动提示；跨平台
-	- FoldingText + Marked2：大纲勾勒，纯文本写作，实时渲染预览。
+   - Macdown：开源 Mou，优于 Mou
+   - Haroopad：支持行号、折叠、自动提示；跨平台
+   - FoldingText + Marked2：大纲勾勒，纯文本写作，实时渲染预览。
 
 2. Windows 端
-	- CuteMarked：支持侧栏 TOC
-	- MarkdownPad：功能全面完善
-	- Visul Studio Code：轻量级，智能化，跨平台。
+   - MarkdownPad：功能全面完善。
+   - Typora：优雅、一体化、行云流水，跨平台。
+   - Visul Studio Code：轻量级，智能化，跨平台。
 
 **Mac 写作伴侣：**
 
@@ -94,7 +94,7 @@ StackEdit 以 Mou 那种左编辑右预览的 WYSIWYG 分栏呈现，支持切�
 - 基于 **[Stack Overflow](http://stackoverflow.com/)** 和 **[Stack Exchange](http://stackexchange.com/)** 所使用的 [PageDown](https://github.com/ujifgc/pagedown) 开发的[开源](https://github.com/benweet/stackedit/) Web App，可以 Chrome 插件形式运行，即使离线也可打开浏览器使用。  
 - 支持从URL或本地磁盘导入文件编辑，编辑实时保存到浏览器本地存储（[browser's local storage](https://developer.mozilla.org/en-US/docs/Web/Guide/DOM/Storage#localStorage)）中；同时也提供了类 [MarkDrop](http://www.cultofmac.com/258241/markdrop-new-minimalistic-markdown-editor-mac) 的分享以及云存储的同步支持。  
 - 编辑完成可将文档从浏览器导出（下载）到本地磁盘，支持导出Markdown、HTML和PDF格式；同时也支持直接直接发布到网上（Publish/Export to the web），例如Blogger、WordPress、DropBox、Google Drive、GitHub/Gist等。
- 
+
 > [推荐的MarkDown在线编辑器 StackEdit](http://www.xuanfengge.com/markdown-to-recommend-online-editor-stackedit.html)  
 > [功能强大的Markdown编辑器StackEdit](http://www.guokr.com/post/544861/)
 
@@ -227,7 +227,7 @@ The Markdown enabled Next Document Processor
 
 + default: solarized dark
 + recommended: 3024-day, **paraiso-light**; monokai, **erlang dark**, paraiso-dark.
- 
+
 **Preview Themes**:
 
 + default: haroopad
@@ -253,14 +253,6 @@ CuteMarkEd 也是采用 WYSIWYG 分栏式设计，支持右边栏显示 TOC。
 
 - 如果使用Eclipse，可以安装[Markdown Editor plugin for Eclipse](http://www.winterwell.com/software/markdown-editor.php)。
 - 浏览器撰写邮件可使用[Markdown-Here](http://markdown-here.com/)插件。
-
-#### [typora](http://typora.io)（Mac）
-a minimal markdown editor
-
-将「写字」和「预览」这两件事情合并了，即时输入即时输出，即现在很流行的 WYSIWYG（What You See Is What You Get）。  
-
-> [Typora：没有 Preview 窗口的奇怪文本编辑器](http://www.waerfa.com/typora)  
-> [让 Markdown 写作更简单，免费极简编辑器：Typora](http://sspai.com/30292)
 
 #### [MWeb](http://coderforart.com/mweb-zh.html)（Mac）
 MWeb 是一站式的 Markdown 编辑和静态网站生成解决方案。  
@@ -322,6 +314,21 @@ Visual Studio Code (简称 VS Code / VSC) 是一款免费开源的现代化轻�
 > [Visual Studio Code 的 10 个超棒特性](http://www.oschina.net/translate/10-awesome-features-of-visual-studio-code)  
 > [不得不爱，Visual Studio Code十大超酷特性](http://www.ithome.com/html/it/152920.htm)
 
+#### [typora](http://typora.io)（Mac）
+a minimal markdown editor
+
+将「写字」和「预览」这两件事情合并了，即时输入即时输出，即现在很流行的 WYSIWYG（What You See Is What You Get）。typora 支持一键切换源码编辑和预览阅读模式，支持自动生成和显示大纲目录。  
+
+相比其他 markdown 编辑阅读软件，typora 极简、优雅、一体化地交互模式，让笔触生风、让写作行云流水。macOS 上可作为 FoldingText+Marked 的替代方案，亦可作为 Haroopad、Visual Studio Code 等跨平台替代写作平台。  
+
+![typora-source_code](Typora/typora-source_code.png)
+
+![typora-reader_mode](Typora/typora-reader_mode.png)
+
+> [Typora：没有 Preview 窗口的奇怪文本编辑器](http://www.waerfa.com/typora)  
+> [让 Markdown 写作更简单，免费极简编辑器：Typora](http://sspai.com/30292)  
+> [Typora - 颠覆写作体验的免费极简 Markdown 编辑器](http://www.iplaysoft.com/typora.html)
+
 ## 4.专业文档编辑器
 ### [iA Writer](www.iawriter.com/mac/)
 iA structures, designs and builds websites, apps and videos, reducing form and content to their essence.
@@ -370,11 +377,11 @@ Scrivener 是 Mac 平台上功能重量级的 Markdown 編輯器，可以在個�
 Dynamic Documents for R
 
 - **Markdown Basics**  
-<!-- ![rMarkdown](http://rmarkdown.rstudio.com/images/markdownOverview.png) -->
+  <!-- ![rMarkdown](http://rmarkdown.rstudio.com/images/markdownOverview.png) -->
 
 - **R Code Chunks**  
-<!-- ![R Code](http://rmarkdown.rstudio.com/images/markdownChunk.png) -->
- 
+  <!-- ![R Code](http://rmarkdown.rstudio.com/images/markdownChunk.png) -->
+
 R Markdown is an authoring format that enables easy creation of dynamic documents, presentations, and reports from R. It combines the core syntax of markdown (an easy-to-write plain text format) with embedded R code chunks that are run so their output can be included in the final document. R Markdown documents are fully reproducible (they can be automatically regenerated whenever underlying R code or data changes).
 
 > [如何开始R语言](http://blog.sina.com.cn/s/blog_403aa80a0101aowm.html)  
@@ -404,7 +411,7 @@ Markdown+Pandoc 可以把自己的写作内容，变成已有的任何格式的�
 ### [CocoaMarkdown](https://github.com/indragiek/CocoaMarkdown)
 
 > Markdown parsing and rendering for iOS and OS X
-> 
+>
 > CocoaMarkdown is a cross-platform framework for parsing and rendering Markdown, built on top of the [C reference implementation](https://github.com/jgm/CommonMark) of [CommonMark](http://commonmark.org/).
 
 [maxiang-desktop]: http://maxiang.info/client_zh
