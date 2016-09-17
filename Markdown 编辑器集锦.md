@@ -108,6 +108,17 @@ StackEdit 以 Mou 那种左编辑右预览的 WYSIWYG 分栏呈现，支持切�
 Classeur 是简洁、轻巧的 Markdown 写作工具。  
 [Classeur](https://github.com/classeur/classeur) 是 **StackEdit** 的孪生版本，提供了增强优化设计的Chrome/Mac APP。
 
+### [Madoko](https://www.madoko.net/)
+MS Research 荣誉出品，IDE 级在线编辑器。
+
+Write Beautiful Documents
+
+Madoko is a fast markdown processor for writing professional articles, books, manuals, webpages and presentations, with a focus on simplicity and plain text readability.
+
+With Madoko you can write complex documents completely in markdown and get beautiful PDF and HTML output.
+
+![Madoko](Madoko/Madoko.png)
+
 ## 2.Markdown Online+Client
 ### [小书匠](http://markdown.xiaoshujiang.com/)
 [小书匠](http://xiaoshujiang.com/)：一个在线的协同写作与阅读网站。
@@ -171,7 +182,82 @@ It is heavily influenced by Chen Luo’s Mou.
 - tomorrow
 
 > [Mac 下两款 Markdown 编辑器 Mou/MacDown 大 PK](http://www.macgg.com/archives/34004.html)  
-> [Macdown Preferences for Markdown Extras](https://github.com/fan2/Markdown/blob/master/Macdown%20Preferences%20for%20Markdown%20Extras.md)  
+> [Macdown Preferences for Markdown Extras](https://github.com/fan2/Markdown/blob/master/Macdown%20Preferences.md)  
+
+### [Haroopad](http://pad.haroopress.com/)（Win+Mac+Linux）
+The Markdown enabled Next Document Processor
+
+<!-- ![Haroopad](http://pad.haroopress.com/assets/images/intro/1.png) -->
+
++ Everything in Markdown
++ Your documents live on air
++ Writing on anywhere
+
+**Features**:
+
++ Line Number, Markdown Folding, Auto Completion
++ GFM + Extensions, MathJax, Diagram
+
+**Editor Themes**:
+
++ default: solarized dark
++ recommended: 3024-day, **paraiso-light**; monokai, **erlang dark**, paraiso-dark.
+
+**Preview Themes**:
+
++ default: haroopad
++ recommended: metro vibes dark, **node dark**
+
+![Haroopad](http://img.blog.csdn.net/20160221100206237 "Haroopad")
+
+### [Atom](https://atom.io/)（Win+Mac+Linux）
+A hackable text editor for the 21st Century
+
+在开发编辑器相争的领域，我们看到了不少的更新换代。最后一次使Web开发界轰动的编辑器，非Sublime Text莫属了，特别是在Package Control出现之后，更为其增添了不少光彩，它提供了完美的包管理功能，使用户能够方便的安装管理各种插件。
+
+Atom 是由 Github 打造的下一代编程开发利器，一个为21世纪所创造的可配置编辑器。当你第一次使用Atom的时候，你会发现它像极了Sublime，在视觉上很有冲击力。
+
+Atom 编辑器完全是使用Web技术构建的。比如，底层依赖的架构是Chromium(Google Chorome的开源项目)，使得每一个窗口都是本地渲染的网页。除此之外，他们（Atom的开发者）还把Node.js加了进来，为的是方便文件操作、可扩展的包管理(npm)，使得Atom变得高度可定制化，你可以随意安装各种npm包来扩展编辑器的功能。
+
+> [Atom 更为先进的文本代码编辑器](http://www.iplaysoft.com/atom-editor.html)  
+> [试用Atom，Github的开发神器](http://www.ituring.com.cn/article/72264)  
+> [文本编辑器（Atom）](http://ninghao.net/blog/2073) / [Atom使用纪要](http://www.cnblogs.com/Darren_code/p/atom.html)  
+> [博客专栏>Web前端专栏>Atom编辑器](http://blog.csdn.net/column/details/atom.html)
+
+### [Visual Studio Code](https://code.visualstudio.com/Download)（Win+Mac+Linux）
+Code focused development. Redefined.
+
+在 Build 2015 大会上，微软除了发布了 Microsoft Edge 浏览器和新的 Windows 10 系统外，最大的惊喜莫过于宣布推出免费跨平台的 Visual Studio Code 编辑器了！
+
+Visual Studio Code (简称 VS Code / VSC) 是一款免费开源的现代化轻量级代码编辑器，支持语法高亮、智能代码补全、自定义热键、括号匹配、代码片段、代码对比 Diff、GIT 等特性，并针对网页开发和云端应用开发做了优化。软件跨平台支持 Win、Mac 以及 Linux，运行流畅，可谓是微软的良心之作……
+
+通过菜单 View 呼出 Command Palette，然后输入"Markdown"，选择“Markdown: Toggle Preview”可查看预览渲染效果或选择“Markdown: Open Preview to the Side”在右侧窗口预览渲染效果。
+
+![Visual Studio Code](http://img.blog.csdn.net/20160221104335925 "Visual Studio Code")
+
+> [Visual Studio Code 的简单试用体验](http://blog.jobbole.com/86576/)  
+> [微软 Visual Studio Code 免费跨平台代码编辑器](http://www.iplaysoft.com/visual-studio-code.html)   
+> [Visual Studio Code 的 10 个超棒特性](http://www.oschina.net/translate/10-awesome-features-of-visual-studio-code)  
+> [不得不爱，Visual Studio Code十大超酷特性](http://www.ithome.com/html/it/152920.htm)
+
+### [typora](http://typora.io)（Win+Mac）
+a minimal markdown editor
+
+typora 将「写字」和「预览」这两件事情合并了，即时输入即时输出，即现在很流行的 WYSIWYG（What You See Is What You Get）。typora 支持一键切换源码编辑和预览阅读模式，支持自动生成和显示大纲目录。  
+
+相比其他 markdown 编辑阅读软件，typora 极简、优雅、一体化地交互模式，让笔触生风、让写作行云流水。macOS 上可作为 FoldingText+Marked 的备换工具，亦可作为 Haroopad、Visual Studio Code 等跨平台替代写作平台。  
+
+![typora-source_code](Typora/typora-source_code.png)
+
+<!--![typora-source_code](http://img.blog.csdn.net/20160913225031208)-->
+
+![typora-reader_mode](Typora/typora-reader_mode.png)
+
+<!--![typora-reader_mode](http://img.blog.csdn.net/20160913225100901)-->
+
+> [Typora：没有 Preview 窗口的奇怪文本编辑器](http://www.waerfa.com/typora)  
+> [让 Markdown 写作更简单，免费极简编辑器：Typora](http://sspai.com/30292)  
+> [Typora - 颠覆写作体验的免费极简 Markdown 编辑器](http://www.iplaysoft.com/typora.html)
 
 ### FoldingText + Marked（Mac）
 #### [FoldingText](http://www.foldingtext.com/)
@@ -214,50 +300,26 @@ Marked 2 ***detects*** changes and ***updates*** faster than ever. It will even 
 > [Marked——高效的Markdown解析器](http://blog.fens.me/nodejs-markdown-marked/)  
 > [Marked 2 使用方法集锦：基础篇](http://www.waerfa.com/marked-2-basic-skills)
 
-### [Haroopad](http://pad.haroopress.com/)（Win+Mac+Linux）
-The Markdown enabled Next Document Processor
+### 其他推荐
 
-<!-- ![Haroopad](http://pad.haroopress.com/assets/images/intro/1.png) -->
+- 如果使用Eclipse，可以安装[Markdown Editor plugin for Eclipse](http://www.winterwell.com/software/markdown-editor.php)。
+- 浏览器撰写邮件可使用[Markdown-Here](http://markdown-here.com/)插件。
 
-+ Everything in Markdown
-+ Your documents live on air
-+ Writing on anywhere
-
-**Features**:
-
-+ Line Number, Markdown Folding, Auto Completion
-+ GFM + Extensions, MathJax, Diagram
-
-**Editor Themes**:
-
-+ default: solarized dark
-+ recommended: 3024-day, **paraiso-light**; monokai, **erlang dark**, paraiso-dark.
-
-**Preview Themes**:
-
-+ default: haroopad
-+ recommended: metro vibes dark, **node dark**
-
-![Haroopad](http://img.blog.csdn.net/20160221100206237 "Haroopad")
-
-### [MarkdownPad](http://www.markdownpad.com/)（Windows）
+#### [MarkdownPad](http://www.markdownpad.com/)（Windows）
 [MarkdownPad](http://www.ttrar.com/html/MarkdownPad-Pro.html) is a full-featured Markdown editor for Windows.
 
 ![MarkdownPad](http://markdownpad.com/img/markdownpad2.png "MarkdownPad")
 
 MarkdownPad 是 Windows 平台上的一个功能完善的 Markdown 编辑器。
 
-### [CuteMarkEd](http://cloose.github.io/CuteMarkEd/)（Windows）
+#### [CuteMarkEd](http://cloose.github.io/CuteMarkEd/)（Windows）
 A Qt-based, free and open source Markdown editor with live HTML preview, math expressions, code and markdown syntax highlighting.
 
 CuteMarkEd 也是采用 WYSIWYG 分栏式设计，支持右边栏显示 TOC。
 
-![CuteMarkEd](http://cloose.github.io/CuteMarkEd/images/screenshot_06.png "CuteMarkEd")
+<!--![CuteMarkEd](http://cloose.github.io/CuteMarkEd/images/screenshot_06.png "CuteMarkEd")-->
 
-### 其他推荐
-
-- 如果使用Eclipse，可以安装[Markdown Editor plugin for Eclipse](http://www.winterwell.com/software/markdown-editor.php)。
-- 浏览器撰写邮件可使用[Markdown-Here](http://markdown-here.com/)插件。
+![CuteMarkEd](https://camo.githubusercontent.com/646f0ab4041ff210c41bf8447bef4d99ebf98c7c/687474703a2f2f636c6f6f73652e6769746875622e696f2f437574654d61726b45642f696d616765732f73637265656e73686f745f30362e706e67 "CuteMarkEd")
 
 #### [MWeb](http://coderforart.com/mweb-zh.html)（Mac）
 MWeb 是一站式的 Markdown 编辑和静态网站生成解决方案。  
@@ -288,55 +350,6 @@ Smark 在后台调用 pandoc 将当前编辑的 markdown 内容转化为 HTML，
 - 可通过用户指明 CSS 文件定义显示式样；
 - 完美支持 LaTex 数学公式、脚注、尾注等，支持使用本地 MathJax 调用，不需要在线访问 MathJax CDN；
 - 多种格式文件导出支持，可将当前 Markdown 文件另存为 HTML、 Miscrosoft Word、OpenOffice / LibreOffice ODT Document、Latex、PDF、reStructured Text、Media Wiki markup、epub 以及 plain txt 等格式文件输出；
-
-#### [Atom](https://atom.io/)（Win+Mac+Linux）
-A hackable text editor for the 21st Century
-
-在开发编辑器相争的领域，我们看到了不少的更新换代。最后一次使Web开发界轰动的编辑器，非Sublime Text莫属了，特别是在Package Control出现之后，更为其增添了不少光彩，它提供了完美的包管理功能，使用户能够方便的安装管理各种插件。
-
-Atom 是由 Github 打造的下一代编程开发利器，一个为21世纪所创造的可配置编辑器。当你第一次使用Atom的时候，你会发现它像极了Sublime，在视觉上很有冲击力。
-
-Atom 编辑器完全是使用Web技术构建的。比如，底层依赖的架构是Chromium(Google Chorome的开源项目)，使得每一个窗口都是本地渲染的网页。除此之外，他们（Atom的开发者）还把Node.js加了进来，为的是方便文件操作、可扩展的包管理(npm)，使得Atom变得高度可定制化，你可以随意安装各种npm包来扩展编辑器的功能。
-
-> [Atom 更为先进的文本代码编辑器](http://www.iplaysoft.com/atom-editor.html)  
-> [试用Atom，Github的开发神器](http://www.ituring.com.cn/article/72264)  
-> [文本编辑器（Atom）](http://ninghao.net/blog/2073) / [Atom使用纪要](http://www.cnblogs.com/Darren_code/p/atom.html)  
-> [博客专栏>Web前端专栏>Atom编辑器](http://blog.csdn.net/column/details/atom.html)
-
-#### [Visual Studio Code](https://code.visualstudio.com/Download)（Win+Mac+Linux）
-Code focused development. Redefined.
-
-在 Build 2015 大会上，微软除了发布了 Microsoft Edge 浏览器和新的 Windows 10 系统外，最大的惊喜莫过于宣布推出免费跨平台的 Visual Studio Code 编辑器了！
-
-Visual Studio Code (简称 VS Code / VSC) 是一款免费开源的现代化轻量级代码编辑器，支持语法高亮、智能代码补全、自定义热键、括号匹配、代码片段、代码对比 Diff、GIT 等特性，并针对网页开发和云端应用开发做了优化。软件跨平台支持 Win、Mac 以及 Linux，运行流畅，可谓是微软的良心之作……
-
-通过菜单 View 呼出 Command Palette，然后输入"Markdown"，选择“Markdown: Toggle Preview”可查看预览渲染效果或选择“Markdown: Open Preview to the Side”在右侧窗口预览渲染效果。
-
-![Visual Studio Code](http://img.blog.csdn.net/20160221104335925 "Visual Studio Code")
-
-> [Visual Studio Code 的简单试用体验](http://blog.jobbole.com/86576/)  
-> [微软 Visual Studio Code 免费跨平台代码编辑器](http://www.iplaysoft.com/visual-studio-code.html)   
-> [Visual Studio Code 的 10 个超棒特性](http://www.oschina.net/translate/10-awesome-features-of-visual-studio-code)  
-> [不得不爱，Visual Studio Code十大超酷特性](http://www.ithome.com/html/it/152920.htm)
-
-#### [typora](http://typora.io)（Win+Mac）
-a minimal markdown editor
-
-typora 将「写字」和「预览」这两件事情合并了，即时输入即时输出，即现在很流行的 WYSIWYG（What You See Is What You Get）。typora 支持一键切换源码编辑和预览阅读模式，支持自动生成和显示大纲目录。  
-
-相比其他 markdown 编辑阅读软件，typora 极简、优雅、一体化地交互模式，让笔触生风、让写作行云流水。macOS 上可作为 FoldingText+Marked 的备换工具，亦可作为 Haroopad、Visual Studio Code 等跨平台替代写作平台。  
-
-![typora-source_code](Typora/typora-source_code.png)
-
-<!--![typora-source_code](http://img.blog.csdn.net/20160913225031208)-->
-
-![typora-reader_mode](Typora/typora-reader_mode.png)
-
-<!--![typora-reader_mode](http://img.blog.csdn.net/20160913225100901)-->
-
-> [Typora：没有 Preview 窗口的奇怪文本编辑器](http://www.waerfa.com/typora)  
-> [让 Markdown 写作更简单，免费极简编辑器：Typora](http://sspai.com/30292)  
-> [Typora - 颠覆写作体验的免费极简 Markdown 编辑器](http://www.iplaysoft.com/typora.html)
 
 ## 4.专业文档编辑器
 ### [iA Writer](www.iawriter.com/mac/)
@@ -370,6 +383,27 @@ Ulysses 是一款非常强大的 Markdown 工具。相对其他的纯 Markdown �
 
 > [Ulysses III 这款写作软件的使用体验如何？](http://www.zhihu.com/question/20927359)  
 > [Markdown 编辑器佼佼者：Ulysses III 上手初体验](http://sspai.com/27336)
+
+### [Quiver](http://happenapps.com/#quiver)
+The Programmer's Notebook
+
+![Quiver-Overlook](http://happenapps.com/images/quiver/screenshot1.png)
+
+- Mix text with code  
+- An awesome code editor  
+- Markdown Support  
+- LaTeX Support  
+- ...
+
+Quiver is a notebook built for programmers. It lets you easily mix text, code, Markdown and LaTeX within one note, edit code with an awesome code editor, live preview Markdown and LaTeX, and find any note instantly via the full-text search.
+
+If you want to start using Quiver right away, just remember one thing:
+
+> A note in Quiver is comprised of **_cells_**.
+
+Cells are snippets of text, code, Markdown or LaTeX that you can freely mix. You can even set different languages for different code cells inside the same note.
+
+> [技术写作者的专属笔记本：Quiver](http://sspai.com/32193/)
 
 ### [Scrivener](http://www.literatureandlatte.com/)
 Scrivener is a powerful content-generation tool for writers that allows you to concentrate on composing and structuring long and difficult documents. While it gives you complete control of the formatting, its focus is on helping you get to the end of that awkward first draft.  
