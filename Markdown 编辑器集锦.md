@@ -1,8 +1,10 @@
+
+
 <!--[TOC]-->
 <!-- http://blog.csdn.net/phunxm/article/details/50706386 -->
 
 **Web App 推荐：**
-​    
+
 - StackEdit / Classeur
 
 **客户端推荐：**
@@ -314,16 +316,20 @@ Visual Studio Code (简称 VS Code / VSC) 是一款免费开源的现代化轻�
 > [Visual Studio Code 的 10 个超棒特性](http://www.oschina.net/translate/10-awesome-features-of-visual-studio-code)  
 > [不得不爱，Visual Studio Code十大超酷特性](http://www.ithome.com/html/it/152920.htm)
 
-#### [typora](http://typora.io)（Mac）
+#### [typora](http://typora.io)（Win+Mac）
 a minimal markdown editor
 
-将「写字」和「预览」这两件事情合并了，即时输入即时输出，即现在很流行的 WYSIWYG（What You See Is What You Get）。typora 支持一键切换源码编辑和预览阅读模式，支持自动生成和显示大纲目录。  
+typora 将「写字」和「预览」这两件事情合并了，即时输入即时输出，即现在很流行的 WYSIWYG（What You See Is What You Get）。typora 支持一键切换源码编辑和预览阅读模式，支持自动生成和显示大纲目录。  
 
-相比其他 markdown 编辑阅读软件，typora 极简、优雅、一体化地交互模式，让笔触生风、让写作行云流水。macOS 上可作为 FoldingText+Marked 的替代方案，亦可作为 Haroopad、Visual Studio Code 等跨平台替代写作平台。  
+相比其他 markdown 编辑阅读软件，typora 极简、优雅、一体化地交互模式，让笔触生风、让写作行云流水。macOS 上可作为 FoldingText+Marked 的备换工具，亦可作为 Haroopad、Visual Studio Code 等跨平台替代写作平台。  
 
 ![typora-source_code](Typora/typora-source_code.png)
 
+<!--![typora-source_code](http://img.blog.csdn.net/20160913225031208)-->
+
 ![typora-reader_mode](Typora/typora-reader_mode.png)
+
+<!--![typora-reader_mode](http://img.blog.csdn.net/20160913225100901)-->
 
 > [Typora：没有 Preview 窗口的奇怪文本编辑器](http://www.waerfa.com/typora)  
 > [让 Markdown 写作更简单，免费极简编辑器：Typora](http://sspai.com/30292)  
