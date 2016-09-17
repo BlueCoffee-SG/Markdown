@@ -180,15 +180,18 @@ It is heavily influenced by Chen Luo’s Mou.
 Remember, it's all just text.  
 FoldingText uses [Markdown](http://daringfireball.net/projects/markdown/) formatting to give structure to your text files.
 
-出自 TaskPaper 和 WriteRoom 的同名作者 Jesse Grosjean 之手。
+出自 TaskPaper 和 WriteRoom 的同名作者 Jesse Grosjean 之手，集 `Calc`、`Todo`、`Schedule`、`Timer`、`Stopwatch` 等模式于一身，简约而不简单。
 
-和其它的 markdown editor 完全不同的是 FoldingText 文件 **`.ft`** 表面上是个纯文本，在程序背后是用树形结构进行组织的。树状结构的每个结节叫 `node`，文本中的任何一段都是一个 `node`。  
-FT Outliner 提供针对类似 vim text object 粒度的 `Folding`、`Focus`、`Move & Organize` 等操作。可针对当前缩进 Level、Heading 进行折叠或聚焦编辑。  
+当鼠标移出 Markdown Format 控制符时，隐藏控制符，及时渲染进入阅读模式；当鼠标移至格式符内时，可重新返回编辑模式。这种智能的模式软切换特性提供了**_沉浸式_**的写作体验。同时，保留前置章节符号（Heading： `#`）作为大纲节点，以便清晰地了解当前章节所属纲领层次。
 
-FoldingText支持 **Plugins** 和 **AppleScript** 扩展：
+![FoldingText-Demo](FoldingText/FoldingText.png)
 
-- 可安装插件[`rendered_images_for_folding_text`](https://github.com/carolineartz/rendered_images_for_folding_text) 支持 [@img](http://support.foldingtext.com/t/markdown-image-support/397) 渲染  
-- 调用AppleScript生成[TOC](http://support.foldingtext.com/t/toc-table-of-content-generator/295)、[table](http://support.foldingtext.com/t/scripting-easy-creation-of-text-tables-flat-and-nested/283) 或 调用 Marked 2 预览。 
+FoldingText 表面上是以纯文本格式呈现，但程序背后采用 Node Paths 进行树状结构化存储和解析，文本中的任何一段都是一个节点（`node`），可提供类似 vim text object 粒度的 `Move` & `Organize` 等操作，可针对当前缩进 Level、Heading 进行折叠或聚焦。
+
+FoldingText 支持 **Plugins** 和 **AppleScript** 扩展：
+
+- 可安装插件 [`rendered_images_for_folding_text`](https://github.com/carolineartz/rendered_images_for_folding_text) 支持 [@img](http://support.foldingtext.com/t/markdown-image-support/397) 渲染  
+- 调用 AppleScript 生成 [TOC](http://support.foldingtext.com/t/toc-table-of-content-generator/295)、[table](http://support.foldingtext.com/t/scripting-easy-creation-of-text-tables-flat-and-nested/283) 或 调用 Marked 2 预览。 
 
 > [FoldingText - 伪装成 markdown 编辑器的 outliner](http://www.v2ex.com/t/123024)  
 > [RobTrew / tree-tools](https://github.com/RobTrew/tree-tools)  
