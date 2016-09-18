@@ -5,7 +5,8 @@
 
 **Web App 推荐：**
 
-- StackEdit / Classeur
+- [StackEdit](https://stackedit.io/) / [**Classeur**](https://classeur.io/)  
+- [**Modoko**](https://www.madoko.net/)
 
 **客户端推荐：**
 
@@ -21,7 +22,7 @@
 
 **Mac 写作伴侣：**
 
-- 速记备忘：[**Notes**](http://www.macobserver.com/tmo/article/how-to-effectively-use-the-notes-app-in-ios-and-os-x)（备忘录）
+- 速记/笔记：[**Notes**](http://www.macobserver.com/tmo/article/how-to-effectively-use-the-notes-app-in-ios-and-os-x)（备忘录）+ [**Quiver**](http://happenapps.com/#quiver)
 - 提纲挈领：**[OmniOutliner](https://www.omnigroup.com/omnioutliner/)**
 - 博客撰写：**[FoldingText](https://github.com/fan2/Markdown/blob/master/Help%20for%20FoldingText.md)** + **[Marked2](https://github.com/fan2/Markdown/blob/master/Help%20for%20Marked.md)**
 
@@ -117,7 +118,9 @@ Madoko is a fast markdown processor for writing professional articles, books, ma
 
 With Madoko you can write complex documents completely in markdown and get beautiful PDF and HTML output.
 
-![Madoko](Madoko/Madoko.png)
+<!--![Madoko](Madoko/Madoko.png)-->
+
+![Madoko](http://img.blog.csdn.net/20160918074814514)
 
 ## 2.Markdown Online+Client
 ### [小书匠](http://markdown.xiaoshujiang.com/)
