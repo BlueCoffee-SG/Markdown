@@ -1,14 +1,13 @@
 
-
 <!--[TOC]-->
 <!-- http://blog.csdn.net/phunxm/article/details/50706386 -->
 
-**Web App 推荐：**
+**1. Web App 推荐：**  
 
 - [StackEdit](https://stackedit.io/) / [**Classeur**](https://classeur.io/)  
 - [**Modoko**](https://www.madoko.net/)
 
-**客户端推荐：**
+**2. 客户端推荐：**  
 
    - MarkdownPad（Windows）：功能全面完善  
    - Macdown（macOS）：开源 Mou，优于 Mou  
@@ -16,7 +15,7 @@
    - **_Typora_**（cross platform）：优雅、一体化、行云流水，跨平台  
    - **FoldingText+Marked2**（macOS）：大纲勾勒，纯文本写作，实时渲染预览。
 
-**写作伴侣：**
+**3. 写作伴侣：**  
 
 - 速记/笔记：[**Apple Notes**](http://www.macobserver.com/tmo/article/how-to-effectively-use-the-notes-app-in-ios-and-os-x)（备忘录）+ [**Microsoft OneNote**](http://www.onenote.com/)  
 - 提纲挈领：**[OmniOutliner](https://www.omnigroup.com/omnioutliner/)**  
