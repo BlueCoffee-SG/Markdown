@@ -1,5 +1,4 @@
 # Markdown教程
-
 Markdown是一种轻量级标记语言，创始人为John Gruber。  
 Markdown允许人们『使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML或HTML文档』。  
 
@@ -40,7 +39,8 @@ Markdown 的目标是实现「易读易写」（easy-to-read and easy-to-write �
 ## 简明教程
 [Markdown 简明教程] /  [Markdown 示例]  
 markdown 简明语法：[lutaf][markdown-simple-usage-lutaf] / [ibruce][markdown-simple-usage-ibruce] / [maybeiwill][markdown-simple-usage-maybeiwill]  
-简书 Markdown 教程：[新手指南][JIANSHU_MARKDOWN_GUIDE] / [简明教程][JIANSHU_MARKDOWN_USAGE]
+简书 Markdown 教程：[新手指南][JIANSHU_MARKDOWN_GUIDE] / [简明教程][JIANSHU_MARKDOWN_USAGE]  
+[Markdown 简单的世界](http://www.kancloud.cn/wizardforcel/markdown-simple-world)  
 
 ## CSDN Markdown
 [博客园支持 GFM][CNBLOGS_MARKDOWN]  
