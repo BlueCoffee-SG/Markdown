@@ -4,27 +4,40 @@
 
 [OpenFTDocinMarked.applescript](https://github.com/RobTrew/txtquery-tools/blob/master/utilities/OpenFTDocinMarked.applescript)
 
-1-Show Script menu in menu bar
-----
+脚本编辑器-偏好设置
+---
 
-![Show_Script_menu_in_menu_bar](OpenFTDocinMarked/1-Show_Script_menu_in_menu_bar.png)
+![1-脚本编辑器-偏好设置](OpenFTDocinMarked/1-脚本编辑器-偏好设置.png)
 
-2-grant `SystemUIServer` for control accessibility
-----
+[x] 在菜单栏中显示脚本菜单
 
-![SystemUIServer_control_accessibility](OpenFTDocinMarked/2-SystemUIServer_control_accessibility.png)
+打开FoldingText-脚本菜单
+---
 
-3-Open `FoldingText Scripts` Folder
-----
+![2-打开FoldingText-脚本菜单](OpenFTDocinMarked/2-打开FoldingText-脚本菜单.png)
 
-![Open_FoldingText_Scripts_Folder](OpenFTDocinMarked/3-Open_FoldingText_Scripts_Folder.png)
+将 `OpenFTDocinMarked.applescript` 脚本复制到 `~/Library/Scripts/Applications/FoldingText ` 目录下：
 
-4-load OpenFTDocInMarked
-----
+![3-FoldingText_Scripts](OpenFTDocinMarked/3-FoldingText_Scripts.png)
 
-![load_OpenFTDocInMarked](OpenFTDocinMarked/4-load_OpenFTDocInMarked.png)
+重新点击脚本菜单，下拉列表多了 `FoldingText Scripts` 分区及其  **OpenFTDocinMarked** 菜单项。
 
-5-OpenFTDocInMarked Demonstration
-----
+![4-打开FoldingText-OpenFTDocinMarked](OpenFTDocinMarked/4-打开FoldingText-OpenFTDocinMarked.png)
 
-![OpenFTDocInMarked](OpenFTDocinMarked/5-OpenFTDocInMarked.png)
+点击该菜单项，弹出辅助功能授权确认框。
+
+grant `SystemUIServer` for control accessibility
+---
+
+![5-SystemUIServer.app-辅助功能控制权限](OpenFTDocinMarked/5-SystemUIServer.app-辅助功能控制权限.png)
+
+打开 `系统偏好设置|安全性与隐私`，选中 **`辅助功能`**，点击左下角的锁，输入账号密码。
+
+![6-安全性与隐私-辅助功能-勾选SystemUIServer.app.png](OpenFTDocinMarked/6-安全性与隐私-辅助功能-勾选SystemUIServer.app.png)
+
+[x] SystemUIServer.app
+
+OpenFTDocInMarked Demonstration
+---
+
+![OpenFTDocInMarked](OpenFTDocinMarked/7-OpenFTDocInMarked.png)
