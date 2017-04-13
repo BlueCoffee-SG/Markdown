@@ -1,0 +1,203 @@
+/* ============================================================== *
+ *  Theme for FoldingText 2.0
+ *
+ *  Author: Jamie Kowalski
+ *  Date:   November 2013 - July 2014
+ * ============================================================== */
+
+
+/* ============================================================== *
+ *  Variables
+ * ============================================================== */
+
+@monospaceFont: 'TheSansMono Office', Consolas, Menlo, monospace;
+@proportionalFont: Seravek, 'Source Sans Pro'; // Seravek is on OS X 10.9
+@fontFamily: @proportionalFont;
+@fontSize: 1.1em;         // FoldingText uses this setting on the body element
+@inkColor: black;
+@textColor: @inkColor;
+@deskColor: #FEFCF6;
+@paperColor: @deskColor;
+@keywordColor: mix(@textColor, @paperColor, 25%);
+
+// @lineHeight: 1.25;   // reducing line height interferes with .calc widget style
+@tabSize: 8;
+@selectionLeftFillTo: margin;
+@paperTopMargin:    4rem;
+@paperRightMargin:  4rem;
+@paperLeftMargin:   4rem;
+
+@codeFontSize:   95%;
+@codeFontFamily: @monospaceFont;
+@codeColor: black;
+@codeBackgroundColor: mix(transparent, @textColor, 98%);
+@codeBorder: 1px solid mix(transparent, @textColor, 93%);
+@codeBorderRadius: 6px;
+
+@tagBackgroundColor: @codeBackgroundColor;
+@tagBorder: @codeBorder;
+@tagBorderRadius: @codeBorderRadius;
+
+@interfaceColor: #5A88C7;
+@cursorColor: @interfaceColor;
+
+/* ============================================================== *
+ *  General 
+ * ============================================================== */
+
+body {
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    text-rendering: optimizeSpeed; // this is set in FoldingText default
+}
+
+.CodeMirror {
+
+  .line-select-position {
+      margin-top: -3px;
+  }
+  .CodeMirror div.CodeMirror-textDropCursor { // textDropCursor is used when 
+                                              // inserting dragged text
+      border-color: #333;
+      // .line-select-position;
+  }
+  .CodeMirror div.CodeMirror-textDropCursor {
+      border-color: black;
+  }
+  .cm-selected-text {
+      color: rgb(256,253,240);
+  }
+  .cm-unordered .cm-list-bullet,
+  .cm-ordered .cm-lead {
+      color: #5A88C7 !important;
+  }
+}
+
+/* ============================================================== *
+ *  Headings 
+ * ============================================================== */
+
+.CodeMirror {
+  .cm-heading[cm-level="1"] {
+    font-size: 1.4em;
+  }
+  .cm-heading[cm-level="2"] {
+    font-size: 1.1em;
+  }
+  .cm-heading .cm-lead {
+    cursor: pointer;
+  }
+}
+
+/* ============================================================== *
+ *  Special item types 
+ * ============================================================== */
+
+.CodeMirror {
+  .cm-keyword {
+    color: @keywordColor;
+  }
+  .cm-mode {
+    font-weight: normal;
+  }
+  .cm-propertyname {
+    font-weight: normal;
+    font-style: italic;
+    color: #aaa;
+  }
+  .cm-propertyvalue {
+    font-style: normal;
+  }
+}
+
+/* ============================================================== *
+ *  Modes
+ * ============================================================== */
+
+.CodeMirror {
+  .cm-calc-modecontext,
+  .cm-calc-renderwidget {
+    font-family: @monospaceFont;
+  }
+  .cm-calc-modecontext.cm-heading {
+    font-family: inherit;
+  }
+}
+
+/* ============================================================== *
+ *  Code
+ * ============================================================== */
+
+.CodeMirror {
+  .cm-code,
+  .cm-codeblock,
+  .cm-fencedcode,
+  .cm-fencedcodetopboundary,
+  .cm-fencedcodebottomboundary,
+  .cm-htmlblock {
+    font-family: @codeFontFamily;
+    font-size: @codeFontSize;
+  }
+  
+  // inline code
+  .cm-code {
+    background: @codeBackgroundColor;
+    border-top: @codeBorder;
+    border-bottom: @codeBorder;
+  }
+  .cm-hidesyntax .cm-code {
+    border-radius: @codeBorderRadius;
+    border-left: @codeBorder;
+    border-right: @codeBorder;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .cm-hidesyntax .cm-code.cm-currentsyntax {
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: none;
+    border-right: none;
+  }
+  .cm-code.cm-keyword {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .cm-code.cm-keyword,
+  .cm-hidesyntax .cm-code.cm-currentsyntax.cm-keyword {
+    border-radius: @codeBorderRadius 0 0 @codeBorderRadius;
+    border: @codeBorder;
+    border-right: none;
+  }
+  .cm-code + .cm-code.cm-keyword,
+  .cm-hidesyntax .cm-code + .cm-code.cm-keyword.cm-currentsyntax {
+    border-radius: 0 @codeBorderRadius @codeBorderRadius 0;
+    border: @codeBorder;
+    border-left: none;
+  }
+    
+  // fenced code block
+  .cm-fencedcodetopboundary .cm-keyword, .cm-fencedcodebottomboundary .cm-keyword {
+	  font-family: @codeFontFamily;
+    color: @keywordColor;
+  }
+  .cm-fencedcodetopboundary-background,
+  .cm-fencedcodebottomboundary-background,
+  .cm-fencedcode-background,
+  .cm-codeblock-background {
+    background-color: @codeBackgroundColor;
+    border: @codeBorder;
+    border-left-width: 2px;
+    border-top: none;
+    border-bottom: none;
+  }
+  .cm-fencedcodetopboundary-background,
+  .cm-codeblock-start-background {
+  	border-top: @codeBorder;
+    border-radius: @codeBorderRadius @codeBorderRadius 0 0;
+  }
+  .cm-fencedcodebottomboundary-background,
+  .cm-codeblock-end-background {
+  	border-bottom: @codeBorder;
+    border-radius: 0 0 @codeBorderRadius @codeBorderRadius;
+  }
+}
