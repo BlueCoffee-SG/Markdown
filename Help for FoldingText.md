@@ -164,8 +164,8 @@ Ordered List      | <kbd>⇧</kbd><kbd>⌘</kbd><kbd>l</kbd> | 格式化为有�
 操作               | 快捷键                                | 功能
 ------------------|--------------------------------------|-------
 Fold              | <kbd>⌘</kbd><kbd>/</kbd>             | 折叠/展开当前级别section<br>光标在标题或内容区都可以<br>- 折叠所有子级header标题<br>- 展开所有子级header内容
-Collapse by Level | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd> | 逐级折叠<br>光标行下必须有子层级<br>- 显示各子级header标题<br>- 可重复操作，继续折叠子级
-Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd> | 逐级展开，逆行expand<br>可重复操作，逐级展开子级标题和内容
+Collapse by Level | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd> | 当前级别内逐层折叠<br>光标行下必须有子层级<br>- 显示各子级header标题<br>- 可重复操作，继续折叠子级
+Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd> | 当前级别内逐层展开，逆行expand<br>可重复操作，逐级展开子级标题和内容
 
 ### Focus
 
@@ -173,9 +173,10 @@ Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd> | 逐级展开，
 ------------------|--------------------------------------|---
 Focus             | <kbd>⌘</kbd><kbd>U</kbd>             | 聚焦当前section
 Focus Out         | <kbd>⇧</kbd><kbd>⌘</kbd><kbd>U</kbd> | 展开到上一级section<br>可重复操作，逐级向上展开
-Focus Heading     | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>U</kbd> | 查看TOC浮窗<br/>可⬆️/⬇️移动，点击跳转
+Focus Heading     | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>U</kbd> | 查看TOC浮窗<br/>可⬆️/⬇️移动，点击跳转聚焦当级 section
 Outline View      | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>T</kbd> | 查看TOC侧边栏
 
 ## References
 [Customizing FoldingText](http://computers.tutsplus.com/tutorials/customizing-foldingtext--cms-21674)
 
+[FoldingText, 伪装成 markdown 编辑器的 outliner](https://www.v2ex.com/t/123024)
