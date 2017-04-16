@@ -19,7 +19,7 @@ Edit|Run Command...(`⌘'`) 中新增  **date** 和 **time** 快捷命令。
 
 插入当前日期和时间。
 
-## jamiekowalski/[foldingtext-extra]([foldingtext-extra](https://github.com/jamiekowalski/foldingtext-extra))
+## jamiekowalski/[foldingtext-extra](https://github.com/jamiekowalski/foldingtext-extra)
 
 ### concentrate.ftplugin
 聚焦当前编辑行（Narrow your focus to the current sentence）。
