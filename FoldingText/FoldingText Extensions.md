@@ -35,14 +35,14 @@ FoldingText 2 plugins and scripts
 ### change number of heading levels.ftplugin
 Edit|Run Command...(`⌘'`) 中新增  **more/fewer heading levels** 快捷命令。
 
-- `⇧⌘]`：Increase number of heading levels by 1：增加#，减小H级别；  
-- `⇧⌘[`：Decrease number of heading levels by 1：减少#，增大H级别。   
+- `⇧⌘]`：Increase number of heading levels by 1：增加#，降低H级别；  
+- `⇧⌘[`：Decrease number of heading levels by 1：减少#，升高H级别。   
 
 ### change document expansion level.ftplugin
 Edit|Run Command...(`⌘'`) 中新增  **expand/collapse more** 快捷命令。
 
-- `⌘⌥-`：Collapse whole document one more level：整体同级逐级折叠；  
-- `⌘⌥=`：Expand whole document one more level：整体同级逐级展开。  
+- `⌘⌥-`：Collapse whole document one more level：全文**同级**逐级折叠；  
+- `⌘⌥=`：Expand whole document one more level：全文**同级**逐级展开。  
 
 > 默认的 `⌘/` 为只折叠/展开当前 section。  
 > 默认的 `⌘⌥←`/`⌘⌥→` 为当前级别内**逐层**折叠/展开到当前 section。  
