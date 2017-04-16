@@ -205,6 +205,8 @@ Fold              | <kbd>⌘</kbd><kbd>/</kbd>             | 折叠/展开当前
 Collapse by Level | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd> | 当前级别内逐层折叠<br>光标行下必须有子层级<br>- 显示各子级header标题<br>- 可重复操作，继续折叠子级
 Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd> | 当前级别内逐层展开，逆行expand<br>可重复操作，逐级展开子级标题和内容
 
+可搭配 [foldingtext-extra](https://github.com/jamiekowalski/foldingtext-extra) 中的 `change document expansion level.ftplugin` 插件使用。
+
 ## References
 [Customizing FoldingText](http://computers.tutsplus.com/tutorials/customizing-foldingtext--cms-21674)
 
