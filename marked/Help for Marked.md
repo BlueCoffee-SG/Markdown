@@ -1,3 +1,4 @@
+<!--TOC-->
 
 # [Marked](http://marked2app.com/)
 [Marked 2 使用方法集锦：开篇](http://www.waerfa.com/marked-2-intro)  
@@ -7,7 +8,7 @@
 通过脚本 [OpenFTDocinMarked.applescript][] 调起 Marked 2 渲染预览 Markdown。  
 当在 Folding Text 中修改保存 Markdown 文档时，Marked 2 会实时检测刷新。
 
-![FoldingText_Marked2](FoldingText/FoldingText_Marked2.png)
+![FoldingText_Marked2](../FoldingText/FoldingText_Marked2.png)
 
 ## Preferences
 ### General
@@ -46,7 +47,7 @@ Shortcut  |  Function                       |  Comment
 
 ### Preview_Nav
 
-![1-Preview_Nav](marked/1-Preview_Nav.png)
+![1-Preview_Nav](1-Preview_Nav.png)
 
 #### 帮助
 Shortcut  |  Function                       |  Comment
@@ -78,9 +79,16 @@ Shortcut  |  Function                       |  Comment
 `s`         | Auto-Scroll                     | 自动滚屏
 <kbd>⇧</kbd><kbd>→</kbd>/<kbd>⇧</kbd><kbd>←</kbd> | Speed up/Slow down auto-scroll | 加速/减速自动滚屏
 
-### TOC_Nav
+### TOC
+#### [Insert TOC at head](http://marked2app.com/help/Special_Syntax.html)
+在文中（开头）插入 `<!--TOC-->`，通过 Marked2 渲染插入目录（Table Of Contents）。  
+如果文中多次插入 ` <!--TOC-->`，仅以第一个有效。  
 
-![2-TOC_Nav](marked/2-TOC_Nav.png)
+在 TOC 后插入 `max#`(#∈{1,2,3,4,5}) 则可指定目录显示的级别深度（nested heirarchy）。
+例如 `<!--TOC max3-->` 表示插入最深3级目录。
+
+#### Floating TOC Navigator
+![2-TOC_Nav](2-TOC_Nav.png)
 
 Shortcut  |  Function                       |  Comment
 ----------|---------------------------------|----------------------
