@@ -182,6 +182,10 @@ Example.calc
 ```
 
 ## View
+- Hide Syntax：隐藏（或显示）原始语法  
+- Typewritter Scrolling：打字机滚动模式  
+- Text Wrap Width：单行最大宽度，可选`80`个字符。  
+
 ### TOC
 
 操作              | 快捷键                                | 功能
@@ -206,6 +210,13 @@ Collapse by Level | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd> | 当前级别内
 Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd> | 当前级别内逐层展开，逆行expand<br>可重复操作，逐级展开子级标题和内容
 
 可搭配 [foldingtext-extra](https://github.com/jamiekowalski/foldingtext-extra) 中的 `change document expansion level.ftplugin` 插件使用。
+
+## Organize
+<kbd>⌘</kbd><kbd>]</kbd> / <kbd>⌘</kbd><kbd>[</kbd>：增大/减小 缩进。
+
+<kbd>⌥</kbd><kbd>⌘</kbd><kbd>[</kbd> / <kbd>⌥</kbd><kbd>⌘</kbd><kbd>]</kbd>：上移/下移
+
+<kbd>^</kbd><kbd>⌥</kbd><kbd>↑</kbd> / <kbd>^</kbd><kbd>⌥</kbd><kbd>↓</kbd>：分支(section)上移/下移
 
 ## References
 [Customizing FoldingText](http://computers.tutsplus.com/tutorials/customizing-foldingtext--cms-21674)
