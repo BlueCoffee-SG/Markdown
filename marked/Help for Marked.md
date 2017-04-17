@@ -84,8 +84,8 @@ Shortcut  |  Function                       |  Comment
 在文中（开头）插入 `<!--TOC-->`，通过 Marked2 渲染插入目录（Table Of Contents）。  
 如果文中多次插入 ` <!--TOC-->`，仅以第一个有效。  
 
-在 TOC 后插入 `max#`(#∈{1,2,3,4,5}) 则可指定目录显示的级别深度（nested heirarchy）。
-例如 `<!--TOC max3-->` 表示插入最深3级目录。
+在 TOC 后插入 `max#`(#∈{1,2,3,4,5}) 可指定目录显示的级别深度（nested heirarchy）,例如 `<!--TOC max3-->` 表示插入最深3级目录。  
+这个有点类似 SublimeText 的 [MarkdownTOC](https://packagecontrol.io/packages/MarkdownTOC) 插件语法。
 
 #### Floating TOC Navigator
 ![2-TOC_Nav](2-TOC_Nav.png)
