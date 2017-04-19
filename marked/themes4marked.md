@@ -1,3 +1,5 @@
+## [Solarized Dark colors for Marked.app](https://gist.github.com/kconner/3453403)
+
 ## [Byword.css for Marked](https://github.com/EvanLovely/markdown-styles/tree/master/Byword%20for%20Marked)
 
 
