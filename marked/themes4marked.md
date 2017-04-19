@@ -9,7 +9,7 @@
 
 @img ![Ulysses Freestraction Dark](http://www.candlerblog.com/images/2013/04/freestraction-dark.png)
 
-The following installation instructions are lifted right off of the [Marked product page]([Marked product page](http://markedapp.com/)) (at the very bottom):
+The following installation instructions are lifted right off of the [Marked product page](http://markedapp.com/) (at the very bottom):
 
 1. Save the CSS file to a safe place such as `~/Library/Application Support/Marked/Custom CSS`  
 2. In Marked **_Preferences_**, go to the **Styles** pane  
