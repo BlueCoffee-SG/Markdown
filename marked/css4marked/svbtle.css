@@ -1,0 +1,129 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: 'Open Sans','Helvetica','Avenir','Arial',sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, dl, table, blockquote, figure, code {
+  margin: 0 auto;
+  width: 550px;
+}
+
+figcaption {
+  display: none;
+}
+
+p, h1, h2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+p {
+  color: rgb(77, 77, 77);
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 27px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+h1, h2, blockquote, ul, ol {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: rgb(58, 58, 58);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+  font-weight: bold;
+}
+
+blockquote {
+  border-bottom-color: rgb(132, 89, 107);
+  border-left-color: rgb(132, 89, 107);
+  border-left-style: solid;
+  border-left-width: 8px;
+  border-right-color: rgb(132, 89, 107);
+  border-top-color: rgb(132, 89, 107);
+  font-size: 15px;
+  line-height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a {
+  color: rgb(51, 51, 51);
+  text-decoration: none solid rgb(51, 51, 51);
+  border-bottom-color: rgb(225, 225, 225);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+hr {
+  color: rgb(244, 243, 243);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 0;
+  border-left-style: solid;
+  border-left-width: 0;
+  border-right-style: solid;
+  border-right-width: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-style: solid;
+  border-top-width: 5px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 430px;
+}
+
+ol, ul {
+  padding-left: 60px;
+}
+
+li {
+  color: rgb(77, 77, 77);
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+code {
+  border: 1px solid #d2d2d2;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  padding: 0 5px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+pre code {
+  padding: 10px 0;
+  border: 0;
+}
+
+img {
+  width: 650px;
+  margin-left: -50px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: block;
+  border-bottom-style: none;
+}

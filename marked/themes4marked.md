@@ -1,7 +1,12 @@
-## [Solarized Dark colors for Marked.app](https://gist.github.com/kconner/3453403)
-
 ## [Byword.css for Marked](https://github.com/EvanLovely/markdown-styles/tree/master/Byword%20for%20Marked)
 
+## [maxjacobson/marked-themes](https://github.com/maxjacobson/marked-themes)
+
+## Solarized
+
+### [Solarized Dark colors for Marked.app](https://gist.github.com/kconner/3453403)
+
+### [jgoodall/markedapp-solarized](https://github.com/jgoodall/markedapp-solarized)
 
 ## [Some Ulysses III Themes for Marked](http://www.candlerblog.com/2013/04/11/ulysses-iii-and-marked/)
 
