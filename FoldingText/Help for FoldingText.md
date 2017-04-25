@@ -219,6 +219,6 @@ Expand by Level   | <kbd>⌥</kbd><kbd>⌘</kbd><kbd>→</kbd> | 当前级别内
 <kbd>^</kbd><kbd>⌥</kbd><kbd>↑</kbd> / <kbd>^</kbd><kbd>⌥</kbd><kbd>↓</kbd>：分支(section)上移/下移
 
 ## References
-[Customizing FoldingText](http://computers.tutsplus.com/tutorials/customizing-foldingtext--cms-21674)
-
-[FoldingText, 伪装成 markdown 编辑器的 outliner](https://www.v2ex.com/t/123024)
+[Customizing FoldingText](http://computers.tutsplus.com/tutorials/customizing-foldingtext--cms-21674)  
+[SOME THOUGHTS ABOUT FOLDINGTEXT](https://welcometosherwood.wordpress.com/2014/06/07/some-thoughts-about-foldingtext/)  
+[FoldingText, 伪装成 markdown 编辑器的 outliner](https://www.v2ex.com/t/123024)  
