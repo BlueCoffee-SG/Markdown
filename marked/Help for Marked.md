@@ -56,8 +56,8 @@ Shortcut  |  Function                       |  Comment
 <kbd>⌥</kbd><kbd>⌘</kbd><kbd>k</kbd>     | 调出热键参考悬浮窗
 
 #### 主题
-默认主题（theme style）是 **Swiss**，可切换测试 *GitHub*（<kbd>⌘</kbd><kbd>4</kbd>）主题效果。  
-另外，推荐尝试复古的 Antique（<kbd>⌘</kbd><kbd>2</kbd>）。
+默认主题（theme style）是 **Swiss**，可切换测试 ***GitHub***（<kbd>⌘</kbd><kbd>4</kbd>）主题效果。  
+另外，推荐复古的 ***Antique***（<kbd>⌘</kbd><kbd>2</kbd>）和第三方主题 [**Byword**](https://github.com/EvanLovely/markdown-styles/tree/master/Byword%20for%20Marked)、[Svbtle](https://github.com/chrishunt/marked)、[Ulysses Freestraction Light](http://www.candlerblog.com/2013/04/11/ulysses-iii-and-marked/)。
 
 在 `Preferences|Style` 的 Theme 中可选择默认主题（*Default style*）；在 *Custom Styles*  中可添加或移除自定义 CSS 样式，参考《themes4marked.md》。 
 
