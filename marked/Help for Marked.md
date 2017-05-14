@@ -62,6 +62,9 @@ Shortcut  |  Function                       |  Comment
 在 `Preferences|Style` 的 Theme 中可选择默认主题（*Default style*）；  
 在 *Custom Styles*  中可添加或移除自定义 CSS 样式，参考《themes4marked.md》。 
 
+##### 高级（advanced）
+***Syntax highlighting***：可选 `xcode.css`。
+
 #### 导航
 Shortcut  |  Function                       |  Comment
 ----------|---------------------------------|----------------------
@@ -100,6 +103,91 @@ Shortcut  |  Function                       |  Comment
 `j` / `⬇️`    | Select next item                | 向下移动
 `k` / `⬆️`    | Select previous item            | 向上移动
 `o`         | Scroll to selection item        | 跳转到当前选中章节
+
+### Fenced Code Block（YAML）
+Fenced Code Block 以三个反引号（backtick quotes：<kbd>`</kbd>，有的支持波浪线<kbd>~</kbd>）包裹，第一行的三个反引号之后可以冠上编程语言的 [YAML](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) 标记识别语法高亮。
+
+#### Markdown
+
+```Markdown
+- list 1
+- list 2
+```
+
+#### [HTML5](http://www.runoob.com/html/html5-intro.html)
+
+```HTML
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>文档标题</title>
+</head>
+ 
+<body>
+文档内容......
+</body>
+ 
+</html>
+```
+
+#### C
+```C
+/*main.c*/
+
+#include <stdio.h>
+
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+#### C++
+ aliases:  `cpp`
+
+ 尽量使用 `cpp` 而非 `C++`，因为 `C++` 中的 ++ 号渲染有问题！
+
+```cpp
+// main.cpp
+
+#include <iostream>
+
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    std::cout << "Hello, World!\n";
+    return 0;
+}
+```
+
+#### Objective-C
+aliases: `obj-c`、`objc`、`objectivec`  
+
+**注意**：不支持 `obj-c++`、`objc++`、`objectivec++`，因为 ++ 号渲染有问题！
+
+Apple LLVM 8.1 - Language - Objective C
+
+> Objective-C Automatic Reference Count: YES
+
+```obj-c
+// main.m
+
+#if !__has_feature(objc_arc)
+#error doest not support Objective-C Automatic Reference Counting(ARC)
+#endif
+
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        // insert code here...
+#warning todo something
+        NSLog(@"Hello, World!");
+    }
+    return 0;
+}
+```
 
 ## <!--以下是本文的脚注和超链接-->
 [OpenFTDocinMarked.applescript]: https://github.com/RobTrew/txtquery-tools/blob/master/utilities/OpenFTDocinMarked.applescript
