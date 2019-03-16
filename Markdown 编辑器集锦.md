@@ -144,6 +144,7 @@ FoldingText uses [Markdown](http://daringfireball.net/projects/markdown/) format
 
 当鼠标移出 Markdown Format 控制符时，隐藏控制符，及时渲染进入阅读模式；当鼠标移至格式符内时，可重新返回编辑模式。这种智能的模式软切换特性提供了**_沉浸式_**的写作体验。同时，保留前置章节符号（Heading： `#`）作为大纲节点，以便清晰地了解当前章节所属纲领层次。
 
+<!-- ![FoldingText-Demo](http://img.blog.csdn.net/20161024061702278) -->
 ![FoldingText-Demo](FoldingText/FoldingText.png)
 
 FoldingText 表面上是以纯文本格式呈现，但程序背后采用 Node Paths 进行树状结构化存储和解析，文本中的任何一段都是一个节点（`node`），可提供类似 vim text object 粒度的 `Move` & `Organize` 等操作，可针对当前缩进 Level、Heading 进行折叠或聚焦。
@@ -315,10 +316,12 @@ Visual Studio Code (简称 VS Code / VSC) 是一款免费开源的现代化轻�
 
 ![Visual Studio Code](http://img.blog.csdn.net/20160221104335925 "Visual Studio Code")
 
-> [Visual Studio Code 的简单试用体验](http://blog.jobbole.com/86576/)  
-> [微软 Visual Studio Code 免费跨平台代码编辑器](http://www.iplaysoft.com/visual-studio-code.html)   
-> [Visual Studio Code 的 10 个超棒特性](http://www.oschina.net/translate/10-awesome-features-of-visual-studio-code)  
-> [不得不爱，Visual Studio Code十大超酷特性](http://www.ithome.com/html/it/152920.htm)
+[Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)  
+[使用 VSCode 编辑 MarkDown](https://imchenchao.com/blog/MarkdownVSCode/)  
+[用 VSCode 打造最佳 Markdown 编辑器](https://www.jianshu.com/p/18876655b452)  
+
+[在 VSCode 下用 MPE 愉快地写文档](https://zhuanlan.zhihu.com/p/56699805) - [Markdown Preview Enhanced](https://blog.csdn.net/u013597671/article/details/77914638)  
+[vscode 粘贴图片插件](https://www.njleonzhang.com/2018/08/14/vs-code-paste-image.html)  
 
 ## Markdown Notebook
 
